@@ -1,0 +1,214 @@
+# (PART\*) Lab 6 {-}
+
+*Last updated `r Sys.Date()`*
+
+# Data Collection Round 2 {-}
+
+This week you will be continuing data collection for your project.
+
+# Assignment 4: Final Research Proposal {-}
+
+## Overview {-}
+
+**Due before the end of your lab the week of February 28th**
+
+Following a week after you submit your Research Proposal Draft you will have received the edits from your TA.  You can decide to resubmit the same proposal without making any changes or you will have the opportunity to review the edits and make the needed changes in order to increase your mark.  If you decide to pursue this the final copy of the Research Proposal will be due before the end of your lab the week of February 28th.  Your TA will be in their zoom rooms in case you have any last-minute questions or concerns regarding this assignment.
+
+If you have any questions regarding your mark and/or the comments from your TA please ensure you take the opportunity to chat with your TA and go over these.  This will ensure that you are in the best position to attain the highest marks possible for this assignment.
+
+## Research Proposal Rubric {-}
+
+**Total\ /39**
+
+### Abstract {-}
+
+**\ /3**
+
+**Criteria**
+
+- Brief, no more than 500 words
+- Clearly outlines the question/problem
+- Clearly describes how the question/problem will be addressed
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />3 pts | All 3 criteria are met |
+| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| No Marks<br />0 pts | None of the criteria are met |
+
+### Introduction {-}
+
+**\ /6**
+
+**Criteria**
+
+- Relevant background information provided
+- Clearly articulates how the background information is connected to the current project idea
+- Well written and easy to follow
+- Flows from more general and broad background information and narrows towards the focus of this proposed project
+- Hypothesis/question(s) posed are clearly stated towards the end of this section
+- No factual errors are present
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />6 pts | All 6 criteria are met |
+| Excellent<br />5 pts | 5 of the 6 criteria are met |
+| Proficient<br />4 pts | 4 of the 6 criteria are met |
+| Satisfactory<br />3 pts | 3 of the 6 criteria are met |
+| Unsatisfactory<br />2 pt | 2 of the 6 criteria are met |
+| Poor<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Experimental Design {-}
+
+**\ /6**
+
+**Criteria**
+
+- No bullet points
+- The experimental design is specific and addresses the question/problem
+- Enough information is provided that someone else may be able to run a similar experiment
+- There is an appropriate control where applicable
+- Both independent and dependent variables are clearly defined
+- Statistical analysis to be used has been clearly outlined
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />6 pts | All 6 criteria are met |
+| Excellent<br />5 pts | 5 of the 6 criteria are met |
+| Proficient<br />4 pts | 4 of the 6 criteria are met |
+| Satisfactory<br />3 pts | 3 of the 6 criteria are met |
+| Unsatisfactory<br />2 pt | 2 of the 6 criteria are met |
+| Poor<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Significance of Project {-}
+
+**\ /3**
+
+**Criteria**
+
+- Significance of the problem is clearly and convincingly stated
+- Experimental design has been described in a way that elicits confidence in this study
+- Background information was used well in order to show the importance of this project
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />3 pts | All 3 criteria are met |
+| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Spelling & Grammar {-}
+
+**\ /3**
+
+**Criteria**
+
+- No spelling errors
+- No grammar errors
+- No awkward sentence structures
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />3 pts | All 3 criteria are met |
+| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### References & In-Text Citations {-}
+
+**\ /4**
+
+**Criteria**
+
+- APA format used properly and consistently
+- Minimum of 5 primary source papers used in the proposal
+- In-text citations are used when required
+- Citations and references match up
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />4 pts | All 4 criteria are met |
+| Proficient<br />3 pts | 3 of the 4 criteria are met  |
+| Satisfactory<br />2 pts | 2 of the 4 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Plagiarism & Quotations {-}
+
+**\ /3**
+
+**Criteria**
+
+- No plagiarism of any kind has been found
+- No quotations present
+- Information attained from outside resources are properly cited
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />3 pts | All 3 criteria are met |
+| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Format {-}
+
+**\ /4**
+
+**Criteria**
+
+- 5 pages (not including references)
+- Font 12
+- Times New Roman
+- Double spaced
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />4 pts | All 4 criteria are met |
+| Proficient<br />3 pts | 3 of the 4 criteria are met  |
+| Satisfactory<br />2 pts | 2 of the 4 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Background {-}
+
+**\ /4**
+
+**Criteria**
+
+- Information regarding the feeding and habitat needs of the organism being used provided
+- The significance of using this particular organism to study the issue at hand has been provided
+- Information regarding the specific problem being addressed, both current and historical, have been provided
+- Student has shown a solid understanding of the organism, its habitat and its impact on other organisms within its range
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />4 pts | All 4 criteria are met |
+| Proficient<br />3 pts | 3 of the 4 criteria are met  |
+| Satisfactory<br />2 pts | 2 of the 4 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Timeline {-}
+
+**\ /3**
+
+**Criteria**
+
+- All data collection dates included and a description of what data will be collected and how this will be done
+- All non-data collection dates included with details of what will be done on those days
+- Start and end of dates are provided
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />3 pts | All 3 criteria are met |
+| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+
+# Quiz 3: Who Am I? {-}
+
+Complete Quiz 2: Who Am I? on [Canvas](https://canvas.ubc.ca/courses/113910)

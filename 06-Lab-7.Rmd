@@ -1,0 +1,11 @@
+# (PART\*) Lab 7 {-}
+
+*Last updated `r Sys.Date()`*
+
+# Data Collection Round 3 {-}
+
+This week you will be continuing data collection for your project.
+
+# Quiz 4: Who Am I? {-}
+
+Complete Quiz 4: Who Am I? on [Canvas](https://canvas.ubc.ca/courses/113910)

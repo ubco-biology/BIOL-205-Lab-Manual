@@ -1,0 +1,28 @@
+# (PART\*) Lab 3 {-}
+
+*Last updated `r Sys.Date()`*
+
+# Getting Acquainted with Your Organism {-}
+
+As you will be working with this organism for the duration of the term it makes most sense to get to know your organism well. Thus far you have done some reading already and have likely learned a lot however there is nothing better than first-hand experience.  This will help you in the design part of your experiment.
+
+Based on your textbook and your previous knowledge from your primary papers research **please complete Getting Acquainted Assignment 2.**
+
+# Assignment 2: Getting Acquainted {-}
+
+Download a copy of the assignment here. [getting_acquainted_assignment.docx](files/getting_acquainted_assignment.docx)
+
+## Scientific Drawing Rubric {-}
+
+**Total\ /18**
+
+| <span style="display: inline-block; width:600px">Criteria</span> | Pts |
+| :--- | :--- |
+| **Caption**<br /> - No title present<br /> - Caption includes multiple sentences<br /> - Caption thoroughly described what the structure is | 3 |
+| **Drawing**<br /> - Appropriate number of fine lines drawn <br /> - Dotted lines used to show depth <br /> - No shading on the drawing <br /> - Labels are organized in a column on one side of the drawing <br /> - Labels are found on the right side of the drawing <br /> - Label lines are straight <br /> - Label lines do not intersect with anything | 7 |
+| **Organisms and Structures**<br /> - Drawing is oriented such that the anterior or oral aspect of organism is at the top of the page<br /> - Any structures removed or displaced have been indicated on this drawing<br /> - Genus and species are Italicized<br /> - Genus is capitalized<br /> - Specific epithet should be all lower case | 5 |
+| **Microscope**<br /> - No circle is drawn around the organism<br /> - The scale (or magnification) of the drawing is at the bottom right of the drawing<br /> - Scale/magnification determination is accurate | 3 |
+
+# Quiz 1: Getting Acquainted {-}
+
+Complete Quiz 1: Getting Acquainted on [Canvas](https://canvas.ubc.ca/courses/113910)

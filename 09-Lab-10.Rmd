@@ -1,0 +1,298 @@
+# (PART\*) Lab 10 {-}
+
+*Last updated `r Sys.Date()`*
+
+# Assignment 5: Poster Presentations {-}
+
+## Overview {-}
+
+**Due during your lab the week of March 28th**
+
+Now that you have developed a thorough understanding of the topic you will need to present your findings and provide some potential solutions to the original problem to your funders, which in this case are your peers.
+
+All groups will give oral presentations in your regular lab period during the last week of term.  Each group will have 10 minutes for their talk followed by a couple of minutes for questions. This is typically the time period allowed at a scientific conference. Each student in the group should participate equally in the presentation. Your presentation must be done using PowerPoint. A computer and projector will be available in the lab. Bring your presentation on a usb. You are also required to hand in a hard copy of your presentation at this time 24 hours prior to the start of your lab. Failure to do so will result in an instant 10% deduction. Your group will be given a grade for the quality of your oral presentation. It is important that you;
+
+*	Outline your talk as early as possible
+*	Get together to organize and practice the presentation so the timing is accurate and you do not repeat information
+*	Remember that your goal is to present material in a clear, succinct and interesting manner.
+
+
+### Suggestions for Content and Structure
+
+*	Plan a strong, clear beginning and ending.
+*	Provide a clear context for your work. Your introduction should include the objective and biological context of your study. 
+*	Include your hypotheses and prediction.
+*	Present your materials and methods in a simple or streamlined manner. Keep it short and simple.
+*	Use the PowerPoint example [here](files/presentation_example.pdf) to help guide you
+
+**Helpful presentation pointers for your content**
+
+*	Know your audience – think about who you are presenting too.  In this case you are reporting your findings to the which every organization is funding your research 
+*	Reiterate why this research was so important
+*	Show your passion for the topic.  Every story has a beginning, middle and end.  For example, you started with a problem, you sought to answer it and finally you found an “answer”.
+*	Keep things simple!  Don’t make things so complicated that your audiences lose track of where you are.  Keeping it simple will help everyone be able to follow along with you.  When needed define abbreviated terms you plan on using.  Never assume your audience will know what they mean.
+
+**Presentation pointers for you**
+
+*	Practice over and over and over again until you can flow through the material without any hesitation.  This will help ensure you have a handle on the material when you are nervous up at the front of the class.  Take the opportunity to practice your presentation in the class
+*	Get ready to perform.  This is a performance!  Know your lines and your subject.  Memorizing your lines can be problematic as you may start to sound too scripted.  Use bullet points to help tell you what to talk about instead.  Remember you are telling a story.
+    * In order to help deal with nerves before a presentation work out slowing your breathing, visualize yourself giving a relaxed talk and even tell yourself you are confident.  You may even want to “power pose” it!  For those that don’t watch Grey’s Anatomy this is when you stand like superman or superwomen right before attempting something that makes you nervous.  There are studies indicating this is very successful but at the very least it’s not going to hurt right?
+* Walk confidently to the front of the room to get you in the right frame of mind
+*	Stand tall when you are up there and keep your chest lifted.  Remember you totally got this!
+*	Above all…smile!  You will instantly appear more relaxed and research shows that smiling can actually reduce your stress level.  Plus, there is the added benefit of people enjoying the interaction more as you don’t look like you are totally miserable up there .
+*	Speak up.  People want to hear what you have to say so make sure they can.
+*	Take your time.  For you it’s going to feel like its lasting forever but for your audience you may come across like you just had two coffees and a Redbull.  Allow for those “awkward” pauses as for the audience it will actually sound more normal.
+*	Talk to the audience and not your screen or cue cards.  You should know the information so well that all you need is a quick bullet point to get you talking.
+*	Keep to the time frame.  This is where giving yourself lots of practice time will help out.
+
+Present results clearly and simply. If you choose to present summary tables and graphs, make sure they illustrate only the points you want to make. Be sure to describe the axes before the trends in the data and ensure your figures/tables are large enough to be seen by the students at the back of the room. 
+
+Compare your results directly with the results of other similar research form the literature
+
+Do not restrict yourselves to presenting only your best results. Mention problems you had and how you would avoid them next time as well as sources of variation and error and how these impacted your results. 
+
+## Oral Presentation Rubric {-}
+
+You and your partner(s) will be assessed base on the below rubric. Please use this rubric when creating and presenting your PowerPoint presentation.
+
+**Total\ /54**
+
+### Title Slide {-}
+
+**\ /3**
+
+**Criteria**
+
+- Title is clear and tells the audience what the presentation is about
+- All names of researchers provided
+- Affiliations are provided
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />3 pts | All 3 criteria are met |
+| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Outline {-}
+
+**\ /2**
+
+**Criteria**
+
+- Outline has been provided and is clear
+- Outline goes over all relevant items which will be discussed
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />2 pts | All criteria are met |
+| Satisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Background {-}
+
+**\ /6**
+
+**Criteria**
+
+- 2 slides
+- Only essential information has been provided
+- Relevancy about the project has been described
+- Student objectives/hypotheses have been well described
+- Presenter displays a clear passion for the importance of the topic and is engaging
+- 1-2 min was provided for this section
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />6 pts | All 6 criteria are met |
+| Excellent<br />5 pts | 5 of the 6 criteria are met |
+| Proficient<br />4 pts | 4 of the 6 criteria are met |
+| Satisfactory<br />3 pts | 3 of the 6 criteria are met |
+| Unsatisfactory<br />2 pt | 2 of the 6 criteria are met |
+| Poor<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Experimental Design {-}
+
+**\ /6**
+
+**Criteria**
+
+- 1-2 slides with
+- Photos/figures used help to explain the methods
+- Description of the design was clear with enough information provided so others can replicate
+- Study group is described and an explanation for why it was used is provided
+- Variables being tested were described
+- Control group described
+- Information regarding sample size and trial numbers was provided
+- Experimental design was appropriate to test the question/hypothesis
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />6 pts | All 7 criteria are met |
+| Excellent<br />5 pts | 5-6 of the 7 criteria are met |
+| Proficient<br />4 pts | 4 of the 7 criteria are met |
+| Satisfactory<br />3 pts | 3 of the 7 criteria are met |
+| Unsatisfactory<br />2 pt | 2 of the 7 criteria are met |
+| Poor<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Results {-}
+
+**\ /5**
+
+**Criteria**
+
+- At least 2 slides were provided which included graphs/charts etc
+- No raw data was provided
+- No figures/tables were provided and not explained
+- Both quantifiable and qualitative results were provided
+- A mixture of text, tables, figures, photos were used to convey results and those selected were the most appropriate for that type of data
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />5 pts | All 5 criteria are met |
+| Proficient<br />4 pts | 4 of the 5 criteria are met |
+| Satisfactory<br />3 pts | 3 of the 5 criteria are met |
+| Unsatisfactory<br />2 pt | 2 of the 5 criteria are met |
+| Poor<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Discussion {-}
+
+**\ /6**
+
+**Criteria**
+
+- 2 slides provided
+- Results not repeated
+- Interpretation of the results was provided and was accurate
+- Findings were clearly presented with the most relevant to the least relevant
+- Results were clearly described and compared to other similar studies and their findings
+- Limitations to the study were clearly provided
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />6 pts | All 6 criteria are met |
+| Excellent<br />5 pts | 5 of the 6 criteria are met |
+| Good<br />4 pts | 4 of the 6 criteria are met |
+| Proficient<br />3 pts | 3 of the 6 criteria are met |
+| Satisfactory<br />2 pt | 2 of the 6 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Recommendations {-}
+
+**\ /6**
+
+**Criteria**
+
+- Recommendations were clearly outlined
+- Recommendations were relevant to the problem at hand
+- Recommendations were based on current research
+- Recommendations were based on previous studies and their findings
+
+x| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />6 pts | All 6 criteria are met |
+| Excellent<br />5 pts | 5 of the 6 criteria are met |
+| Good<br />4 pts | 4 of the 6 criteria are met |
+| Satisfactory<br />3 pt | 3 of the 6 criteria are met |
+| Unsatisfactory<br />2 pt | 2 of the 6 criteria are met |
+| Poor<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Acknowledgements {-}
+
+**\ /2**
+
+**Criteria**
+
+- All those individuals involved were recognized for their efforts
+- Funding acknowledgment was provided
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />2 pts | All criteria are met |
+| Satisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Slide Content {-}
+
+**\ /5**
+
+**Criteria**
+
+- Titles for each slide told the audience exactly what they were looking at
+- Proper sans serif font was used
+- Slides were presented in the order of the outline
+- Slide was not wordy but rather all content is done in point form
+- Any copyrighted materials were cited appropriately
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />5 pts | All 5 criteria are met |
+| Proficient<br />4 pts | 4 of the 5 criteria are met |
+| Satisfactory<br />3 pts | 3 of the 5 criteria are met |
+| Unsatisfactory<br />2 pt | 2 of the 5 criteria are met |
+| Poor<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Oral Presentation Skills {-}
+
+**\ /7**
+
+**Criteria**
+
+- Presenters did not sound scripted
+- Presenters did not read of computer and/or notes
+- It was clear that the presenters understood the material they were presenting
+- Presentation fell within the appropriate time span
+- All charts/figures/graphs were explained thoroughly
+- All associations were clearly described
+- Questions were answered knowledgeably and professionally.
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />7 pts | All 7 criteria are met |
+| Excellent<br />6 pts | 6 of the 7 criteria are met |
+| Proficient<br />5 pts | 5 of the 7 criteria are met |
+| Satisfactory<br />4 pts | 4 of the 7 criteria are met |
+| Unsatisfactory<br />3 pt | 3 of the 7 criteria are met |
+| Insufficient<br />2 pts | 2 of the 7 criteria are met |
+| Poor<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Additional {-}
+
+**\ /3**
+
+**Criteria**
+
+- Presentation was submitted 24 hours prior to the presentation
+- Each presenter contributed equally to the project
+- All in-text citations are references were provided
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />3 pts | All 3 criteria are met |
+| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Slide Appearance {-}
+
+**\ /3**
+
+**Criteria**
+
+- Slides were simple, high-contrast, and had a consistent colour scheme
+- Slides were built to be "colour-blind friendly"
+- Slides were uncluttered, clear, and visible from across the room
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />3 pts | All 3 criteria are met |
+| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |

@@ -1,0 +1,51 @@
+--- 
+title: "Biology 205 Lab Manual"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+description: "Your Description Here"
+---
+
+# Welcome {-}
+
+To your Biology 205 Labs!
+
+**First**, a few important and relevant links...
+
+* [Canvas course shell](https://canvas.ubc.ca/courses/113910)
+* [Syllabus](https://canvas.ubc.ca/courses/113910/files/21718741?module_item_id=4662232) 
+
+## Copyright {-}
+
+This work is licenced under the Creative Commons [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+Please use the following for citing this document
+
+Hay, T (2021). *Biology 205 Comparative Invertebrate Zoology Lab Manual.*. [https://ubco-biology.github.io/BIOL-205-Lab-Manual/](https://ubco-biology.github.io/BIOL-205-Lab-Manual/). Some content provided by the University of British Columbia, Okanagan Biology Graduate Program students handbook and the National Center for Case Study Teaching in Science.
+
+All source files are available [https://github.com/ubco-biology/BIOL-205-Lab-Manual](https://github.com/ubco-biology/BIOL-205-Lab-Manual).
+
+## UBCO Biology open materials {-}
+
+This resource is part of a larger project to host UBCO Biology lab materials in an open, accessible format.
+
+All BIOL open materials can be found at [https://ubco-biology.github.io/](https://ubco-biology.github.io/)
+
+## Conventions {-}
+
+<div class = "flag">
+Information relevant to lab logistics and grading.
+</div>
+
+<div class = "note">
+Further insights or notes on presented materials.
+</div>
+
+<div class = "takeAway">
+Highlights and key take aways.
+</div>
+
+<div class = "advanced">
+Optional material that dives deeper into a presented concept.
+</div>
+
