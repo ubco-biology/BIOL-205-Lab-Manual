@@ -4,8 +4,6 @@
 
 # Assignment 3: Research Proposal Draft {-}
 
-## Overview {-}
-
 **Due before the start of your lab the week of February 7th** 
 
 Research proposals should be approximately 5 double-spaced pages.  Each proposal should:
@@ -38,11 +36,11 @@ Research proposals should be approximately 5 double-spaced pages.  Each proposal
 | **September 20th, 2021** | Count organisms using pods from a small sample and estimating total number to provide baseline population size |	May need to readjust environment depending on organism survival |
 | **September 27th, 2021** | Add variable - pesticides | May need to adjust amount of pesticides depending on survivability |
 
-### Ideas on Preparing a Research Proposal {-}
+**Ideas on Preparing a Research Proposal**
 
 *	Read a lot!  It is important that you have a thorough understanding of the topic.  At the very least you should have at least 3 primary source papers you are referring too throughout your proposal.
 *	Discuss your ideas with other students (not just your partner).  Get a feel for what everyone else is doing and the depth they are working in.
 *	Start writing early!  Students often make the mistake of starting the night before the proposal is due.  This more than not results in poor submissions and thus lower grades.  You should expect that you will have at least 3 rounds of revisions before you submit.
 *	Someone reading your proposal should be able to tell what question(s) you will address, why the topic is interesting and/or important, how you will approach the problem, the types of data you will collect, and how your research will advance the field.
 
-As you work on the draft of your research proposal, be sure to consult the Final Research Proposal marking rubric [here]()!
+As you work on the draft of your research proposal, be sure to consult the Final Research Proposal marking rubric [here](https://ubco-biology.github.io/BIOL-205-Lab-Manual/research-proposal-rubric.html)!

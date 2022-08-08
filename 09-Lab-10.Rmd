@@ -17,7 +17,7 @@ All groups will give oral presentations in your regular lab period during the la
 *	Remember that your goal is to present material in a clear, succinct and interesting manner.
 
 
-### Suggestions for Content and Structure
+### Suggestions for Content and Structure {-}
 
 *	Plan a strong, clear beginning and ending.
 *	Provide a clear context for your work. Your introduction should include the objective and biological context of your study. 
