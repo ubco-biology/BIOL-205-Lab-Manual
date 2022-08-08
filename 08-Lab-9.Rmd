@@ -16,7 +16,7 @@ For more information on using R Shiny please visit the following link [https://u
 
 The Shiny app you can use to run your analysis can be found here at [https://openscience.ok.ubc.ca/shiny/BIOL-116](https://openscience.ok.ubc.ca/shiny/BIOL-116)
 
-The YouTube video here can be used to walk you through the steps of using the R Shiny App [https://www.youtube.com/watch?v=FtEx5S7vENo](https://www.youtube.com/watch?v=FtEx5S7vENo)
+The YouTube video here can be used to walk you through the steps of using the R Shiny App <a href="https://www.youtube.com/watch?v=FtEx5S7vENo" target="_blank">![](images/shiny-app.png)</a>
  
 You may wish to refer back to the section on [Preparing your data](https://ubco-biology.github.io/BIOL-116-Lab-Manual/preparing-your-data.html) from BIOL 116 and the chapter [Tidy Data](https://ubco-biology.github.io/Procedures-and-Guidelines/tidy-data.html) in the UBCO Biology Procedures and Guidelines document. 
 
