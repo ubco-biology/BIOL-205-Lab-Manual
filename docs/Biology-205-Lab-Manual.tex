@@ -1,0 +1,1707 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Biology 205 Lab Manual},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Biology 205 Lab Manual}
+\author{}
+\date{\vspace{-2.5em}2022-08-08}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{welcome}{%
+\chapter*{Welcome}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome}
+
+To your Biology 205 Labs!
+
+\textbf{First}, a few important and relevant links\ldots{}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://canvas.ubc.ca/courses/113910}{Canvas course shell}
+\item
+  \href{https://canvas.ubc.ca/courses/113910/files/21718741?module_item_id=4662232}{Syllabus}
+\end{itemize}
+
+\hypertarget{copyright}{%
+\section*{Copyright}\label{copyright}}
+\addcontentsline{toc}{section}{Copyright}
+
+This work is licenced under the Creative Commons \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)}
+
+Please use the following for citing this document
+
+Hay, T (2021). \emph{Biology 205 Comparative Invertebrate Zoology Lab Manual.}. \url{https://ubco-biology.github.io/BIOL-205-Lab-Manual/}. Some content provided by the University of British Columbia, Okanagan Biology Graduate Program students handbook and the National Center for Case Study Teaching in Science.
+
+All source files are available \url{https://github.com/ubco-biology/BIOL-205-Lab-Manual}.
+
+\hypertarget{ubco-biology-open-materials}{%
+\section*{UBCO Biology open materials}\label{ubco-biology-open-materials}}
+\addcontentsline{toc}{section}{UBCO Biology open materials}
+
+This resource is part of a larger project to host UBCO Biology lab materials in an open, accessible format.
+
+All BIOL open materials can be found at \url{https://ubco-biology.github.io/}
+
+\hypertarget{conventions}{%
+\section*{Conventions}\label{conventions}}
+\addcontentsline{toc}{section}{Conventions}
+
+Information relevant to lab logistics and grading.
+
+Further insights or notes on presented materials.
+
+Highlights and key take aways.
+
+Optional material that dives deeper into a presented concept.
+
+\hypertarget{part-labs-1-2}{%
+\part*{Labs 1 \& 2}\label{part-labs-1-2}}
+\addcontentsline{toc}{part}{Labs 1 \& 2}
+
+\emph{Last updated 2022-08-08}
+
+\hypertarget{planning-your-experiment}{%
+\chapter*{Planning Your Experiment}\label{planning-your-experiment}}
+\addcontentsline{toc}{chapter}{Planning Your Experiment}
+
+There is a lot to consider when developing an experiment to answer the problem you have outlined in front of you.
+
+The link below will help you sort out best practices in experimental design. It is highly recommended that before you come to the lab to start designing your experiment that you take the time to review the material in the link below starting with the ``statement of hypothesis'' to ``conducting the research''.
+
+\href{https://ubco-biology.github.io/BIOL-116-Lab-Manual/statement-of-hypothesis.html}{Experimental Methodology - What you need to know to design your experiment}
+
+\hypertarget{assignment-1-primary-source-papers}{%
+\chapter*{Assignment 1: Primary Source Papers}\label{assignment-1-primary-source-papers}}
+\addcontentsline{toc}{chapter}{Assignment 1: Primary Source Papers}
+
+\hypertarget{overview}{%
+\section*{Overview}\label{overview}}
+\addcontentsline{toc}{section}{Overview}
+
+\textbf{Due before the start of your lab the week of January 24th. Please ensure you submit each summary to the specific submission locations on \href{https://canvas.ubc.ca/courses/113910}{Canvas}. Submitting all in one location will result in a mark of zero.}
+
+\hypertarget{what-is-a-primary-source-paper}{%
+\subsection*{What is a primary source paper?}\label{what-is-a-primary-source-paper}}
+\addcontentsline{toc}{subsection}{What is a primary source paper?}
+
+A primary source scientific paper is an original publication. That is, it is a paper discussing the findings or theories of a scientist and/or scientists written by that scientist and/or scientists. On the other hand, a non-primary source research paper is a paper discussing the findings and theories of a scientist and/or scientists but written by another scientist and/or scientists, reporter, journalist, or member of the general public. So, primary source papers are written by those individuals that have conducted the research that is being reported.
+
+The link below provides you with an example of a primary paper found through the UBC Okanagan Library. You will need your cwl to access the paper.
+
+Hay, T. N., Phillips, L. A., Nicholson, B. A., \& Jones, M. D. (2015). Ectomycorrhizal community structure and function in interior spruce forests of british columbia under long term fertilization. Forest Ecology and Management, 350, 87-95. \url{https://doi.org/10.1016/j.foreco.2015.04.023}. Alternatively, this primary source paper can be downloaded \href{files/primary_source_paper_example.pdf}{here.}
+
+The link here provides you with an example of a non-primary sourced paper.
+
+\url{https://en.wikipedia.org/wiki/Spruce\%E2\%80\%93fir_forests}
+
+For each primary paper, you will need to select one figure you feel provides the most relevant information for your topic. You will need to include the following information. \textbf{The 5 figure summaries must be submitted prior to the start of your lab the week of January 24th.} This submission will be done online. You can work with your partner on selecting the 5 papers but this is an independent assignment. Be aware of plagiarism when working together. For your assignment be sure to include:
+
+\begin{itemize}
+\tightlist
+\item
+  The figure and its caption
+\item
+  The URL for the paper itself
+\item
+  A clear and concise description of the information provided by this figure (a couple of sentences)
+\item
+  An explanation for how this information is relevant for your study
+\end{itemize}
+
+\textbf{Here is an example submission}: \href{files/primary_source_paper_example_submission.docx}{primary\_source\_paper\_example\_submission.docx}
+
+\hypertarget{primary-source-paper-rubric}{%
+\section*{Primary Source Paper Rubric}\label{primary-source-paper-rubric}}
+\addcontentsline{toc}{section}{Primary Source Paper Rubric}
+
+\textbf{Total~/9}
+
+\hypertarget{figure-selected}{%
+\subsection*{Figure Selected}\label{figure-selected}}
+\addcontentsline{toc}{subsection}{Figure Selected}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Figure and its caption is provided
+\item
+  URL for paper is provided
+\item
+  Figure is from the URL provided
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks1.5 pts & All 3 criteria are met \\
+Satisfactory1 pts & 2 of the 3 criteria are met \\
+Unsatisfactory0.5 pts & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{description-of-figure}{%
+\subsection*{Description of Figure}\label{description-of-figure}}
+\addcontentsline{toc}{subsection}{Description of Figure}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Description provided is clear and easy to follow
+\item
+  Description provided accurately describes the figure provided
+\item
+  Description indicates that the student has a clear understanding of the information being conveyed by the figure
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks1.5 pts & All 3 criteria are met \\
+Satisfactory1 pts & 2 of the 3 criteria are met \\
+Unsatisfactory0.5 pts & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{relevance-to-study}{%
+\subsection*{Relevance to Study}\label{relevance-to-study}}
+\addcontentsline{toc}{subsection}{Relevance to Study}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Explanation is clear and the rationale
+\item
+  Student has provided a convincing explanation of the relevancy of this figure
+\item
+  Student shows a clear understanding of the significance of this figure to their study
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks1.5 pts & All 3 criteria are met \\
+Satisfactory1 pts & 2 of the 3 criteria are met \\
+Unsatisfactory0.5 pts & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{fish-population-project}{%
+\section*{Fish Population Project}\label{fish-population-project}}
+\addcontentsline{toc}{section}{Fish Population Project}
+
+\hypertarget{fish-population-declines-mitigation-recommendations-needed}{%
+\subsection*{Fish population declines: Mitigation recommendations needed}\label{fish-population-declines-mitigation-recommendations-needed}}
+\addcontentsline{toc}{subsection}{Fish population declines: Mitigation recommendations needed}
+
+Phytoplankton, microscopic single-celled algae, are natural components of aquatic ecosystems and are natural components of aquatic ecosystems and are responsible for half of the carbon and oxygen produced by plants in the world. Some phytoplankton species, however, produce toxins. These toxin producing algae are becoming more common and showing up in more places worldwide. Some of these toxins will produce neurotoxins that prevent nerve transmission signals, resulting in negative effects in animals that consume it. Toxins from phytoplankton can be transferred through the food web and accumulate in higher trophic levels, causing mortality in shellfish, fish, sea birds, and humans. Humans that eat contaminated shellfish can become sick and die. A major challenge for aquatic scientists and environmental managers is to predict the response of animal populations to the proliferation of toxic phytoplankton. A great deal of scientific effort is spent trying to understand the population dynamics of toxic algal blooms and their effects on the food web.
+
+\begin{figure}
+\centering
+\includegraphics{images/figure1.png}
+\caption{Figure 1. Simplified marine food web, including toxic phytoplankton}
+\end{figure}
+
+A vital link between phytoplankton and higher trophic levels is provided by copepods, a type of zooplankton. Zooplankton are animal-like plankton that need to ingest other organisms to survive. Copepods are estimated to be the most abundant animals on the planet and are the main food source for many larval fish species. This leads to the refrain: no copepods no fish.
+
+\begin{figure}
+\centering
+\includegraphics{images/figure2.png}
+\caption{Figure 2. The copepod \emph{Acartia hudsonicaand} a toxic phytoplankton cell, \emph{Alexandrium fundysense}.}
+\end{figure}
+
+The toxic dinoflagellate genus \emph{Alexandrium} spp. Often blooms from Long Island Sound in the United Sates, to the Bay of Fundy, Canada (Figure 3). This bloom results in negative effects in animals (grazers) that consume it and these toxins can accumulate in the higher trophic levels, causing mortality in fish, sea birds and humans. In order to better predict the response of animal populations to the proliferation of toxic phytoplankton, \emph{Alexandrium fundysense}, scientist studied the populations of the copepod \emph{Acartia hudsonica} found in two different regions of the distribution from the Bay of Fundy, Canada, to about Long Island sound, New York and Connecticut. There are frequent and high toxicity levels in the norther region of this range (e.g., Maine) and no toxic blooms recorded in the southern regions (e.g., New Jersey).
+
+\begin{figure}
+\centering
+\includegraphics{images/figure3.png}
+\caption{Figure 3.Geographical distribution of toxic \emph{Alexandrium} spp. The frequency and toxicity of \emph{Alexandrium} decreases from north to south. The copepod \emph{Acartia hudsonica}, a main grazer of toxic \emph{Alexandrium}, is found throughout the entire range shown. Stars correspond to population origins from experiments described here. Northern star indicates Maine, southern star indicates New Jersey sampling sites.}
+\end{figure}
+
+Scientist discovered that at maximum ingestion rates the Maine population had higher egg production compared to the New Jersey population (Figure 4) however when copepods were ingesting non-toxic phytoplankton there were no differences in egg production between these populations (Figure 5).
+
+\begin{figure}
+\centering
+\includegraphics{images/figure4.png}
+\caption{Figure 4.Ingestion rate (feeding; left) and egg production rate (reproduction; right) for copepods feeding on a diet containing toxic \emph{Alexandrium} spp. Ingestion rates were measured over a range of food concentrations while egg production rates correspond to a single concentration. Food saturation occurs around 500 µgCL-1; this means that this concentration represents maximum ingestion and egg production. Scientist chose this concentration for egg production because this is where the greatest difference, if any, in ingestion rate occurred. The Maine population (red) had statistically higher ingestion and egg production rate compared to copepods from New Jersey (green). Units for the dependent variable are in micrograms of carbon (µgC; food) and per copepod per day (ingestion and egg production). Error bars represent standard deviation among replicates in egg production; they are omitted for clarity from ingestion rates. Data adapted from Colin and Dam (2007, 2004).}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{images/figure5.png}
+\caption{Figure 5.Ingestion rate (feeding; left) and egg production rate (reproduction; right) for copepods feeding on a n o-toxic diet. Ingestion rates were measured over a range of food concentrations while egg production rates correspond to a single concentration. Food saturation occurs around 500µgCL-1; this mean as that this concentration represents maximum ingestion and egg production. There were no differences between the Maine (red) and New Jersey (green) populations for both ingestion and egg production rate compared. That is, the two populations fed and reproduced at the same rate. Units and errors bars are the same as Figure 1. Data adapted from Colin and Dam (2007, 2004).}
+\end{figure}
+
+There is still much to learn about the fecundity, mortality and growth of copepods in response to toxic algae. Scientist need to better understand the interaction between toxic algae and their grazers and the adaptability of copepods to toxic algae. Understanding these relationships is key to being able to predict and mitigate issues surrounding fish populations.
+
+\textbf{Your Role}
+
+You have been hired by National Freshwater Copepod Conservation and Fish Restoration agency (NFCCFR) to investigate the impacts of toxic algae on copepod populations. The NFCCFR is interested to know what negative effects, if any, can toxic algae produce in the copepod population in freshwater populations.
+
+Due to budget constraints you and your partner will need to conduct this research in lab and provide the NFCCFR with a proposal for approval prior to initiating your research. (The NFCCFR is your TA in case you were wondering). Before you can begin developing your proposal you must first become immersed in your topic. You and your partner will need to source out \textbf{5 primary source papers} related to this topic.
+
+\hypertarget{macroinvertebrates-project}{%
+\section*{Macroinvertebrates Project}\label{macroinvertebrates-project}}
+\addcontentsline{toc}{section}{Macroinvertebrates Project}
+
+\hypertarget{potential-changes-in-macroinvertebrates-mitigation-recommendations-needed}{%
+\subsection*{Potential changes in macroinvertebrates: Mitigation recommendations needed}\label{potential-changes-in-macroinvertebrates-mitigation-recommendations-needed}}
+\addcontentsline{toc}{subsection}{Potential changes in macroinvertebrates: Mitigation recommendations needed}
+
+In Lannisport, a major town located in the city of Westeros, water sampling has been conducted by the Friends of the Turkey River Organization every three weeks from January to June in order to monitor the impacts of the Milford Farm on the Turkey River (Fig. 6).
+
+\begin{figure}
+\centering
+\includegraphics{images/figure6.png}
+\caption{Figure 6. Map of Milford Farm along the Turkey River}
+\end{figure}
+
+There is growing concern that the levels in glyphosate and/or bacteria levels may impact the macroinvertebrate population found in the Turkey river. Data shown below on glyphosate levels (Fig. 2) and fecal bacterial levels (Fig. 3) have been collected every three weeks by a water quality sampling team.
+
+\begin{figure}
+\centering
+\includegraphics{images/figure7.png}
+\caption{Figure 7. Glyphosate levels found both upstream and downstream from farm on the Milford property taken every three weeks.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{images/figure8.png}
+\caption{Figure 8. Number of fecal coliform bacterial levels per 100 ml sample upstream and downstream the farm on the Milford property taken every 3 weeks.}
+\end{figure}
+
+There is serious concern about the impacts of the farm to the water quality of the creek. The growing concern is whether or not these changes in glyphosate or bacteria levels will result in changes to the macroinvertebrate population and thus the trout population. Both macroinvertebrates and fish populations are used to assess river health however as macroinvertebrate populations are a large source for many animals in this ecological system, the Friends of the Mission Creek (FMCO) and the National Wildlife Federation (NWF) are currently interested in looking at macroinvertebrates specifically.
+
+\textbf{Your Role}
+
+You have been hired by the Friends of the Mission Creek Organization (FMCO) and the National Wildlife Federation (NWF) to investigate how this happened, what the possible effects are on the aquatic life and what can be done to prevent it from happening again.
+
+Due to budget constraints you and your partner will need to conduct this research in lab and provide the FMCO and the NWF with a proposal for approval prior to initiating your research. (The FMCO and NWF will be represented by your TA in case you were wondering). Before you can begin developing your proposal you must first become immersed in your topic. You and your partner will need to source out \textbf{5 primary source papers} related to this topic.
+
+\hypertarget{invasive-mussles-project}{%
+\section*{Invasive Mussles Project}\label{invasive-mussles-project}}
+\addcontentsline{toc}{section}{Invasive Mussles Project}
+
+\hypertarget{invasive-mussel-project-mitigation-recommendations-needed}{%
+\subsection*{Invasive Mussel Project -- Mitigation Recommendations Needed}\label{invasive-mussel-project-mitigation-recommendations-needed}}
+\addcontentsline{toc}{subsection}{Invasive Mussel Project -- Mitigation Recommendations Needed}
+
+Both the zebra and quagga mussels have been shown to be extremely destructive in the Great Lakes (NOAA, 2008). Originally from Eastern Europe they were introduced here in Canada through ballast water discharge from ships, first the zebra mussels in the 80's and then the quaggas in the 90's. As of late it appears the quagga mussels can outcompete the zebra mussels due to their ability to tolerate colder temperatures, live I soft sediment and have a much longer siphon for feeding. The NOAA's Great Lakes Environmental Research Laboratory (GLERL) have been monitoring the issue since the arrival of the quaggas. The map below (Fig. 1) illustrate how quickly the quaggas have dominated the area.
+
+\begin{figure}
+\centering
+\includegraphics{images/figure9.png}
+\caption{Figure 9. Density of Quagga Mussels in Lake Michigan determined in the year 2000, 2005 and 2010 (NOAA, 2008)}
+\end{figure}
+
+Food production for native species have been declining since the introduction of these invasive mussels and in particular the shrimp-like organisms called \emph{Diporeia} as shown in the Figure 1.
+
+\begin{figure}
+\centering
+\includegraphics{images/figure10.png}
+\caption{Figure 10. Density of \emph{Diporeia} in Lake Michigan in 1994/1995, 2000, 2005 and 2010 (NOAA, 2008)}
+\end{figure}
+
+Along with increased mussels and decreased \emph{Diporeia} researchers have seen an increase in the size and number of harmful bottom-dwelling alga in the Great Lakes. One such algal is called \emph{Cladophora}, which makes its way on to beaches in clumps rendering the beaches unpleasant due to their unsightly and smelly nature and also impact nutrient levels in the water (NOAA, 2008).
+
+\begin{figure}
+\centering
+\includegraphics{images/figure11.png}
+\caption{Figure 11. Phytoplankton production from 1983 to 2008 in the springtime in southern Lake Michigan (NOAA, 2008).)}
+\end{figure}
+
+The decline in \emph{Diporiea} has resulted in some fish changing diet to a less nutrient rich diet in order to survive. As recreational fishing has a huge presence in the Great Lakes the presence of these invasive mussels has taken its toll on the economy (NOAA, 2008). Alongside this, the tourism industry has been impacted due to the less enticing beach quality that has resulted from the \emph{Cladophoral} blooms (NOAA, 2008). Consequently, the GLERL has hired you to further investigate why and how this relationship is taking place in order to determine what mitigation strategies may be implemented.
+
+\textbf{Your Role}
+
+You have been hired by the Great Lakes Environmental Research Laboratory (GLERL) to investigate the relationship seen between invasive mussels and the harmful algal blooms. The GLERL is interested to know how these two populations are connected and what mitigation strategies can be implemented to help. Due to budget constraints you and your partner will need to conduct this research in lab and provide the GLERL with a proposal for approval prior to initiating your research. (The GLERL is your TA in case you were wondering). Before you can begin developing your proposal you must first become immersed in your topic. You and your partner will need to source out \textbf{5 primary source papers} related to this topic.
+
+\hypertarget{part-lab-3}{%
+\part*{Lab 3}\label{part-lab-3}}
+\addcontentsline{toc}{part}{Lab 3}
+
+\emph{Last updated 2022-08-08}
+
+\hypertarget{getting-acquainted-with-your-organism}{%
+\chapter*{Getting Acquainted with Your Organism}\label{getting-acquainted-with-your-organism}}
+\addcontentsline{toc}{chapter}{Getting Acquainted with Your Organism}
+
+As you will be working with this organism for the duration of the term it makes most sense to get to know your organism well. Thus far you have done some reading already and have likely learned a lot however there is nothing better than first-hand experience. This will help you in the design part of your experiment.
+
+Based on your textbook and your previous knowledge from your primary papers research \textbf{please complete Getting Acquainted Assignment 2.}
+
+\hypertarget{assignment-2-getting-acquainted}{%
+\chapter*{Assignment 2: Getting Acquainted}\label{assignment-2-getting-acquainted}}
+\addcontentsline{toc}{chapter}{Assignment 2: Getting Acquainted}
+
+Download a copy of the assignment here. \href{files/getting_acquainted_assignment.docx}{getting\_acquainted\_assignment.docx}
+
+\hypertarget{scientific-drawing-rubric}{%
+\section*{Scientific Drawing Rubric}\label{scientific-drawing-rubric}}
+\addcontentsline{toc}{section}{Scientific Drawing Rubric}
+
+\textbf{Total~/18}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pts
+\end{minipage} \\
+\midrule()
+\endhead
+\textbf{Caption} - No title present - Caption includes multiple sentences - Caption thoroughly described what the structure is & 3 \\
+\textbf{Drawing} - Appropriate number of fine lines drawn - Dotted lines used to show depth - No shading on the drawing - Labels are organized in a column on one side of the drawing - Labels are found on the right side of the drawing - Label lines are straight - Label lines do not intersect with anything & 7 \\
+\textbf{Organisms and Structures} - Drawing is oriented such that the anterior or oral aspect of organism is at the top of the page - Any structures removed or displaced have been indicated on this drawing - Genus and species are Italicized - Genus is capitalized - Specific epithet should be all lower case & 5 \\
+\textbf{Microscope} - No circle is drawn around the organism - The scale (or magnification) of the drawing is at the bottom right of the drawing - Scale/magnification determination is accurate & 3 \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{quiz-1-getting-acquainted}{%
+\chapter*{Quiz 1: Getting Acquainted}\label{quiz-1-getting-acquainted}}
+\addcontentsline{toc}{chapter}{Quiz 1: Getting Acquainted}
+
+Complete Quiz 1: Getting Acquainted on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
+
+\hypertarget{part-lab-4}{%
+\part*{Lab 4}\label{part-lab-4}}
+\addcontentsline{toc}{part}{Lab 4}
+
+\emph{Last updated 2022-08-08}
+
+\hypertarget{assignment-3-research-proposal-draft}{%
+\chapter*{Assignment 3: Research Proposal Draft}\label{assignment-3-research-proposal-draft}}
+\addcontentsline{toc}{chapter}{Assignment 3: Research Proposal Draft}
+
+\hypertarget{overview-1}{%
+\section*{Overview}\label{overview-1}}
+\addcontentsline{toc}{section}{Overview}
+
+\textbf{Due before the start of your lab the week of February 7th}
+
+Research proposals should be approximately 5 double-spaced pages. Each proposal should:
+
+\begin{itemize}
+\tightlist
+\item
+  Provide a brief literature review to contextualize the proposed research \textbf{(1-2 pages)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    What do you know about the organisms involved
+
+    \begin{itemize}
+    \tightlist
+    \item
+      What does it need to survive?
+    \item
+      What temperature is it typically found?
+    \item
+      Remember you have to run this experiment in the lab and be able to control for all variables
+    \end{itemize}
+  \item
+    What do you know about the issue surrounding toxic algal blooms
+  \item
+    What differences are there between saltwater systems and freshwater systems if any that need to be considered when making inferences from one to another
+  \end{itemize}
+\item
+  Clearly outline the problem and why this is so important. You will likely need to use the background information to justify the importance \textbf{(0.5-1 pages)}
+\item
+  Provide clear hypotheses
+\item
+  Outline the major methods and data collection (including what statistical analyses to be used, when appropriate and a list of materials required). There should not be any bullet points here \textbf{(1 page)}
+\item
+  References must be provided and on its own page
+\item
+  Title page is not necessary
+\item
+  Provide a detailed projected week by week timeline of your research. The information in this table should include the following and be in chronological order:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Start date of experiment (include pilot round if relevant)
+  \item
+    Data collection dates and how data will be collected
+  \item
+    Non-data collection dates should be included with a detail of what you expect to be working on. E.g. you may need to complete a water change or feed your organisms
+  \item
+    Additional notes may be added in the case where you anticipate there may need to be a change in timeline depending on previous weeks
+  \item
+    End date of experiment
+  \item
+    Below is an example format
+  \end{itemize}
+\end{itemize}
+
+\textbf{Table 1: Projected weekly timeline}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Date
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Activity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notes
+\end{minipage} \\
+\midrule()
+\endhead
+\textbf{September 13, 2021} & Experimental set up - clean tank, fill with spring water and heat to appropriate temperature and add organisms & \\
+\textbf{September 20th, 2021} & Count organisms using pods from a small sample and estimating total number to provide baseline population size & May need to readjust environment depending on organism survival \\
+\textbf{September 27th, 2021} & Add variable - pesticides & May need to adjust amount of pesticides depending on survivability \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{ideas-on-preparing-a-research-proposal}{%
+\subsection*{Ideas on Preparing a Research Proposal}\label{ideas-on-preparing-a-research-proposal}}
+\addcontentsline{toc}{subsection}{Ideas on Preparing a Research Proposal}
+
+\begin{itemize}
+\tightlist
+\item
+  Read a lot! It is important that you have a thorough understanding of the topic. At the very least you should have at least 3 primary source papers you are referring too throughout your proposal.
+\item
+  Discuss your ideas with other students (not just your partner). Get a feel for what everyone else is doing and the depth they are working in.
+\item
+  Start writing early! Students often make the mistake of starting the night before the proposal is due. This more than not results in poor submissions and thus lower grades. You should expect that you will have at least 3 rounds of revisions before you submit.
+\item
+  Someone reading your proposal should be able to tell what question(s) you will address, why the topic is interesting and/or important, how you will approach the problem, the types of data you will collect, and how your research will advance the field.
+\end{itemize}
+
+As you work on the draft of your research proposal, be sure to consult the Final Research Proposal marking rubric \href{}{here}!
+
+\hypertarget{part-lab-5}{%
+\part*{Lab 5}\label{part-lab-5}}
+\addcontentsline{toc}{part}{Lab 5}
+
+\emph{Last updated 2022-08-08}
+
+\hypertarget{data-collection-round-1}{%
+\chapter*{Data Collection Round 1}\label{data-collection-round-1}}
+\addcontentsline{toc}{chapter}{Data Collection Round 1}
+
+This week you will be working in the labs collecting data for your project.
+
+\hypertarget{quiz-2-who-am-i}{%
+\chapter*{Quiz 2: Who Am I?}\label{quiz-2-who-am-i}}
+\addcontentsline{toc}{chapter}{Quiz 2: Who Am I?}
+
+Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
+
+\hypertarget{part-lab-6}{%
+\part*{Lab 6}\label{part-lab-6}}
+\addcontentsline{toc}{part}{Lab 6}
+
+\emph{Last updated 2022-08-08}
+
+\hypertarget{data-collection-round-2}{%
+\chapter*{Data Collection Round 2}\label{data-collection-round-2}}
+\addcontentsline{toc}{chapter}{Data Collection Round 2}
+
+This week you will be continuing data collection for your project.
+
+\hypertarget{assignment-4-final-research-proposal}{%
+\chapter*{Assignment 4: Final Research Proposal}\label{assignment-4-final-research-proposal}}
+\addcontentsline{toc}{chapter}{Assignment 4: Final Research Proposal}
+
+\hypertarget{overview-2}{%
+\section*{Overview}\label{overview-2}}
+\addcontentsline{toc}{section}{Overview}
+
+\textbf{Due before the end of your lab the week of February 28th}
+
+Following a week after you submit your Research Proposal Draft you will have received the edits from your TA. You can decide to resubmit the same proposal without making any changes or you will have the opportunity to review the edits and make the needed changes in order to increase your mark. If you decide to pursue this the final copy of the Research Proposal will be due before the end of your lab the week of February 28th. Your TA will be in their zoom rooms in case you have any last-minute questions or concerns regarding this assignment.
+
+If you have any questions regarding your mark and/or the comments from your TA please ensure you take the opportunity to chat with your TA and go over these. This will ensure that you are in the best position to attain the highest marks possible for this assignment.
+
+\hypertarget{research-proposal-rubric}{%
+\section*{Research Proposal Rubric}\label{research-proposal-rubric}}
+\addcontentsline{toc}{section}{Research Proposal Rubric}
+
+\textbf{Total~/39}
+
+\hypertarget{abstract}{%
+\subsection*{Abstract}\label{abstract}}
+\addcontentsline{toc}{subsection}{Abstract}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Brief, no more than 500 words
+\item
+  Clearly outlines the question/problem
+\item
+  Clearly describes how the question/problem will be addressed
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks3 pts & All 3 criteria are met \\
+Satisfactory2 pts & 2 of the 3 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+No Marks0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{introduction}{%
+\subsection*{Introduction}\label{introduction}}
+\addcontentsline{toc}{subsection}{Introduction}
+
+\textbf{~/6}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Relevant background information provided
+\item
+  Clearly articulates how the background information is connected to the current project idea
+\item
+  Well written and easy to follow
+\item
+  Flows from more general and broad background information and narrows towards the focus of this proposed project
+\item
+  Hypothesis/question(s) posed are clearly stated towards the end of this section
+\item
+  No factual errors are present
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks6 pts & All 6 criteria are met \\
+Excellent5 pts & 5 of the 6 criteria are met \\
+Proficient4 pts & 4 of the 6 criteria are met \\
+Satisfactory3 pts & 3 of the 6 criteria are met \\
+Unsatisfactory2 pt & 2 of the 6 criteria are met \\
+Poor1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{experimental-design}{%
+\subsection*{Experimental Design}\label{experimental-design}}
+\addcontentsline{toc}{subsection}{Experimental Design}
+
+\textbf{~/6}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  No bullet points
+\item
+  The experimental design is specific and addresses the question/problem
+\item
+  Enough information is provided that someone else may be able to run a similar experiment
+\item
+  There is an appropriate control where applicable
+\item
+  Both independent and dependent variables are clearly defined
+\item
+  Statistical analysis to be used has been clearly outlined
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks6 pts & All 6 criteria are met \\
+Excellent5 pts & 5 of the 6 criteria are met \\
+Proficient4 pts & 4 of the 6 criteria are met \\
+Satisfactory3 pts & 3 of the 6 criteria are met \\
+Unsatisfactory2 pt & 2 of the 6 criteria are met \\
+Poor1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{significance-of-project}{%
+\subsection*{Significance of Project}\label{significance-of-project}}
+\addcontentsline{toc}{subsection}{Significance of Project}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Significance of the problem is clearly and convincingly stated
+\item
+  Experimental design has been described in a way that elicits confidence in this study
+\item
+  Background information was used well in order to show the importance of this project
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks3 pts & All 3 criteria are met \\
+Satisfactory2 pts & 2 of the 3 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{spelling-grammar}{%
+\subsection*{Spelling \& Grammar}\label{spelling-grammar}}
+\addcontentsline{toc}{subsection}{Spelling \& Grammar}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  No spelling errors
+\item
+  No grammar errors
+\item
+  No awkward sentence structures
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks3 pts & All 3 criteria are met \\
+Satisfactory2 pts & 2 of the 3 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{references-in-text-citations}{%
+\subsection*{References \& In-Text Citations}\label{references-in-text-citations}}
+\addcontentsline{toc}{subsection}{References \& In-Text Citations}
+
+\textbf{~/4}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  APA format used properly and consistently
+\item
+  Minimum of 5 primary source papers used in the proposal
+\item
+  In-text citations are used when required
+\item
+  Citations and references match up
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks4 pts & All 4 criteria are met \\
+Proficient3 pts & 3 of the 4 criteria are met \\
+Satisfactory2 pts & 2 of the 4 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{plagiarism-quotations}{%
+\subsection*{Plagiarism \& Quotations}\label{plagiarism-quotations}}
+\addcontentsline{toc}{subsection}{Plagiarism \& Quotations}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  No plagiarism of any kind has been found
+\item
+  No quotations present
+\item
+  Information attained from outside resources are properly cited
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks3 pts & All 3 criteria are met \\
+Satisfactory2 pts & 2 of the 3 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{format}{%
+\subsection*{Format}\label{format}}
+\addcontentsline{toc}{subsection}{Format}
+
+\textbf{~/4}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  5 pages (not including references)
+\item
+  Font 12
+\item
+  Times New Roman
+\item
+  Double spaced
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks4 pts & All 4 criteria are met \\
+Proficient3 pts & 3 of the 4 criteria are met \\
+Satisfactory2 pts & 2 of the 4 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{background}{%
+\subsection*{Background}\label{background}}
+\addcontentsline{toc}{subsection}{Background}
+
+\textbf{~/4}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Information regarding the feeding and habitat needs of the organism being used provided
+\item
+  The significance of using this particular organism to study the issue at hand has been provided
+\item
+  Information regarding the specific problem being addressed, both current and historical, have been provided
+\item
+  Student has shown a solid understanding of the organism, its habitat and its impact on other organisms within its range
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks4 pts & All 4 criteria are met \\
+Proficient3 pts & 3 of the 4 criteria are met \\
+Satisfactory2 pts & 2 of the 4 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{timeline}{%
+\subsection*{Timeline}\label{timeline}}
+\addcontentsline{toc}{subsection}{Timeline}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  All data collection dates included and a description of what data will be collected and how this will be done
+\item
+  All non-data collection dates included with details of what will be done on those days
+\item
+  Start and end of dates are provided
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks3 pts & All 3 criteria are met \\
+Satisfactory2 pts & 2 of the 3 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{quiz-3-who-am-i}{%
+\chapter*{Quiz 3: Who Am I?}\label{quiz-3-who-am-i}}
+\addcontentsline{toc}{chapter}{Quiz 3: Who Am I?}
+
+Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
+
+\hypertarget{part-lab-7}{%
+\part*{Lab 7}\label{part-lab-7}}
+\addcontentsline{toc}{part}{Lab 7}
+
+\emph{Last updated 2022-08-08}
+
+\hypertarget{data-collection-round-3}{%
+\chapter*{Data Collection Round 3}\label{data-collection-round-3}}
+\addcontentsline{toc}{chapter}{Data Collection Round 3}
+
+This week you will be continuing data collection for your project.
+
+\hypertarget{quiz-4-who-am-i}{%
+\chapter*{Quiz 4: Who Am I?}\label{quiz-4-who-am-i}}
+\addcontentsline{toc}{chapter}{Quiz 4: Who Am I?}
+
+Complete Quiz 4: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
+
+\hypertarget{part-lab-8}{%
+\part*{Lab 8}\label{part-lab-8}}
+\addcontentsline{toc}{part}{Lab 8}
+
+\emph{Last updated 2022-08-08}
+
+\hypertarget{data-collection-round-4-cleanup}{%
+\chapter*{Data Collection Round 4 \& Cleanup}\label{data-collection-round-4-cleanup}}
+\addcontentsline{toc}{chapter}{Data Collection Round 4 \& Cleanup}
+
+This week you will be continuing data collection for your project.
+
+\hypertarget{quiz-5-who-am-i}{%
+\chapter*{Quiz 5: Who Am I?}\label{quiz-5-who-am-i}}
+\addcontentsline{toc}{chapter}{Quiz 5: Who Am I?}
+
+Complete Quiz 5: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
+
+\hypertarget{part-lab-9}{%
+\part*{Lab 9}\label{part-lab-9}}
+\addcontentsline{toc}{part}{Lab 9}
+
+\emph{Last updated 2022-08-08}
+
+\hypertarget{data-analysis}{%
+\chapter*{Data Analysis}\label{data-analysis}}
+\addcontentsline{toc}{chapter}{Data Analysis}
+
+For the data analysis portion of your presentation, you are permitted to use any operating program you are comfortable with. R shiny is a very simple way to run some basic stats however you are more than welcome to use R, SPSS, or even Excel depending on your needs and comfort level. Biol 202 is going to be a great resource for you so take a look through your notes. There is no assignment due for this module however you should meet with your TA online to discuss the statistical options you plan to pursue your data set and be able to explain why. This will help give your TA an opportunity to guide you and ensure you are appropriately analyzing your data in order to have the best outcome for your presentation.
+
+R is a great way to produce your graphs however students are permitted to use whichever program they feel most comfortable using.
+
+\hypertarget{analysis-using-r-shiny}{%
+\chapter*{Analysis Using R Shiny}\label{analysis-using-r-shiny}}
+\addcontentsline{toc}{chapter}{Analysis Using R Shiny}
+
+If you are a bit uncomfortable using R, the R Shiny App is a nice way to work through your data without requiring an understanding of R.
+
+For more information on using R Shiny please visit the following link \url{https://ubco-biology.github.io/BIOL-116-Lab-Manual/lab-7-intro-to-r-shiny-apps.html}
+
+The Shiny app you can use to run your analysis can be found here at \url{https://openscience.ok.ubc.ca/shiny/BIOL-116}
+
+The YouTube video here can be used to walk you through the steps of using the R Shiny App \url{https://www.youtube.com/watch?v=8WBR-0rjTv8}
+
+You may wish to refer back to the section on \href{https://ubco-biology.github.io/BIOL-116-Lab-Manual/preparing-your-data.html}{Preparing your data} from BIOL 116 and the chapter \href{https://ubco-biology.github.io/Procedures-and-Guidelines/tidy-data.html}{Tidy Data} in the Procedures and Guidelines document.
+
+\hypertarget{analysis-using-excel}{%
+\chapter*{Analysis Using Excel}\label{analysis-using-excel}}
+\addcontentsline{toc}{chapter}{Analysis Using Excel}
+
+Below are a few videos which can help you get acquainted with running statistical analysis in Excel. There are much more available but this should help get you started.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.youtube.com/watch?v=2xxMJEj4Oyg}{Basic Data Analysis in Excel - 1}
+\item
+  \href{https://www.youtube.com/watch?v=0wr9ojMxkuQ}{How to Perform Regression Analysis in Excel}
+\item
+  \href{https://www.youtube.com/watch?v=ZvfO7-J5u34}{How to Perform A One-Way ANOVA in Excel}
+\item
+  \href{https://www.youtube.com/watch?v=NDhmMH25AC4}{How to Perform a Chi-Square Test of Independence in Excel}
+\end{itemize}
+
+\hypertarget{part-lab-10}{%
+\part*{Lab 10}\label{part-lab-10}}
+\addcontentsline{toc}{part}{Lab 10}
+
+\emph{Last updated 2022-08-08}
+
+\hypertarget{assignment-5-poster-presentations}{%
+\chapter*{Assignment 5: Poster Presentations}\label{assignment-5-poster-presentations}}
+\addcontentsline{toc}{chapter}{Assignment 5: Poster Presentations}
+
+\hypertarget{overview-3}{%
+\section*{Overview}\label{overview-3}}
+\addcontentsline{toc}{section}{Overview}
+
+\textbf{Due during your lab the week of March 28th}
+
+Now that you have developed a thorough understanding of the topic you will need to present your findings and provide some potential solutions to the original problem to your funders, which in this case are your peers.
+
+All groups will give oral presentations in your regular lab period during the last week of term. Each group will have 10 minutes for their talk followed by a couple of minutes for questions. This is typically the time period allowed at a scientific conference. Each student in the group should participate equally in the presentation. Your presentation must be done using PowerPoint. A computer and projector will be available in the lab. Bring your presentation on a usb. You are also required to hand in a hard copy of your presentation at this time 24 hours prior to the start of your lab. Failure to do so will result in an instant 10\% deduction. Your group will be given a grade for the quality of your oral presentation. It is important that you;
+
+\begin{itemize}
+\tightlist
+\item
+  Outline your talk as early as possible
+\item
+  Get together to organize and practice the presentation so the timing is accurate and you do not repeat information
+\item
+  Remember that your goal is to present material in a clear, succinct and interesting manner.
+\end{itemize}
+
+\hypertarget{suggestions-for-content-and-structure}{%
+\subsection{Suggestions for Content and Structure}\label{suggestions-for-content-and-structure}}
+
+\begin{itemize}
+\tightlist
+\item
+  Plan a strong, clear beginning and ending.
+\item
+  Provide a clear context for your work. Your introduction should include the objective and biological context of your study.
+\item
+  Include your hypotheses and prediction.
+\item
+  Present your materials and methods in a simple or streamlined manner. Keep it short and simple.
+\item
+  Use the PowerPoint example \href{files/presentation_example.pdf}{here} to help guide you
+\end{itemize}
+
+\textbf{Helpful presentation pointers for your content}
+
+\begin{itemize}
+\tightlist
+\item
+  Know your audience -- think about who you are presenting too. In this case you are reporting your findings to the which every organization is funding your research
+\item
+  Reiterate why this research was so important
+\item
+  Show your passion for the topic. Every story has a beginning, middle and end. For example, you started with a problem, you sought to answer it and finally you found an ``answer''.
+\item
+  Keep things simple! Don't make things so complicated that your audiences lose track of where you are. Keeping it simple will help everyone be able to follow along with you. When needed define abbreviated terms you plan on using. Never assume your audience will know what they mean.
+\end{itemize}
+
+\textbf{Presentation pointers for you}
+
+\begin{itemize}
+\tightlist
+\item
+  Practice over and over and over again until you can flow through the material without any hesitation. This will help ensure you have a handle on the material when you are nervous up at the front of the class. Take the opportunity to practice your presentation in the class
+\item
+  Get ready to perform. This is a performance! Know your lines and your subject. Memorizing your lines can be problematic as you may start to sound too scripted. Use bullet points to help tell you what to talk about instead. Remember you are telling a story.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    In order to help deal with nerves before a presentation work out slowing your breathing, visualize yourself giving a relaxed talk and even tell yourself you are confident. You may even want to ``power pose'' it! For those that don't watch Grey's Anatomy this is when you stand like superman or superwomen right before attempting something that makes you nervous. There are studies indicating this is very successful but at the very least it's not going to hurt right?
+  \end{itemize}
+\item
+  Walk confidently to the front of the room to get you in the right frame of mind
+\item
+  Stand tall when you are up there and keep your chest lifted. Remember you totally got this!
+\item
+  Above all\ldots smile! You will instantly appear more relaxed and research shows that smiling can actually reduce your stress level. Plus, there is the added benefit of people enjoying the interaction more as you don't look like you are totally miserable up there .
+\item
+  Speak up. People want to hear what you have to say so make sure they can.
+\item
+  Take your time. For you it's going to feel like its lasting forever but for your audience you may come across like you just had two coffees and a Redbull. Allow for those ``awkward'' pauses as for the audience it will actually sound more normal.
+\item
+  Talk to the audience and not your screen or cue cards. You should know the information so well that all you need is a quick bullet point to get you talking.
+\item
+  Keep to the time frame. This is where giving yourself lots of practice time will help out.
+\end{itemize}
+
+Present results clearly and simply. If you choose to present summary tables and graphs, make sure they illustrate only the points you want to make. Be sure to describe the axes before the trends in the data and ensure your figures/tables are large enough to be seen by the students at the back of the room.
+
+Compare your results directly with the results of other similar research form the literature
+
+Do not restrict yourselves to presenting only your best results. Mention problems you had and how you would avoid them next time as well as sources of variation and error and how these impacted your results.
+
+\hypertarget{oral-presentation-rubric}{%
+\section*{Oral Presentation Rubric}\label{oral-presentation-rubric}}
+\addcontentsline{toc}{section}{Oral Presentation Rubric}
+
+You and your partner(s) will be assessed base on the below rubric. Please use this rubric when creating and presenting your PowerPoint presentation.
+
+\textbf{Total~/54}
+
+\hypertarget{title-slide}{%
+\subsection*{Title Slide}\label{title-slide}}
+\addcontentsline{toc}{subsection}{Title Slide}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Title is clear and tells the audience what the presentation is about
+\item
+  All names of researchers provided
+\item
+  Affiliations are provided
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks3 pts & All 3 criteria are met \\
+Satisfactory2 pts & 2 of the 3 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{outline}{%
+\subsection*{Outline}\label{outline}}
+\addcontentsline{toc}{subsection}{Outline}
+
+\textbf{~/2}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Outline has been provided and is clear
+\item
+  Outline goes over all relevant items which will be discussed
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks2 pts & All criteria are met \\
+Satisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{background-1}{%
+\subsection*{Background}\label{background-1}}
+\addcontentsline{toc}{subsection}{Background}
+
+\textbf{~/6}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  2 slides
+\item
+  Only essential information has been provided
+\item
+  Relevancy about the project has been described
+\item
+  Student objectives/hypotheses have been well described
+\item
+  Presenter displays a clear passion for the importance of the topic and is engaging
+\item
+  1-2 min was provided for this section
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks6 pts & All 6 criteria are met \\
+Excellent5 pts & 5 of the 6 criteria are met \\
+Proficient4 pts & 4 of the 6 criteria are met \\
+Satisfactory3 pts & 3 of the 6 criteria are met \\
+Unsatisfactory2 pt & 2 of the 6 criteria are met \\
+Poor1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{experimental-design-1}{%
+\subsection*{Experimental Design}\label{experimental-design-1}}
+\addcontentsline{toc}{subsection}{Experimental Design}
+
+\textbf{~/6}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  1-2 slides with
+\item
+  Photos/figures used help to explain the methods
+\item
+  Description of the design was clear with enough information provided so others can replicate
+\item
+  Study group is described and an explanation for why it was used is provided
+\item
+  Variables being tested were described
+\item
+  Control group described
+\item
+  Information regarding sample size and trial numbers was provided
+\item
+  Experimental design was appropriate to test the question/hypothesis
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks6 pts & All 7 criteria are met \\
+Excellent5 pts & 5-6 of the 7 criteria are met \\
+Proficient4 pts & 4 of the 7 criteria are met \\
+Satisfactory3 pts & 3 of the 7 criteria are met \\
+Unsatisfactory2 pt & 2 of the 7 criteria are met \\
+Poor1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{results}{%
+\subsection*{Results}\label{results}}
+\addcontentsline{toc}{subsection}{Results}
+
+\textbf{~/5}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  At least 2 slides were provided which included graphs/charts etc
+\item
+  No raw data was provided
+\item
+  No figures/tables were provided and not explained
+\item
+  Both quantifiable and qualitative results were provided
+\item
+  A mixture of text, tables, figures, photos were used to convey results and those selected were the most appropriate for that type of data
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks5 pts & All 5 criteria are met \\
+Proficient4 pts & 4 of the 5 criteria are met \\
+Satisfactory3 pts & 3 of the 5 criteria are met \\
+Unsatisfactory2 pt & 2 of the 5 criteria are met \\
+Poor1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{discussion}{%
+\subsection*{Discussion}\label{discussion}}
+\addcontentsline{toc}{subsection}{Discussion}
+
+\textbf{~/6}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  2 slides provided
+\item
+  Results not repeated
+\item
+  Interpretation of the results was provided and was accurate
+\item
+  Findings were clearly presented with the most relevant to the least relevant
+\item
+  Results were clearly described and compared to other similar studies and their findings
+\item
+  Limitations to the study were clearly provided
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks6 pts & All 6 criteria are met \\
+Excellent5 pts & 5 of the 6 criteria are met \\
+Good4 pts & 4 of the 6 criteria are met \\
+Proficient3 pts & 3 of the 6 criteria are met \\
+Satisfactory2 pt & 2 of the 6 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{recommendations}{%
+\subsection*{Recommendations}\label{recommendations}}
+\addcontentsline{toc}{subsection}{Recommendations}
+
+\textbf{~/6}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Recommendations were clearly outlined
+\item
+  Recommendations were relevant to the problem at hand
+\item
+  Recommendations were based on current research
+\item
+  Recommendations were based on previous studies and their findings
+\end{itemize}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule()
+x & Points \\
+\midrule()
+\endhead
+Full Marks6 pts & All 6 criteria are met \\
+Excellent5 pts & 5 of the 6 criteria are met \\
+Good4 pts & 4 of the 6 criteria are met \\
+Satisfactory3 pt & 3 of the 6 criteria are met \\
+Unsatisfactory2 pt & 2 of the 6 criteria are met \\
+Poor1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{acknowledgements}{%
+\subsection*{Acknowledgements}\label{acknowledgements}}
+\addcontentsline{toc}{subsection}{Acknowledgements}
+
+\textbf{~/2}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  All those individuals involved were recognized for their efforts
+\item
+  Funding acknowledgment was provided
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks2 pts & All criteria are met \\
+Satisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{slide-content}{%
+\subsection*{Slide Content}\label{slide-content}}
+\addcontentsline{toc}{subsection}{Slide Content}
+
+\textbf{~/5}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Titles for each slide told the audience exactly what they were looking at
+\item
+  Proper sans serif font was used
+\item
+  Slides were presented in the order of the outline
+\item
+  Slide was not wordy but rather all content is done in point form
+\item
+  Any copyrighted materials were cited appropriately
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks5 pts & All 5 criteria are met \\
+Proficient4 pts & 4 of the 5 criteria are met \\
+Satisfactory3 pts & 3 of the 5 criteria are met \\
+Unsatisfactory2 pt & 2 of the 5 criteria are met \\
+Poor1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{oral-presentation-skills}{%
+\subsection*{Oral Presentation Skills}\label{oral-presentation-skills}}
+\addcontentsline{toc}{subsection}{Oral Presentation Skills}
+
+\textbf{~/7}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Presenters did not sound scripted
+\item
+  Presenters did not read of computer and/or notes
+\item
+  It was clear that the presenters understood the material they were presenting
+\item
+  Presentation fell within the appropriate time span
+\item
+  All charts/figures/graphs were explained thoroughly
+\item
+  All associations were clearly described
+\item
+  Questions were answered knowledgeably and professionally.
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks7 pts & All 7 criteria are met \\
+Excellent6 pts & 6 of the 7 criteria are met \\
+Proficient5 pts & 5 of the 7 criteria are met \\
+Satisfactory4 pts & 4 of the 7 criteria are met \\
+Unsatisfactory3 pt & 3 of the 7 criteria are met \\
+Insufficient2 pts & 2 of the 7 criteria are met \\
+Poor1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{additional}{%
+\subsection*{Additional}\label{additional}}
+\addcontentsline{toc}{subsection}{Additional}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Presentation was submitted 24 hours prior to the presentation
+\item
+  Each presenter contributed equally to the project
+\item
+  All in-text citations are references were provided
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks3 pts & All 3 criteria are met \\
+Satisfactory2 pts & 2 of the 3 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{slide-appearance}{%
+\subsection*{Slide Appearance}\label{slide-appearance}}
+\addcontentsline{toc}{subsection}{Slide Appearance}
+
+\textbf{~/3}
+
+\textbf{Criteria}
+
+\begin{itemize}
+\tightlist
+\item
+  Slides were simple, high-contrast, and had a consistent colour scheme
+\item
+  Slides were built to be ``colour-blind friendly''
+\item
+  Slides were uncluttered, clear, and visible from across the room
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} \\
+\midrule()
+\endhead
+Full Marks3 pts & All 3 criteria are met \\
+Satisfactory2 pts & 2 of the 3 criteria are met \\
+Unsatisfactory1 pt & Only 1 of the criteria is met \\
+Incomplete0 pts & None of the criteria are met \\
+\bottomrule()
+\end{longtable}
+
+\end{document}
