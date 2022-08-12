@@ -6,7 +6,7 @@
 
 There is a lot to consider when developing an experiment to answer the problem you have outlined in front of you. 
 
-The link below will help you sort out best practices in experimental design.  It is highly recommended that before you come to the lab to start designing your experiment that you take the time to review the material in the link below starting with the "statement of hypothesis" to "conducting the research".
+The link below will help you sort out best practices in experimental design.  It is highly recommended that before you come to the lab to start designing your experiment that you take the time to review the material from BIOL 116 in the link below starting with the "statement of hypothesis" to "conducting the research".
 
 [Experimental Methodology - What you need to know to design your experiment](https://ubco-biology.github.io/BIOL-116-Lab-Manual/statement-of-hypothesis.html)
 
@@ -22,7 +22,7 @@ A primary source scientific paper is an original publication.  That is, it is a 
 
 The link below provides you with an example of a primary paper found through the UBC Okanagan Library.  You will need your cwl to access the paper.
 
-Hay, T. N., Phillips, L. A., Nicholson, B. A., & Jones, M. D. (2015). Ectomycorrhizal community structure and function in interior spruce forests of british columbia under long term fertilization. Forest Ecology and Management, 350, 87-95. [https://doi.org/10.1016/j.foreco.2015.04.023](https://doi.org/10.1016/j.foreco.2015.04.023). Alternatively, this primary source paper can be downloaded [here.](files/primary_source_paper_example.pdf) 
+Hay, T. N., Phillips, L. A., Nicholson, B. A., & Jones, M. D. (2015). Ectomycorrhizal community structure and function in interior spruce forests of british columbia under long term fertilization. Forest Ecology and Management, 350, 87-95. [https://doi.org/10.1016/j.foreco.2015.04.023](https://doi.org/10.1016/j.foreco.2015.04.023). 
 
 The link here provides you with an example of a non-primary sourced paper.
 
