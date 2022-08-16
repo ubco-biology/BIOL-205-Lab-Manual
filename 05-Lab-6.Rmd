@@ -18,7 +18,7 @@ If you have any questions regarding your mark and/or the comments from your TA p
 
 ## Research Proposal Rubric {-}
 
-**Total\ /39**
+**Total\ /41**
 
 ### Abstract {-}
 
@@ -39,9 +39,21 @@ If you have any questions regarding your mark and/or the comments from your TA p
 
 ### Introduction {-}
 
+Your Introduction & Background should:
+
+* Provide a brief literature review to contextualize the proposed research **(1-2 pages)**
+    * What do you know about the organisms involved
+        - What does it need to survive?
+        - What temperature is it typically found? 
+        - Remember you have to run this experiment in the lab and be able to control for all variables
+    *	What do you know about the issue surrounding toxic algal blooms
+    * What differences are there between saltwater systems and freshwater systems if any that need to be considered when making inferences from one to another
+* Clearly outline the problem and why this is so important.  You will likely need to use the background information to justify the importance **(0.5-1 pages)**
+* Provide clear hypotheses 
+
 **\ /6**
 
-**Criteria**
+**Grading Criteria**
 
 - Relevant background information provided
 - Clearly articulates how the background information is connected to the current project idea
@@ -60,11 +72,51 @@ If you have any questions regarding your mark and/or the comments from your TA p
 | Poor<br />1 pt | Only 1 of the criteria is met |
 | Incomplete<br />0 pts | None of the criteria are met |
 
+### Background {-}
+
+**\ /4**
+
+**Grading Criteria**
+
+- Information regarding the feeding and habitat needs of the organism being used provided
+- The significance of using this particular organism to study the issue at hand has been provided
+- Information regarding the specific problem being addressed, both current and historical, have been provided
+- Student has shown a solid understanding of the organism, its habitat and its impact on other organisms within its range
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />4 pts | All 4 criteria are met |
+| Proficient<br />3 pts | 3 of the 4 criteria are met  |
+| Satisfactory<br />2 pts | 2 of the 4 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
+### Significance of Project {-}
+
+**\ /3**
+
+**Grading Criteria**
+
+- Significance of the problem is clearly and convincingly stated
+- Experimental design has been described in a way that elicits confidence in this study
+- Background information was used well in order to show the importance of this project
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />3 pts | All 3 criteria are met |
+| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
+
 ### Experimental Design {-}
+
+Your Methods section should:
+
+* Outline the major methods and data collection (including what statistical analyses to be used, when appropriate and a list of materials required).  There should not be any bullet points here **(1 page)**
 
 **\ /6**
 
-**Criteria**
+**Grading Criteria**
 
 - No bullet points
 - The experimental design is specific and addresses the question/problem
@@ -83,28 +135,12 @@ If you have any questions regarding your mark and/or the comments from your TA p
 | Poor<br />1 pt | Only 1 of the criteria is met |
 | Incomplete<br />0 pts | None of the criteria are met |
 
-### Significance of Project {-}
-
-**\ /3**
-
-**Criteria**
-
-- Significance of the problem is clearly and convincingly stated
-- Experimental design has been described in a way that elicits confidence in this study
-- Background information was used well in order to show the importance of this project
-
-| Points | <span style="display: inline-block; width:550px">Criteria</span> |
-| :--- | :--- |
-| Full Marks<br />3 pts | All 3 criteria are met |
-| Satisfactory<br />2 pts | 2 of the 3 criteria are met |
-| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
-| Incomplete<br />0 pts | None of the criteria are met |
 
 ### Spelling & Grammar {-}
 
 **\ /3**
 
-**Criteria**
+**Grading Criteria**
 
 - No spelling errors
 - No grammar errors
@@ -121,7 +157,7 @@ If you have any questions regarding your mark and/or the comments from your TA p
 
 **\ /4**
 
-**Criteria**
+**Grading Criteria**
 
 - APA format used properly and consistently
 - Minimum of 5 primary source papers used in the proposal
@@ -140,7 +176,7 @@ If you have any questions regarding your mark and/or the comments from your TA p
 
 **\ /3**
 
-**Criteria**
+**Grading Criteria**
 
 - No plagiarism of any kind has been found
 - No quotations present
@@ -157,7 +193,7 @@ If you have any questions regarding your mark and/or the comments from your TA p
 
 **\ /4**
 
-**Criteria**
+**Grading Criteria**
 
 - 5 pages (not including references)
 - Font 12
@@ -172,30 +208,29 @@ If you have any questions regarding your mark and/or the comments from your TA p
 | Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
 | Incomplete<br />0 pts | None of the criteria are met |
 
-### Background {-}
-
-**\ /4**
-
-**Criteria**
-
-- Information regarding the feeding and habitat needs of the organism being used provided
-- The significance of using this particular organism to study the issue at hand has been provided
-- Information regarding the specific problem being addressed, both current and historical, have been provided
-- Student has shown a solid understanding of the organism, its habitat and its impact on other organisms within its range
-
-| Points | <span style="display: inline-block; width:550px">Criteria</span> |
-| :--- | :--- |
-| Full Marks<br />4 pts | All 4 criteria are met |
-| Proficient<br />3 pts | 3 of the 4 criteria are met  |
-| Satisfactory<br />2 pts | 2 of the 4 criteria are met |
-| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
-| Incomplete<br />0 pts | None of the criteria are met |
-
 ### Timeline {-}
+
+You must: 
+
+* Provide a detailed projected week by week timeline of your research. The information in this table should include the following and be in chronological order:
+    * Start date of experiment (include pilot round if relevant)
+    * Data collection dates and how data will be collected
+    * Non-data collection dates should be included with a detail of what you expect to be working on.  E.g. you may need to complete a water change or feed your organisms
+    * Additional notes may be added in the case where you anticipate there may need to be a change in timeline depending on previous weeks
+    * End date of experiment
+    * Below is an example format
+
+**Table 1: Projected weekly timeline**
+
+| Date | Activity |	Notes |
+| :--- | :--- | :--- |
+| **September 13, 2021** | Experimental set up - clean tank, fill with spring water and heat to appropriate temperature and add organisms |
+| **September 20th, 2021** | Count organisms using pods from a small sample and estimating total number to provide baseline population size |	May need to readjust environment depending on organism survival |
+| **September 27th, 2021** | Add variable - pesticides | May need to adjust amount of pesticides depending on survivability |
 
 **\ /3**
 
-**Criteria**
+**Grading Criteria**
 
 - All data collection dates included and a description of what data will be collected and how this will be done
 - All non-data collection dates included with details of what will be done on those days
@@ -208,6 +243,20 @@ If you have any questions regarding your mark and/or the comments from your TA p
 | Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
 | Incomplete<br />0 pts | None of the criteria are met |
 
+### File Uploads {-}
+
+**\ /2**
+
+**Grading Criteria**
+
+- Research proposal has been submitted as pdf 
+- Research proposal has been submitted as RMarkdown 
+
+| Points | <span style="display: inline-block; width:550px">Criteria</span> |
+| :--- | :--- |
+| Full Marks<br />2 pts | All 2 of the criteria are met |
+| Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
+| Incomplete<br />0 pts | None of the criteria are met |
 
 # Quiz 3: Who Am I? {-}
 
