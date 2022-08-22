@@ -21,7 +21,7 @@ All groups will give oral presentations in your regular lab period during the la
 
 *	Plan a strong, clear beginning and ending.
 *	Provide a clear context for your work. Your introduction should include the objective and biological context of your study. 
-*	Include your hypotheses and prediction.
+*	Include your <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Hypothesis">hypotheses</a> and <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Prediction">prediction</a>.
 *	Present your materials and methods in a simple or streamlined manner. Keep it short and simple.
 *	Use the PowerPoint example [here](https://osf.io/download/te4x7) to help guide you
 
@@ -144,7 +144,7 @@ You and your partner(s) will be assessed base on the below rubric. Please use th
 **Criteria**
 
 - At least 2 slides were provided which included graphs/charts etc
-- No raw data was provided
+- No <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Raw-data">raw data</a> was provided
 - No figures/tables were provided and not explained
 - Both quantifiable and qualitative results were provided
 - A mixture of text, tables, figures, photos were used to convey results and those selected were the most appropriate for that type of data

@@ -4,19 +4,19 @@
 
 # Applying Open Science Principles {-}
 
-You will be expected to apply some principles of Open Science to your research project. For a brief refresher on Open Science Principles and the Research Workflow see the following links:
+You will be expected to apply some principles of <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Open-science">Open Science</a> to your research project. For a brief refresher on Open Science Principles and the Research Workflow see the following links:
 
 * [Open Science & Registered Reports](https://ubco-biology.github.io/BIOL-116-Lab-Manual/open-science.htmlhttps://ubco-biology.github.io/BIOL-116-Lab-Manual/open-science.html)
 * [The Research Workflow](https://ubco-biology.github.io/BIOL-116-Lab-Manual/the-research-workflow.html)
 
-For this project, you will follow the stages of a typical registered report and implement the following Open Science practices while working on your project:
+For this project, you will follow the stages of a typical <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Registered-report">registered report</a> and implement the following Open Science practices while working on your project:
 
-* Using appropriate version control on electronic documents and proper file and data management practices throughout the experiment. 
+* Using appropriate <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Version-control">version control</a> on electronic documents and proper <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#File-and-data-management">file and data management</a> practices throughout the experiment. 
     * Be sure to follow the rules outlined in Chapters 1-5 [File and Data Management](https://ubco-biology.github.io/Procedures-and-Guidelines/file-and-data-management.html) in the UBCO Biology Procedures & Guidelines Document.
-* Performing a literature review on your research topic and documenting a list of consulted studies, how they were found, and the strengths, limitations, and weaknesses of each.
-* Submitting a research proposal draft with an established a priori hypothesis, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
+* Performing a <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Literature-review">literature review</a> on your research topic and documenting a list of consulted studies, how they were found, and the strengths, limitations, and weaknesses of each.
+* Submitting a research proposal draft with an established <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
 * Implementing the study according to your plan, and noting any deviations from that plan (Note: deviations often happen, and that's OK! The key is to document them). These reflections will be submitted for marks.
-* Submitting and presenting a poster that details your experiences implementing the research plan (including any changes recorded, justification for changes, analysis of the data, and your interpretation and conclusion).
+* Submitting and presenting a poster that details your experiences implementing the research plan (including any changes recorded, justification for changes, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Statistical-analysis">analysis</a> of the data, and your interpretation and conclusion).
 
 # Assignment 3: Research Proposal Draft {-}
 

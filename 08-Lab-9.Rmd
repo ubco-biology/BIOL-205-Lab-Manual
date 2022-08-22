@@ -4,7 +4,7 @@
 
 # Data Analysis {-}
 
-For the data analysis portion of your presentation, you are permitted to use any operating program you are comfortable with.  R shiny is a very simple way to run some basic stats however you are more than welcome to use R, SPSS, or even Excel depending on your needs and comfort level.  Biol 202 is going to be a great resource for you so take a look through your notes. There is no assignment due for this module however you should meet with your TA online to discuss the statistical options you plan to pursue your data set and be able to explain why. This will help give your TA an opportunity to guide you and ensure you are appropriately analyzing your data in order to have the best outcome for your presentation. 
+For the data <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Statistical-analysis">analysis</a> portion of your presentation, you are permitted to use any operating program you are comfortable with.  R shiny is a very simple way to run some basic stats however you are more than welcome to use R, SPSS, or even Excel depending on your needs and comfort level.  Biol 202 is going to be a great resource for you so take a look through your notes. There is no assignment due for this module however you should meet with your TA online to discuss the statistical options you plan to pursue your data set and be able to explain why. This will help give your TA an opportunity to guide you and ensure you are appropriately analyzing your data in order to have the best outcome for your presentation. 
 
 R is a great way to produce your graphs however students are permitted to use whichever program they feel most comfortable using.
 
