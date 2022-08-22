@@ -23,7 +23,7 @@ All groups will give oral presentations in your regular lab period during the la
 *	Provide a clear context for your work. Your introduction should include the objective and biological context of your study. 
 *	Include your hypotheses and prediction.
 *	Present your materials and methods in a simple or streamlined manner. Keep it short and simple.
-*	Use the PowerPoint example [here](files/presentation_example.pdf) to help guide you
+*	Use the PowerPoint example [here](https://osf.io/download/te4x7) to help guide you
 
 **Helpful presentation pointers for your content**
 

@@ -10,7 +10,7 @@ Based on your textbook and your previous knowledge from your primary papers rese
 
 # Assignment 2: Getting Acquainted {-}
 
-Download a copy of the assignment here. [Getting_acquainted_assignment.docx](files/getting_acquainted_assignment.docx)
+Download a copy of the assignment here. [Getting_acquainted_assignment.docx](https://osf.io/download/xz2rk)
 
 As part of this assignment you are expected to draw a diagram of your organism. For more information on the guidelines for drawing organisms, and for some examples of poorly and properly formated sketches see [Sketches & Drawings](https://ubco-biology.github.io/Procedures-and-Guidelines/sketches-drawings.html) in the UBCO Biology Procedures and Guidelines Document. 
 

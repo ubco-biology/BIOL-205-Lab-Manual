@@ -27,7 +27,7 @@ For each primary paper, you will need to select one figure you feel provides the
 * A clear and concise description of the information provided by this figure (a couple of sentences)
 * An explanation for how this information is relevant for your study
 
-**Here is an example submission**: [primary_source_paper_example_submission.docx](files/primary_source_paper_example_submission.docx)
+**Here is an example submission**: [primary_source_paper_example_submission.docx](https://osf.io/download/93rpn)
 
 ## Primary Source Paper Rubric {-}
 
