@@ -305,7 +305,7 @@ We\'ll practice using the R script for a categorical explanatory variable and qu
   * [BIOL205_Script_Quantitative-Categorical.R](https://osf.io/download/46mpk)
 * Download this sample data set
   * 
-* Follow the instructions provided [earlier]() and run *ALL* code in the script
+* Follow the instructions provided [earlier](https://ubco-biology.github.io/BIOL-205-Lab-Manual/using-the-rscripts.html) and run *ALL* code in the script
   * Save the boxplot produced to your computer. You will need to upload this to the quiz on Canvas
   * Keep the results of descriptive statistics and statistical analyses open while you complete the quiz. You will need some of these values to answer questions!
   
