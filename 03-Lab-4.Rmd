@@ -20,12 +20,12 @@ For an optional refresher of Open Science principles and core values, visit the 
 
 Writing a <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Registered-report">registered report</a> involves submitting your research question, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Hypothesis">hypotheses</a>, and planned methods for <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Peer-review">peer review</a> prior to beginning data collection. Using this format enhances research quality because it gives researchers a chance alter study design and methods before investing time into data collection. Just think of a time where you spent countless hours writing an essay thinking it was perfect, only to give it to a friend to read and receive a ton of editing comments. Often readers notice things the author doesn't! Pre-registering a report also helps avoid questionable research practices like selective reporting of results and publication bias. 
 
-For your Recommendation Report in BIOL 205, you will follow the stages of a typical <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Registered-report">registered report</a> and implement the following Open Science practices while working on your project:
+For your Registered Report in BIOL 205, you will follow the stages of a typical <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Registered-report">registered report</a> and implement the following Open Science practices while working on your project:
 
 * Using appropriate <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Version-control">version control</a> on electronic documents and proper <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#File-and-data-management">file and data management</a> practices throughout the experiment. 
     * Be sure to follow the rules outlined in Chapters 1-5 [File and Data Management](https://ubco-biology.github.io/Procedures-and-Guidelines/file-and-data-management.html) in the UBCO Biology Procedures & Guidelines Document.
 * Performing a <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Literature-review">literature review</a> on your research topic and documenting a list of consulted studies, how they were found, and the strengths, limitations, and weaknesses of each.
-* Submitting a research proposal draft with an established <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
+* Submitting a registered report draft with an established <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
 * Implementing the study according to your plan, and noting any deviations from that plan (Note: deviations often happen, and that's OK! The key is to document them). These reflections will be submitted for marks.
 * Submitting and presenting a poster that details your experiences implementing the research plan (including any changes recorded, justification for changes, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Statistical-analysis">analysis</a> of the data, and your interpretation and conclusion).
 
@@ -35,7 +35,7 @@ While there are numerous programs that you can use to write lab reports, researc
 
 First, R is both free and open source! Moreover, using R allows for computational reproducibility of your work. Computational reproducibility is the ability to document data and analyses so that others can understand and replicate the computations that led to the results and conclusions.
 
-While you could use R to perform statistical analyses and write your report separately using a program like Microsoft Word. By using RMarkdown to write your lab report, you can include data analyses directly within the report which allows for everything to be stored in a single document. This makes it simple for readers to understand the computations used to conduct analyses as they read through your paper. Also, remember that there are free versions of R & RStudio, while programs like Microsoft Word require purchased subscriptions. For your Recommendation Report in BIOL 205 you won't be expected to have the code for your anaylses directly embedded within your RMarkdown document but you will use pre-made R scripts to perform analyses.
+While you could use R to perform statistical analyses and write your report separately using a program like Microsoft Word. By using RMarkdown to write your lab report, you can include data analyses directly within the report which allows for everything to be stored in a single document. This makes it simple for readers to understand the computations used to conduct analyses as they read through your paper. Also, remember that there are free versions of R & RStudio, while programs like Microsoft Word require purchased subscriptions. For your Registered Report in BIOL 205 you won't be expected to have the code for your anaylses directly embedded within your RMarkdown document but you will use pre-made R scripts to perform analyses.
 
 ### Scientific Writing, Installation of R & RStudio {-}
 
@@ -43,11 +43,11 @@ For a refresher on scientific writing, the different sections of a lab report, a
 
 ## Assignment Template {-}
 
-You will use the following template for your Recommendation Report:
+You will use the following template for your Registered Report:
 
 [20220824_Lab03_205_Assignment_V1.Rmd](https://osf.io/download/g5zxk) 
 
-Before starting your Recommendation Report, we'll spend some time going through the different parts of this template.
+Before starting your Registered Report, we'll spend some time going through the different parts of this template.
 
 ### Using the Template {-}
 
@@ -313,34 +313,33 @@ We\'ll practice using the R script for a categorical explanatory variable and qu
 
 Now you\'re ready to start the quiz. Complete the Quiz titled Open Science, R, & RMarkdown on [Canvas](https://canvas.ubc.ca/courses/98621). 
 
-# Assignment 3: Research Proposal Draft {-}
+# Assignment 3: Registered Report Draft {-}
 
-You will use the following template for your Recommendation Report:
+You will use the following template for your Registered Report:
 
 [20220824_Lab03_205_Assignment_V1.Rmd]() (3 KB)
 
 **Due before the start of your lab the week of February 7th** 
 
-<div class = "flag">
-You will need to submit 4 files for this assignment:
+For this assignment you will submit a registered report draft with an established <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
 
-* Recommendation report as `.Rmd`
-* Recommendation report as `.pdf`
-* Data in <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Long-format-data">long</a>, tidy, format as <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Comma-separated-values-(CSV)-file">`.csv`</a>
-* Data dictionary as `.md`
-</div>
+At this point you won't have completed data analysis and won`'t have results to discuss. So you should focus on describing what you plan to do in detail along with explanations for why your project is importand and any potential implications results might have. For the draft research proposal you only need to include the following sections of the assignment template:
 
-You will receive your marked recommendation report one week from the time it is submitted.
+* Abstract 
+* Introduction 
+* Methods
+* Discussion - describe the potential implications of your project 
+* References
 
-You can decide to resubmit the same recommendation report draft without making any changes or you will have the opportunity to review the edits and make the needed changes in order to increase your mark.
+When you submit the final copy of your registered report you will include **ALL** the sections of the assignment template, including the data availability statement, results etc. with a focus on your results and the direct implications and interpretaion of those specific results. 
 
-If you have any questions regarding your mark and / or the comments from your TA please ensure you take the opportunity to chat with your TA to go over these. This will ensure that you are in the best position to attain the highest marks possible for this assignment.
+You will receive your marked Registered Report draft one week from the time it is submitted. If you have any questions regarding your mark and / or the comments from your TA please ensure you take the opportunity to chat with your TA to go over these. This will ensure that you are in the best position to attain the highest marks possible for this assignment.
 
-**Ideas on Preparing a Research Proposal**
+**Tips for Preparing a Registered Report**
 
-*	Read a lot!  It is important that you have a thorough understanding of the topic.  At the very least you should have at least 3 primary source papers you are referring too throughout your proposal.
+*	Read a lot!  It is important that you have a thorough understanding of the topic.  At the very least you should have at least 3 primary source papers you are referring too throughout your report.
 *	Discuss your ideas with other students (not just your partner).  Get a feel for what everyone else is doing and the depth they are working in.
-*	Start writing early!  Students often make the mistake of starting the night before the proposal is due.  This more than not results in poor submissions and thus lower grades.  You should expect that you will have at least 3 rounds of revisions before you submit.
-*	Someone reading your proposal should be able to tell what question(s) you will address, why the topic is interesting and/or important, how you will approach the problem, the types of data you will collect, and how your research will advance the field.
+*	Start writing early!  Students often make the mistake of starting the night before the report is due.  This more than not results in poor submissions and thus lower grades.  You should expect that you will have at least 3 rounds of revisions before you submit.
+*	Someone reading your report should be able to tell what question(s) you will address, why the topic is interesting and/or important, how you will approach the problem, the types of data you will collect, and how your research will advance the field.
 
-As you work on the draft of your research proposal, be sure to consult the Final Research Proposal marking rubric [here](https://ubco-biology.github.io/BIOL-205-Lab-Manual/research-proposal-rubric.html)!
+As you work on the draft of your research report, be sure to consult the Final Registered Report marking rubric [here](https://ubco-biology.github.io/BIOL-205-Lab-Manual/registered-report-rubric.html)!
