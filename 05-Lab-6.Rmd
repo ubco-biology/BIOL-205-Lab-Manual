@@ -258,6 +258,6 @@ You must:
 | Unsatisfactory<br />1 pt | Only 1 of the criteria is met |
 | Incomplete<br />0 pts | None of the criteria are met |
 
-# Quiz 3: Who Am I? {-}
+# Quiz 4: Who Am I? {-}
 
 Complete Quiz 2: Who Am I? on [Canvas](https://canvas.ubc.ca/courses/113910)

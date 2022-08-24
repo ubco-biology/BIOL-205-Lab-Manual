@@ -75,7 +75,7 @@
 
 \title{Biology 205 Lab Manual}
 \author{}
-\date{\vspace{-2.5em}2022-08-22}
+\date{\vspace{-2.5em}2022-08-24}
 
 \begin{document}
 \maketitle
@@ -136,7 +136,7 @@ Optional material that dives deeper into a presented concept.
 \part*{Labs 1 \& 2}\label{part-labs-1-2}}
 \addcontentsline{toc}{part}{Labs 1 \& 2}
 
-\emph{Last updated 2022-08-22}
+\emph{Last updated 2022-08-24}
 
 \hypertarget{planning-your-experiment}{%
 \chapter*{Planning Your Experiment}\label{planning-your-experiment}}
@@ -426,7 +426,7 @@ You have been hired by the Great Lakes Environmental Research Laboratory (GLERL)
 \part*{Lab 3}\label{part-lab-3}}
 \addcontentsline{toc}{part}{Lab 3}
 
-\emph{Last updated 2022-08-22}
+\emph{Last updated 2022-08-24}
 
 \hypertarget{getting-acquainted-with-your-organism}{%
 \chapter*{Getting Acquainted with Your Organism}\label{getting-acquainted-with-your-organism}}
@@ -478,23 +478,33 @@ Complete Quiz 1: Getting Acquainted on \href{https://canvas.ubc.ca/courses/11391
 \part*{Lab 4}\label{part-lab-4}}
 \addcontentsline{toc}{part}{Lab 4}
 
-\emph{Last updated 2022-08-22}
+\emph{Last updated 2022-08-24}
 
-\hypertarget{applying-open-science-principles}{%
-\chapter*{Applying Open Science Principles}\label{applying-open-science-principles}}
-\addcontentsline{toc}{chapter}{Applying Open Science Principles}
+\hypertarget{open-science-r-rmarkdown-tutorial}{%
+\chapter*{Open Science, R, \& RMarkdown Tutorial}\label{open-science-r-rmarkdown-tutorial}}
+\addcontentsline{toc}{chapter}{Open Science, R, \& RMarkdown Tutorial}
 
-You will be expected to apply some principles of Open Science to your research project. For a brief refresher on Open Science Principles and the Research Workflow see the following links:
+You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and template for your Recommendation Report in BIOL 205. To prepare you for this, you must first complete this refresher Open Science, R, \& RMarkdown tutorial and the accompanying quiz.
 
-\begin{itemize}
-\tightlist
-\item
-  \href{https://ubco-biology.github.io/BIOL-116-Lab-Manual/open-science.htmlhttps://ubco-biology.github.io/BIOL-116-Lab-Manual/open-science.html}{Open Science \& Registered Reports}
-\item
-  \href{https://ubco-biology.github.io/BIOL-116-Lab-Manual/the-research-workflow.html}{The Research Workflow}
-\end{itemize}
+\hypertarget{overview-1}{%
+\section*{Overview}\label{overview-1}}
+\addcontentsline{toc}{section}{Overview}
 
-For this project, you will follow the stages of a typical registered report and implement the following Open Science practices while working on your project:
+\hypertarget{open-science}{%
+\subsection*{Open Science}\label{open-science}}
+\addcontentsline{toc}{subsection}{Open Science}
+
+Open Science is a movement that tries to combat the replication crisis, questionable research practices, and flashy research trumping quality research in two ways. First, by providing different incentives and rewards for research. That is, changing what we measure as a success in research, shifting from a culture that emphasizes novel findings to one that also rewards the many other aspects of practicing good science. Second, by making all parts of the scientific research process transparent and accessible, allowing for a critical review of how a study was conducted, and ultimately enabling that study to be independently replicated.
+
+For an optional refresher of Open Science principles and core values, visit the \href{https://ubco-biology.github.io/OS-Introduction/principles-of-open-science.html}{Open Science 101 Module} that was covered in BIOL 116.
+
+\hypertarget{registered-reports}{%
+\subsection*{Registered Reports}\label{registered-reports}}
+\addcontentsline{toc}{subsection}{Registered Reports}
+
+Writing a registered report involves submitting your research question, hypotheses, and planned methods for peer review prior to beginning data collection. Using this format enhances research quality because it gives researchers a chance alter study design and methods before investing time into data collection. Just think of a time where you spent countless hours writing an essay thinking it was perfect, only to give it to a friend to read and receive a ton of editing comments. Often readers notice things the author doesn't! Pre-registering a report also helps avoid questionable research practices like selective reporting of results and publication bias.
+
+For your Recommendation Report in BIOL 205, you will follow the stages of a typical registered report and implement the following Open Science practices while working on your project:
 
 \begin{itemize}
 \tightlist
@@ -516,33 +526,477 @@ For this project, you will follow the stages of a typical registered report and 
   Submitting and presenting a poster that details your experiences implementing the research plan (including any changes recorded, justification for changes, analysis of the data, and your interpretation and conclusion).
 \end{itemize}
 
-\hypertarget{assignment-3-research-proposal-draft}{%
-\chapter*{Assignment 3: Research Proposal Draft}\label{assignment-3-research-proposal-draft}}
-\addcontentsline{toc}{chapter}{Assignment 3: Research Proposal Draft}
+\hypertarget{why-use-r-rmarkdown}{%
+\subsection*{Why Use R \& RMarkdown?}\label{why-use-r-rmarkdown}}
+\addcontentsline{toc}{subsection}{Why Use R \& RMarkdown?}
 
-\textbf{Due before the start of your lab the week of February 7th}
+While there are numerous programs that you can use to write lab reports, research manuscripts, and perform statistical analysis, there are so many benefits to using R \& RMarkdown!
 
-You were introduced to Scientific Writing, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and template for the Research Proposal in BIOL 205. Follow the steps below to get started on your assignment:
+First, R is both free and open source! Moreover, using R allows for computational reproducibility of your work. Computational reproducibility is the ability to document data and analyses so that others can understand and replicate the computations that led to the results and conclusions.
+
+While you could use R to perform statistical analyses and write your report separately using a program like Microsoft Word. By using RMarkdown to write your lab report, you can include data analyses directly within the report which allows for everything to be stored in a single document. This makes it simple for readers to understand the computations used to conduct analyses as they read through your paper. Also, remember that there are free versions of R \& RStudio, while programs like Microsoft Word require purchased subscriptions. For your Recommendation Report in BIOL 205 you won't be expected to have the code for your anaylses directly embedded within your RMarkdown document but you will use pre-made R scripts to perform analyses.
+
+\hypertarget{scientific-writing-installation-of-r-rstudio}{%
+\subsection*{Scientific Writing, Installation of R \& RStudio}\label{scientific-writing-installation-of-r-rstudio}}
+\addcontentsline{toc}{subsection}{Scientific Writing, Installation of R \& RStudio}
+
+For a refresher on scientific writing, the different sections of a lab report, and setting up R \& RStudio, see the BIOL 125 Lab Manual here \url{https://ubco-biology.github.io/BIOL-125-Lab-Manual/recommendation-report.html}. \textbf{Read all of the subsections under the Recommendation Report.}
+
+\hypertarget{assignment-template}{%
+\section*{Assignment Template}\label{assignment-template}}
+\addcontentsline{toc}{section}{Assignment Template}
+
+You will use the following template for your Recommendation Report:
+
+\href{https://osf.io/download/g5zxk}{20220824\_Lab03\_205\_Assignment\_V1.Rmd}
+
+Before starting your Recommendation Report, we'll spend some time going through the different parts of this template.
+
+\hypertarget{using-the-template}{%
+\subsection*{Using the Template}\label{using-the-template}}
+\addcontentsline{toc}{subsection}{Using the Template}
+
+All the markdown syntax that you need for RMarkdown can be found in the \href{https://ubco-biology.github.io/Procedures-and-Guidelines/markdown-1.html}{Markdown} section of the BIOL Procedures and Guidelines.
+
+\hypertarget{directory-structure-file-naming}{%
+\subsection*{Directory Structure \& File Naming}\label{directory-structure-file-naming}}
+\addcontentsline{toc}{subsection}{Directory Structure \& File Naming}
+
+It is expected that you will have a root project folder for your work associated with this lab. And that at the minimum you will have a folder for your report, your data, and your figures. And that you will download this template into your \texttt{report/} directory. And that lastly, you will rename the template in accordance with the file naming conventions in the \href{https://ubco-biology.github.io/Procedures-and-Guidelines/file-naming.html}{Biology Procedures and Guidelines document}.
+
+This structure and hierarchy will be important when it comes time to include figures and images in your report.
+
+\hypertarget{yaml}{%
+\subsection*{YAML}\label{yaml}}
+\addcontentsline{toc}{subsection}{YAML}
+
+The top of the template contains some front matter called YAML. YAML provides instructions to all the pieces of software involved in converting your RMarkdown document to it's outputs, in this case, \texttt{pdf}. YAML is very specific to spacing, so don't add any extra spaces!
+
+What you need to do.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Read all of the subsections under the \href{https://ubco-biology.github.io/BIOL-125-Lab-Manual/recommendation-report.html}{Recommendation Report} heading of the BIOL 125 lab manual
+  Provide a title within the quotations after \texttt{title}.
 \item
-  Download the template for the assignment
-
-  \begin{enumerate}
-  \def\labelenumii{\alph{enumii}.}
-  \tightlist
-  \item
-    You will use the RMarkdown template provided in BIOL 125 for this research proposal. The template and instructions for how to use the template can be found \href{https://ubco-biology.github.io/BIOL-125-Lab-Manual/assignment-lab-5.html}{here}.
-  \end{enumerate}
+  Provide your name within the quotations after \texttt{author}.
+\item
+  Provide your abstract within the quotations after \texttt{abstract}.
 \end{enumerate}
 
-Since you are completing a research proposal and not writing up the results of a research project, \textbf{remove the results section}.
+What might be nice to know.
 
-The discussion section of your report can focus on the \textbf{implications of your proposed project} rather than interpretation of results and client recommendations.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  r Sys.Date() pulls the date from your computer and auto populates this for you.
+\item
+  The \texttt{output} tag defines the output format. Other options include \texttt{html\_document} and \texttt{word\_document}.
+\end{enumerate}
+
+What exactly is YAML?
+
+\begin{quote}
+YAML™ (rhymes with ``camel'') is a human-friendly, cross language, Unicode based data serialization language designed around the common native data types of dynamic programming languages. It is broadly useful for programming needs ranging from configuration files to internet messaging to object persistence to data auditing and visualization.
+\end{quote}
+
+Read more at \href{https://yaml.org/}{the Official YAML Web Site}
+
+\hypertarget{document-body}{%
+\subsection*{Document Body}\label{document-body}}
+\addcontentsline{toc}{subsection}{Document Body}
+
+The template is then pre-populated with first level headers for each section you're expected to include in your report. Each heading re-iterates the key elements the content of these headings should address. This is just place holder text, so replace it with your own.
+
+\hypertarget{images-graphs}{%
+\subsection*{Images \& Graphs}\label{images-graphs}}
+\addcontentsline{toc}{subsection}{Images \& Graphs}
+
+There is one sample graph included. Note how it references the figure to be included \texttt{../figures/image-name.png} The \texttt{../} means 'go one level up in the directory' which, if you have your project set up in the following way and your \texttt{.Rmd} file is in your \texttt{report/} directory it means 'look in the \texttt{root/} directory for a folder called \texttt{figures/}.
+
+\begin{verbatim}
+root/
+  report/20220101_Lab05_125_Assignment_V1.Rmd
+  data/
+  figures/MVD_BIOL125-Lab5_Fig-1-Boxplot_V1.png
+\end{verbatim}
+
+If you make a mistake in setting this path, you'll get the following error in RStudio
+
+\begin{verbatim}
+(No image at path ...)
+\end{verbatim}
+
+You'll also note the following directly after the image path: \texttt{\{width=50\%\}}. This reduces the image size by 50\%.
+
+As noted in the template, you do not need to write \texttt{Figure\ 1:} before your figures; this small piece of text is handled during the conversion from RMarkdown to pdf. Any other information that you would like to include in the caption should go in the \texttt{{[}{]}} before the \texttt{()} that contain the path to the image.
+
+Figure placement
+
+The engine behind the conversion from RMarkdown to pdf is a typesetting application, one with pretty strict rules about how content should be formatted - much more strict than something like Microsoft Word.
+
+What this means is that if the placement of your images will disrupt your prose - by creating large amounts of empty white space for example - this typesetting application will \emph{push} your figure to somewhere lower in your report where it won't create this white space.
+
+Your figures should be adjacent to the relevant text in your RMarkdown file. How this manifests to your pdf might look a little different; that's ok.
+
+\hypertarget{references}{%
+\subsection*{References}\label{references}}
+\addcontentsline{toc}{subsection}{References}
+
+Just before the heading for references you'll see the following
+
+\begin{verbatim}
+\clearpage
+\end{verbatim}
+
+This creates a page break between your references section and the rest of your report.
+
+\hypertarget{building-the-pdf}{%
+\subsection*{\texorpdfstring{Building the \texttt{pdf}}{Building the pdf}}\label{building-the-pdf}}
+\addcontentsline{toc}{subsection}{Building the \texttt{pdf}}
+
+If you've installed \texttt{R}, RStudio, and the \texttt{markdown} and \texttt{tinytex} packages succesfully, when you open the template \texttt{.Rmd} file you should see an option to \texttt{Knit}.
+
+\includegraphics{images/Knit_20220101.png}
+
+Click this button or select the drop down arrow and select \texttt{Knit\ to\ pdf}. This will generate a pdf in the same directory as your \texttt{.Rmd} file.
+
+\hypertarget{using-the-rscripts}{%
+\section*{Using the RScripts}\label{using-the-rscripts}}
+\addcontentsline{toc}{section}{Using the RScripts}
+
+R scripts are text files containing the commands (aka code) and comments used to perform computations. For your research project, R scripts have been pre-written for you! You won't need to learn how to write code in R for this course; that comes later in BIOL 202.
+
+There is a separate R script for each type of variable combination you might have for your project. Download the R script that corresponds to the types of variables you have in your experiment.
+
+\begin{itemize}
+\tightlist
+\item
+  Both response and explanatory variables are categorical
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://osf.io/download/sg7y6}{BIOL205\_Script\_Categorical-Categorical.R}
+  \end{itemize}
+\item
+  Both response and explanatory variables are quantitative
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://osf.io/download/adwg4}{BIOL205\_Script\_Quantitative-Quantitative.R}
+  \end{itemize}
+\item
+  Categorical explanatory variable and quantitative response variable
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://osf.io/download/46mpk}{BIOL205\_Script\_Quantitative-Categorical.R}
+  \end{itemize}
+\end{itemize}
+
+While there are instructions within the R scripts themselves, the following sections describe how to use the R scripts in more detail. Be sure to read \textbf{everything here and in the R scripts!} Alongside each line of code in the script is a comment proceeded with a hashtag (\#). The comments are either descriptions of what the code is doing or instructions describing things you need to do.
+
+\hypertarget{step-1-set-your-working-directory}{%
+\subsection*{Step 1: Set your working directory}\label{step-1-set-your-working-directory}}
+\addcontentsline{toc}{subsection}{Step 1: Set your working directory}
+
+Make sure your working directory is set according to the instructions \href{https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html}{here} in the Procedures and Guidelines Document.
+
+\hypertarget{step-2-installing-loading-required-packages}{%
+\subsection*{Step 2: Installing \& Loading Required Packages}\label{step-2-installing-loading-required-packages}}
+\addcontentsline{toc}{subsection}{Step 2: Installing \& Loading Required Packages}
+
+Packages in R contain a set of functions, code, and data that you can use for your analysis. Before you can use the functions within a package, the package must be installed in R. Once a package is installed on your computer you won't need to re-install it every time you use R. However, if you're on a lab computer, since the computers are re-set at the end of each day you may need to re-install packages at each log in.
+
+To install packages noted in the R script, copy the installation lines of code without the preceeding hashtag (\#) ie. remove the \# from \texttt{\#\ install.packages("ggplot2")} so it looks like this \texttt{install.packages("ggplot2")} and copy it into the R console (lower left pane of RStudio). When you push enter on your keyboard the package will install. Be sure to do this for all of the required packages noted in the R script.
+
+Once packages are installed, they must be loaded to your current session in R. You will have to do this each time you re-start R. To load packages use the library function by running the lines of code pre-written into your R script. For example, run \texttt{library(ggplot2)} by clicking the `Run' button at the top right of the working document.
+
+\includegraphics{images/run_button.png}
+
+\hypertarget{step-3-uploading-your-data}{%
+\subsection*{Step 3: Uploading your data}\label{step-3-uploading-your-data}}
+\addcontentsline{toc}{subsection}{Step 3: Uploading your data}
+
+Replace `insert-data-file-name-here.csv' with the file name that your data is saved as to your computer. If your data file contains a header row, be sure that \texttt{my\_data\ \textless{}-\ read.csv(file\ =\ my\_file,\ header\ =\ TRUE)} shows \texttt{header\ =\ TRUE}. If you have no header row, simply change the code to \texttt{header\ =\ FALSE}.
+
+\hypertarget{step-4-visualizing-your-data}{%
+\subsection*{Step 4: Visualizing your data}\label{step-4-visualizing-your-data}}
+\addcontentsline{toc}{subsection}{Step 4: Visualizing your data}
+
+You'll need to tell R some information before you can create graphs. Specifically, you need to assign the names of your variables, axes labels, and figure caption. You can do this by
+
+\begin{itemize}
+\tightlist
+\item
+  Replacing ``X variable name'' and ``Y variable name'' with the names of your x and y variables
+\item
+  Replacing ``X label name'' and ``Y label name'' with your desired x and y axes labels
+\item
+  Replacing ``My Caption'' with your desired figure caption
+\end{itemize}
+
+In the R script for a categorical explanatory and a categorical response variable, code for both a boxplot and a stripchart is included. Recall that according to the \href{https://ubco-biology.github.io/Procedures-and-Guidelines/figures.html}{Biology Procedures and Guidelines document}, you should use a boxplot if the groups of your categorical variable have more than 20 data points. Alternatively, you should use a stripchart if each group contains less than 20 data points. Be sure to only produce one desired figure.
+
+In some of the R scripts there are some additional pieces of code that you don't need to worry about for now; you'll learn more about these in BIOL 202!
+
+For example, we have to factor the categorical variables before producing graphs. You will see this additional code if the script you are using includes categorical variables.
+
+In the code for creating a boxplot or stripchart, we refer to a function that calculates confidence intervals. So we have to define that function prior to running the code to produce the figure. You will find this additional piece of code in your R script if your experiment has a categorical explanatory variable and quantitative response variable.
+
+There are some regions in the R scripts where variables are re-named or manipulated. Don't worry about why for now!
+
+Now you're ready to run the code to create your figure! Once the code has been run, your figure will show in the lower right panel of RStudio under `Plots'. To save your figure click the `Export' button and then `Save as Image'.
+
+\hypertarget{step-5-calculate-descriptive-statistics}{%
+\subsection*{Step 5: Calculate descriptive statistics}\label{step-5-calculate-descriptive-statistics}}
+\addcontentsline{toc}{subsection}{Step 5: Calculate descriptive statistics}
+
+The code here should run smoothly if everything in the proceeding steps was done correctly. Once the code has been run, your descriptive statistics will be printed in the console of RStudio (lower left panel). The instructions below describe how to interpret this output depending on the types of variables in your experiment.
+
+\textbf{Two Categorical Variables}
+
+Here is an example of the descriptive statistics output produced by the R script for two categorical variables. The explanatory (independent) variable and its associated groups appear in the first column, while the response (dependent) variable appears at the top. In this case the explanatory variable was species and the response variable was sex. The numbers provided in the table describe the frequency for each category. For example, in this sample there was 1 female Adelie penguin and 0 male Chinstrap penguins.
+
+\includegraphics{images/categorical-categorical_stats_example.png}
+
+\textbf{Two Quantitative Variables}
+
+Here is an example of the output produced by the R script for two quantitative variables. The explanatory (independent) variable appears in the first row, while the response (dependent) variable appears in the second row. \texttt{n} indicates the sample size, while the following columns represent the mean, standard deviation, median, and interquartile range, respectively.
+
+\includegraphics{images/quantitative_quantitative_stats_example.png}
+
+\textbf{One Categorical and One Quantitative Variable}
+
+Here is an example of the output produced by the R script for one categorical and one quantitative variable. This table is organized so that the descriptive statistics of the quantitative response variable are reported based on the groups of the explanatory variable. \texttt{n} indicates the sample size, while the following columns represent the mean, standard deviation, median, and interquartile range, respectively. For example, the mean mass (g) for Adelie penguins in this sample is 3775 g.
+
+\begin{figure}
+\centering
+\includegraphics{images/quantitative-categorical_stats_example.png}
+\caption{Sample descriptive statistics output for one categorical and one quantitative variable (species and mass (g)).}
+\end{figure}
+
+Take a screenshot of these values or write them down for writing your lab report later.
+
+\hypertarget{step-6-performing-statistical-analyses}{%
+\subsection*{Step 6: Performing statistical analyses}\label{step-6-performing-statistical-analyses}}
+\addcontentsline{toc}{subsection}{Step 6: Performing statistical analyses}
+
+Similar to with the descriptive statistics, the code here should run smoothly if everything in the proceeding steps was done correctly. The type of statistical analyses you will perform depends on the types of variables in your experiment. Code for all possible statistical tests is included within the R scripts. \textbf{Only run the code that corresponds with the type of variables in your experiment.} Use the guidelines below to help you choose the appropriate statistical test:
+
+\begin{itemize}
+\tightlist
+\item
+  Both your response (dependent) and explanatory (independent) variables are \textbf{categorical}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Both your response and explanatory variables have exactly 2 groups -\textgreater{} Use Fisher's Exact Test
+  \item
+    At least one of your response or explanatory variables has more than 2 groups -\textgreater{} Use Chi-Square Contingency Analysis
+  \end{itemize}
+\item
+  Both your response (dependent) and explanatory (independent) variables are \textbf{quantitative} -\textgreater{} Use Correlation Analysis
+\item
+  Your response (dependent) variable is \textbf{quantitative} and your explanatory (independent) variable is \textbf{categorical}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Your categorical variable has exactly 2 groups -\textgreater{} Use Two Sample T-test
+  \item
+    Your categorical variable has more than 2 groups -\textgreater{} Use ANOVA
+  \end{itemize}
+\end{itemize}
+
+When interpreting the output from a statistical analysis for this project, focus on the p-value provided by R. You'll learn more about the other details shown by the output in BIOL 202! Below are some examples of output for each type of statistical test. The associated p-value has a red box around it.
+
+\textbf{Fisher's Exact Test}
+
+\includegraphics{images/fishers_example.png}
+
+\textbf{Chi-Square Contingency Analysis}
+
+\includegraphics{images/chi-square_example.png}
+
+\textbf{Correlation Analysis}
+
+\includegraphics{images/correlation_example.png}
+
+\textbf{Two-Sample T-test}
+
+\includegraphics{images/t-test_example.png}
+
+\textbf{ANOVA}
+
+\includegraphics{images/anova_example.png}
+
+OPTIONAL!
+
+If you would like to have the code directly embedded within your RMarkdown report. Feel free to use the template below that corresponds with the types of variables in your research project. All of the code within these templates is the same as those described above but there are no instructions embedded in these templates.
+
+\begin{itemize}
+\tightlist
+\item
+  Both response and explanatory variables are categorical
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://osf.io/download/98vmu}{20220824\_Lab03\_205\_Assignment-Categorical-Categorical\_V1.Rmd}
+  \end{itemize}
+\item
+  Both response and explanatory variables are quantitative
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://osf.io/download/75q4x}{20220824\_Lab03\_205\_Assignment-Quantitative-Quantitative\_V1.Rmd}
+  \end{itemize}
+\item
+  Categorical explanatory variable and quantitative response variable
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://osf.io/download/s7bng}{20220824\_Lab03\_205\_Assignment-Quantitative-Categorical\_V1.Rmd}
+  \end{itemize}
+\end{itemize}
+
+Similar to the R scripts, code for all possible statistical tests is included within these templates. \textbf{Only include the code that corresponds with the type of variables in your experiment.} In other words, delete the R chunk that contains code for any statistical test you are \textbf{NOT} using.
+
+Similarly, code for both a boxplot and a stripchart is included within the quantitative-categorical template. If you plan to include a boxplot and not a stripchart, be sure to delete the R chunk that contains the code for the stripchart.
+
+\hypertarget{quiz-2-open-science-r-rmarkdown}{%
+\chapter*{Quiz 2: Open Science, R, \& RMarkdown}\label{quiz-2-open-science-r-rmarkdown}}
+\addcontentsline{toc}{chapter}{Quiz 2: Open Science, R, \& RMarkdown}
+
+Before starting this quiz, you must:
+
+\begin{itemize}
+\tightlist
+\item
+  practice knitting the assignment template RMarkdown file
+\item
+  practice using the R script for a categorical explanatory variable and quantitative response variable
+\end{itemize}
+
+\textbf{The quiz will ask you to upload a screenshots from these files and will have questions from the output of the R script!}
+
+\hypertarget{practicing-knitting}{%
+\section*{Practicing Knitting}\label{practicing-knitting}}
+\addcontentsline{toc}{section}{Practicing Knitting}
+
+If you haven't already downloaded the assignment template, here it is again:
+
+\href{https://osf.io/download/g5zxk}{20220824\_Lab03\_205\_Assignment\_V1.Rmd}
+
+To test the template,
+
+\begin{itemize}
+\tightlist
+\item
+  insert your name as the author in the YAML header
+\item
+  ensure the template \texttt{.Rmd} file is in your \texttt{report/} directory
+\item
+  download the following image into your \texttt{figures/} directory
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://osf.io/download/zuehg}{MVD\_BIOL205-Lab5\_Fig-1-Boxplot\_V1.png} (4 KB)
+  \end{itemize}
+\item
+  knit the document to a PDF
+\end{itemize}
+
+You should get something that looks like this after \texttt{Knitting} the \texttt{.Rmd} file
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://osf.io/download/3k8ve}{20220824\_Lab05\_205\_Assignment\_V1.pdf} (180 KB)
+\end{itemize}
+
+\textbf{Your knitted document should show your name under the title!} Take a screenshot of the first page of the knitted assignment template. You'll need to upload this screenshot to the quiz on Canvas.
+
+\hypertarget{practicing-using-the-r-scripts}{%
+\section*{Practicing Using the R Scripts}\label{practicing-using-the-r-scripts}}
+\addcontentsline{toc}{section}{Practicing Using the R Scripts}
+
+We'll practice using the R script for a categorical explanatory variable and quantitative response variable. Follow these steps:
+
+\begin{itemize}
+\tightlist
+\item
+  Download the R script
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://osf.io/download/46mpk}{BIOL205\_Script\_Quantitative-Categorical.R}
+  \end{itemize}
+\item
+  Download this sample data set
+
+  \begin{itemize}
+  \tightlist
+  \item
+  \end{itemize}
+\item
+  Follow the instructions provided \href{}{earlier} and run \emph{ALL} code in the script
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Save the boxplot produced to your computer. You will need to upload this to the quiz on Canvas
+  \item
+    Keep the results of descriptive statistics and statistical analyses open while you complete the quiz. You will need some of these values to answer questions!
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{complete-the-quiz}{%
+\section*{Complete the Quiz}\label{complete-the-quiz}}
+\addcontentsline{toc}{section}{Complete the Quiz}
+
+Now you're ready to start the quiz. Complete the Quiz titled Open Science, R, \& RMarkdown on \href{https://canvas.ubc.ca/courses/98621}{Canvas}.
+
+\hypertarget{assignment-3-research-proposal-draft}{%
+\chapter*{Assignment 3: Research Proposal Draft}\label{assignment-3-research-proposal-draft}}
+\addcontentsline{toc}{chapter}{Assignment 3: Research Proposal Draft}
+
+You will use the following template for your Recommendation Report:
+
+\href{}{20220824\_Lab03\_205\_Assignment\_V1.Rmd} (3 KB)
+
+\textbf{Due before the start of your lab the week of February 7th}
+
+You will need to submit 4 files for this assignment:
+
+\begin{itemize}
+\tightlist
+\item
+  Recommendation report as \texttt{.Rmd}
+\item
+  Recommendation report as \texttt{.pdf}
+\item
+  Data in long, tidy, format as \texttt{.csv}
+\item
+  Data dictionary as \texttt{.md}
+\end{itemize}
+
+You will receive your marked recommendation report one week from the time it is submitted.
+
+You can decide to resubmit the same recommendation report draft without making any changes or you will have the opportunity to review the edits and make the needed changes in order to increase your mark.
+
+If you have any questions regarding your mark and / or the comments from your TA please ensure you take the opportunity to chat with your TA to go over these. This will ensure that you are in the best position to attain the highest marks possible for this assignment.
 
 \textbf{Ideas on Preparing a Research Proposal}
 
@@ -564,7 +1018,7 @@ As you work on the draft of your research proposal, be sure to consult the Final
 \part*{Lab 5}\label{part-lab-5}}
 \addcontentsline{toc}{part}{Lab 5}
 
-\emph{Last updated 2022-08-22}
+\emph{Last updated 2022-08-24}
 
 \hypertarget{data-collection-round-1}{%
 \chapter*{Data Collection Round 1}\label{data-collection-round-1}}
@@ -572,9 +1026,9 @@ As you work on the draft of your research proposal, be sure to consult the Final
 
 This week you will be working in the labs collecting data for your project.
 
-\hypertarget{quiz-2-who-am-i}{%
-\chapter*{Quiz 2: Who Am I?}\label{quiz-2-who-am-i}}
-\addcontentsline{toc}{chapter}{Quiz 2: Who Am I?}
+\hypertarget{quiz-3-who-am-i}{%
+\chapter*{Quiz 3: Who Am I?}\label{quiz-3-who-am-i}}
+\addcontentsline{toc}{chapter}{Quiz 3: Who Am I?}
 
 Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
 
@@ -582,7 +1036,7 @@ Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 6}\label{part-lab-6}}
 \addcontentsline{toc}{part}{Lab 6}
 
-\emph{Last updated 2022-08-22}
+\emph{Last updated 2022-08-24}
 
 \hypertarget{data-collection-round-2}{%
 \chapter*{Data Collection Round 2}\label{data-collection-round-2}}
@@ -594,8 +1048,8 @@ This week you will be continuing data collection for your project.
 \chapter*{Assignment 4: Final Research Proposal}\label{assignment-4-final-research-proposal}}
 \addcontentsline{toc}{chapter}{Assignment 4: Final Research Proposal}
 
-\hypertarget{overview-1}{%
-\section*{Overview}\label{overview-1}}
+\hypertarget{overview-2}{%
+\section*{Overview}\label{overview-2}}
 \addcontentsline{toc}{section}{Overview}
 
 \textbf{Due before the end of your lab the week of February 28th}
@@ -1116,9 +1570,9 @@ Incomplete0 pts & None of the criteria are met \\
 \bottomrule()
 \end{longtable}
 
-\hypertarget{quiz-3-who-am-i}{%
-\chapter*{Quiz 3: Who Am I?}\label{quiz-3-who-am-i}}
-\addcontentsline{toc}{chapter}{Quiz 3: Who Am I?}
+\hypertarget{quiz-4-who-am-i}{%
+\chapter*{Quiz 4: Who Am I?}\label{quiz-4-who-am-i}}
+\addcontentsline{toc}{chapter}{Quiz 4: Who Am I?}
 
 Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
 
@@ -1126,7 +1580,7 @@ Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 7}\label{part-lab-7}}
 \addcontentsline{toc}{part}{Lab 7}
 
-\emph{Last updated 2022-08-22}
+\emph{Last updated 2022-08-24}
 
 \hypertarget{data-collection-round-3}{%
 \chapter*{Data Collection Round 3}\label{data-collection-round-3}}
@@ -1134,9 +1588,9 @@ Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 
 This week you will be continuing data collection for your project.
 
-\hypertarget{quiz-4-who-am-i}{%
-\chapter*{Quiz 4: Who Am I?}\label{quiz-4-who-am-i}}
-\addcontentsline{toc}{chapter}{Quiz 4: Who Am I?}
+\hypertarget{quiz-5-who-am-i}{%
+\chapter*{Quiz 5: Who Am I?}\label{quiz-5-who-am-i}}
+\addcontentsline{toc}{chapter}{Quiz 5: Who Am I?}
 
 Complete Quiz 4: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
 
@@ -1144,7 +1598,7 @@ Complete Quiz 4: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 8}\label{part-lab-8}}
 \addcontentsline{toc}{part}{Lab 8}
 
-\emph{Last updated 2022-08-22}
+\emph{Last updated 2022-08-24}
 
 \hypertarget{data-collection-round-4-cleanup}{%
 \chapter*{Data Collection Round 4 \& Cleanup}\label{data-collection-round-4-cleanup}}
@@ -1152,9 +1606,9 @@ Complete Quiz 4: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 
 This week you will be continuing data collection for your project.
 
-\hypertarget{quiz-5-who-am-i}{%
-\chapter*{Quiz 5: Who Am I?}\label{quiz-5-who-am-i}}
-\addcontentsline{toc}{chapter}{Quiz 5: Who Am I?}
+\hypertarget{quiz-6-who-am-i}{%
+\chapter*{Quiz 6: Who Am I?}\label{quiz-6-who-am-i}}
+\addcontentsline{toc}{chapter}{Quiz 6: Who Am I?}
 
 Complete Quiz 5: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
 
@@ -1162,7 +1616,7 @@ Complete Quiz 5: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 9}\label{part-lab-9}}
 \addcontentsline{toc}{part}{Lab 9}
 
-\emph{Last updated 2022-08-22}
+\emph{Last updated 2022-08-24}
 
 \hypertarget{data-analysis}{%
 \chapter*{Data Analysis}\label{data-analysis}}
@@ -1208,14 +1662,14 @@ Below are a few videos which can help you get acquainted with running statistica
 \part*{Lab 10}\label{part-lab-10}}
 \addcontentsline{toc}{part}{Lab 10}
 
-\emph{Last updated 2022-08-22}
+\emph{Last updated 2022-08-24}
 
 \hypertarget{assignment-5-poster-presentations}{%
 \chapter*{Assignment 5: Poster Presentations}\label{assignment-5-poster-presentations}}
 \addcontentsline{toc}{chapter}{Assignment 5: Poster Presentations}
 
-\hypertarget{overview-2}{%
-\section*{Overview}\label{overview-2}}
+\hypertarget{overview-3}{%
+\section*{Overview}\label{overview-3}}
 \addcontentsline{toc}{section}{Overview}
 
 \textbf{Due during your lab the week of March 28th}

@@ -6,6 +6,6 @@
 
 This week you will be continuing data collection for your project.
 
-# Quiz 5: Who Am I? {-}
+# Quiz 6: Who Am I? {-}
 
 Complete Quiz 5: Who Am I? on [Canvas](https://canvas.ubc.ca/courses/113910)

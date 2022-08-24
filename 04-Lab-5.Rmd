@@ -6,6 +6,6 @@
 
 This week you will be working in the labs collecting data for your project.
 
-# Quiz 2: Who Am I? {-}
+# Quiz 3: Who Am I? {-}
 
 Complete Quiz 2: Who Am I? on [Canvas](https://canvas.ubc.ca/courses/113910)
