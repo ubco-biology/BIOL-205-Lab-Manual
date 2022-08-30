@@ -251,8 +251,6 @@ When interpreting the output from a statistical analysis for this project, focus
 ![](images/anova_example.png)
     
 <div class = "advanced"> 
-OPTIONAL!
-
 If you would like to have the code directly embedded within your RMarkdown report. Feel free to use the template below that corresponds with the types of variables in your research project. All of the code within these templates is the same as those described above but there are no instructions embedded in these templates. 
 
 * Both response and explanatory variables are categorical 
