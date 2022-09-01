@@ -14,7 +14,11 @@ The link below will help you sort out best practices in experimental design.  It
 
 ## Overview {-}
 
-**Due before the start of your lab the week of January 24th.  Please ensure you submit each summary to the specific submission locations on [Canvas](https://canvas.ubc.ca/courses/113910). Submitting all in one location will result in a mark of zero.**
+**Please ensure you submit each summary to the specific submission locations on [Canvas](https://canvas.ubc.ca/courses/113910). Submitting all in one location will result in a mark of zero.**
+
+<div class="note">
+See [Canvas](https://canvas.ubc.ca) for assignment due dates.
+</div>
 
 Your TA will assign you one of the following topics for this assignment: Fish Population, Macroinvertebrates, or Invasive Mussels. Details about each of these projects can be found in the following pages of this lab manual.
 

@@ -6,7 +6,9 @@
 
 ## Overview {-}
 
-**Due during your lab the week of March 28th**
+<div class="note">
+See [Canvas](https://canvas.ubc.ca) for assignment due dates.
+</div>
 
 Now that you have developed a thorough understanding of the topic you will need to present your findings and provide some potential solutions to the original problem to your funders, which in this case are your peers.
 

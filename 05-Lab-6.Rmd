@@ -10,7 +10,9 @@ This week you will be continuing data collection for your project.
 
 ## Overview {-}
 
-**Due before the end of your lab the week of February 28th (WE SHOULD MAKE THIS DUE DATE LATER IN THE TERM AFTER DATA COLLECITON?)**
+<div class="note">
+See [Canvas](https://canvas.ubc.ca) for assignment due dates.
+</div>
 
 <div class = "flag">
 You will need to submit 4 files for this assignment:

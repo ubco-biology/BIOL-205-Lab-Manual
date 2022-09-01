@@ -317,7 +317,9 @@ You will use the following template for your Registered Report:
 
 [20220824_Lab03_205_Assignment_V1.Rmd]() (3 KB)
 
-**Due before the start of your lab the week of February 7th** 
+<div class="note">
+See [Canvas](https://canvas.ubc.ca) for assignment due dates.
+</div>
 
 For this assignment you will submit a registered report draft with an established <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
 
