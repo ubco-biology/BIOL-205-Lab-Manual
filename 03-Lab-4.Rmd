@@ -4,7 +4,7 @@
 
 # Open Science, R, & RMarkdown Tutorial {-}
 
-You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and template for your Recommendation Report in BIOL 205. To prepare you for this, you must first complete this refresher Open Science, R, & RMarkdown tutorial and the accompanying quiz.
+You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and template for your Registered Report in BIOL 205. To prepare you for this, you must first complete this refresher Open Science, R, & RMarkdown tutorial and the accompanying quiz.
 
 ## Overview {-}
 
@@ -258,7 +258,7 @@ If you would like to have the code directly embedded within your RMarkdown repor
 * Both response and explanatory variables are quantitative 
     * [20220824_Lab03_205_Assignment-Quantitative-Quantitative_V1.Rmd](https://osf.io/download/75q4x)
 * Categorical explanatory variable and quantitative response variable 
-    * [20220824_Lab03_205_Assignment-Quantitative-Categorical_V1.Rmd](https://osf.io/download/s7bng)
+    * [20220824_Lab03_205_Assignment-Quantitative-Categorical_V1.Rmd](https://osf.io/download/2hsk5)
 
 Similar to the R scripts, code for all possible statistical tests is included within these templates. **Only include the code that corresponds with the type of variables in your experiment.** In other words, delete the R chunk that contains code for any statistical test you are **NOT** using. 
 
@@ -302,7 +302,7 @@ We\'ll practice using the R script for a categorical explanatory variable and qu
 * Download the R script 
   * [BIOL205_Script_Quantitative-Categorical.R](https://osf.io/download/46mpk)
 * Download this sample data set
-  * 
+  * [BIOL205_sample-data.csv](https://osf.io/download/3r76k)
 * Follow the instructions provided [earlier](https://ubco-biology.github.io/BIOL-205-Lab-Manual/using-the-rscripts.html) and run *ALL* code in the script
   * Save the boxplot produced to your computer. You will need to upload this to the quiz on Canvas
   * Keep the results of descriptive statistics and statistical analyses open while you complete the quiz. You will need some of these values to answer questions!
