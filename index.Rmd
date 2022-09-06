@@ -1,9 +1,10 @@
 --- 
 title: "Biology 205 Lab Manual"
+author: "Dr. Tristyn Hay"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-description: "Your Description Here"
+description: "Biology lab manual for BIOL 205 at the UBC Okanagan Campus."
 ---
 
 # Welcome {-}
@@ -48,4 +49,3 @@ Highlights and key take aways.
 <div class = "advanced">
 Optional material that dives deeper into a presented concept.
 </div>
-

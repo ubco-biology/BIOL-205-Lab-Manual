@@ -1,7 +1,20 @@
 /**custom colours**/
 
-.summary {
-  background-color:   #e8f6f3  !important;
+nav > ul > li:first-of-type {
+  background:   #ADD8FF  !important;
+}
+
+li.part > span, h1, h2 {
+	color: #ADD8FF !important;
+}
+
+li.divider {
+	display: none;
+}
+
+
+ul.summary li span {
+	opacity: 1 !important;
 }
 
 .note, .advanced, .flag, .takeAway {

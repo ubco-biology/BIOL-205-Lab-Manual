@@ -1,4 +1,4 @@
-# (PART\*) Lab 4 {-}
+# (PART\*) Lab 4 - BIOL 205 {-}
 
 *Last updated `r Sys.Date()`*
 
