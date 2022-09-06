@@ -101,14 +101,17 @@
 <li class="chapter" data-level="" data-path="fish-population-project.html"><a href="fish-population-project.html"><i class="fa fa-check"></i>Fish Population Project</a>
 <ul>
 <li class="chapter" data-level="" data-path="fish-population-project.html"><a href="fish-population-project.html#fish-population-declines-mitigation-recommendations-needed"><i class="fa fa-check"></i>Fish population declines: Mitigation recommendations needed</a></li>
+<li class="chapter" data-level="" data-path="fish-population-project.html"><a href="fish-population-project.html#your-role"><i class="fa fa-check"></i>Your Role</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="macroinvertebrates-project.html"><a href="macroinvertebrates-project.html"><i class="fa fa-check"></i>Macroinvertebrates Project</a>
 <ul>
 <li class="chapter" data-level="" data-path="macroinvertebrates-project.html"><a href="macroinvertebrates-project.html#potential-changes-in-macroinvertebrates-mitigation-recommendations-needed"><i class="fa fa-check"></i>Potential changes in macroinvertebrates: Mitigation recommendations needed</a></li>
+<li class="chapter" data-level="" data-path="macroinvertebrates-project.html"><a href="macroinvertebrates-project.html#your-role-1"><i class="fa fa-check"></i>Your Role</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="invasive-mussles-project.html"><a href="invasive-mussles-project.html"><i class="fa fa-check"></i>Invasive Mussles Project</a>
 <ul>
 <li class="chapter" data-level="" data-path="invasive-mussles-project.html"><a href="invasive-mussles-project.html#invasive-mussel-project-mitigation-recommendations-needed"><i class="fa fa-check"></i>Invasive Mussel Project – Mitigation Recommendations Needed</a></li>
+<li class="chapter" data-level="" data-path="invasive-mussles-project.html"><a href="invasive-mussles-project.html#your-role-2"><i class="fa fa-check"></i>Your Role</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Lab 3 - BIOL 205</b></span></li>
@@ -240,12 +243,12 @@
 <div id="using-the-template" class="section level3 unnumbered hasAnchor">
 <h3>Using the Template<a href="assignment-template.html#using-the-template" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="note">
-<p>All the markdown syntax that you need for RMarkdown can be found in the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/markdown-1.html">Markdown</a> section of the BIOL Procedures and Guidelines.</p>
+<p>All the markdown syntax that you need for RMarkdown can be found in the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/markdown-1.html" target="_blank">Markdown</a> section of the BIOL Procedures and Guidelines.</p>
 </div>
 </div>
 <div id="directory-structure-file-naming" class="section level3 unnumbered hasAnchor">
 <h3>Directory Structure &amp; File Naming<a href="assignment-template.html#directory-structure-file-naming" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>It is expected that you will have a root project folder for your work associated with this lab. And that at the minimum you will have a folder for your report, your data, and your figures. And that you will download this template into your <code>report/</code> directory. And that lastly, you will rename the template in accordance with the file naming conventions in the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/file-naming.html">Biology Procedures and Guidelines document</a>.</p>
+<p>It is expected that you will have a root project folder for your work associated with this lab. And that at the minimum you will have a folder for your report, your data, and your figures. And that you will download this template into your <code>report/</code> directory. And that lastly, you will rename the template in accordance with the file naming conventions in the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/file-naming.html" target="_blank">Biology Procedures and Guidelines document</a>.</p>
 <p>This structure and hierarchy will be important when it comes time to include figures and images in your report.</p>
 </div>
 <div id="yaml" class="section level3 unnumbered hasAnchor">
@@ -276,11 +279,12 @@
 </div>
 <div id="images-graphs" class="section level3 unnumbered hasAnchor">
 <h3>Images &amp; Graphs<a href="assignment-template.html#images-graphs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>There is one sample graph included. Note how it references the figure to be included <code>../figures/image-name.png</code> The <code>../</code> means 'go one level up in the directory' which, if you have your project set up in the following way and your <code>.Rmd</code> file is in your <code>report/</code> directory it means 'look in the <code>root/</code> directory for a folder called <code>figures/</code>.</p>
-<pre><code>root/
-  report/20220101_Lab05_125_Assignment_V1.Rmd
-  data/
-  figures/MVD_BIOL125-Lab5_Fig-1-Boxplot_V1.png</code></pre>
+<p>There is one sample graph referenced in the template. If you'd like to download this image and place it in your <code>figures/</code> directory to test knitting your template, the file can be downloaded <a href="https://osf.io/download/nrzdu">at this link</a>. Note how it references the figure to be included <code>../figures/image-name.png</code>. The <code>../</code> means 'go one level up in the directory' which, if you have your project set up in the following way and your <code>.Rmd</code> file is in your <code>report/</code> directory it means 'look in the <code>root/</code> directory for a folder called <code>figures/</code>.</p>
+<pre><code>├── BIOL205_RP/
+│   ├── report/
+│   │   ├──20220101_Lab03_205_Assignment_V1.Rmd
+│   ├── data/
+│   │   ├──figures/MVD_BIOL125-Lab5_Fig-1-Boxplot_V1.png</code></pre>
 <p>If you make a mistake in setting this path, you'll get the following error in RStudio</p>
 <pre><code>(No image at path ...)</code></pre>
 <p>You'll also note the following directly after the image path: <code>{width=50%}</code>. This reduces the image size by 50%.</p>

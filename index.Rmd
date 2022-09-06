@@ -22,7 +22,9 @@ This work is licenced under the Creative Commons [Attribution-NonCommercial-Shar
 
 Please use the following for citing this document
 
-Hay, T (2021). *Biology 205 Comparative Invertebrate Zoology Lab Manual.*. [https://ubco-biology.github.io/BIOL-205-Lab-Manual/](https://ubco-biology.github.io/BIOL-205-Lab-Manual/). Some content provided by the University of British Columbia, Okanagan Biology Graduate Program students handbook and the National Center for Case Study Teaching in Science.
+Hay, T (2021). *Biology 205 Comparative Invertebrate Zoology Lab Manual.*. [https://ubco-biology.github.io/BIOL-205-Lab-Manual/](https://ubco-biology.github.io/BIOL-205-Lab-Manual/).
+
+Some content provided by the University of British Columbia, Okanagan Biology Graduate Program students handbook and the National Center for Case Study Teaching in Science.
 
 All source files are available [https://github.com/ubco-biology/BIOL-205-Lab-Manual](https://github.com/ubco-biology/BIOL-205-Lab-Manual).
 

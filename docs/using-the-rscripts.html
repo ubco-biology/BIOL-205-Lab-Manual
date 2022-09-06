@@ -101,14 +101,17 @@
 <li class="chapter" data-level="" data-path="fish-population-project.html"><a href="fish-population-project.html"><i class="fa fa-check"></i>Fish Population Project</a>
 <ul>
 <li class="chapter" data-level="" data-path="fish-population-project.html"><a href="fish-population-project.html#fish-population-declines-mitigation-recommendations-needed"><i class="fa fa-check"></i>Fish population declines: Mitigation recommendations needed</a></li>
+<li class="chapter" data-level="" data-path="fish-population-project.html"><a href="fish-population-project.html#your-role"><i class="fa fa-check"></i>Your Role</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="macroinvertebrates-project.html"><a href="macroinvertebrates-project.html"><i class="fa fa-check"></i>Macroinvertebrates Project</a>
 <ul>
 <li class="chapter" data-level="" data-path="macroinvertebrates-project.html"><a href="macroinvertebrates-project.html#potential-changes-in-macroinvertebrates-mitigation-recommendations-needed"><i class="fa fa-check"></i>Potential changes in macroinvertebrates: Mitigation recommendations needed</a></li>
+<li class="chapter" data-level="" data-path="macroinvertebrates-project.html"><a href="macroinvertebrates-project.html#your-role-1"><i class="fa fa-check"></i>Your Role</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="invasive-mussles-project.html"><a href="invasive-mussles-project.html"><i class="fa fa-check"></i>Invasive Mussles Project</a>
 <ul>
 <li class="chapter" data-level="" data-path="invasive-mussles-project.html"><a href="invasive-mussles-project.html#invasive-mussel-project-mitigation-recommendations-needed"><i class="fa fa-check"></i>Invasive Mussel Project – Mitigation Recommendations Needed</a></li>
+<li class="chapter" data-level="" data-path="invasive-mussles-project.html"><a href="invasive-mussles-project.html#your-role-2"><i class="fa fa-check"></i>Your Role</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Lab 3 - BIOL 205</b></span></li>
@@ -253,12 +256,16 @@
 <p>While there are instructions within the R scripts themselves, the following sections describe how to use the R scripts in more detail. Be sure to read <strong>everything here and in the R scripts!</strong> Alongside each line of code in the script is a comment proceeded with a hashtag (#). The comments are either descriptions of what the code is doing or instructions describing things you need to do.</p>
 <div id="step-1-set-your-working-directory" class="section level3 unnumbered hasAnchor">
 <h3>Step 1: Set your working directory<a href="using-the-rscripts.html#step-1-set-your-working-directory" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Make sure your working directory is set according to the instructions <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html">here</a> in the Procedures and Guidelines Document.</p>
+<p>Make sure your working directory is set according to the instructions <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html" target="_blank">here</a> in the Procedures and Guidelines Document.</p>
 </div>
 <div id="step-2-installing-loading-required-packages" class="section level3 unnumbered hasAnchor">
 <h3>Step 2: Installing &amp; Loading Required Packages<a href="using-the-rscripts.html#step-2-installing-loading-required-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Packages in R contain a set of functions, code, and data that you can use for your analysis. Before you can use the functions within a package, the package must be installed in R. Once a package is installed on your computer you won’t need to re-install it every time you use R. However, if you're on a lab computer, since the computers are re-set at the end of each day you may need to re-install packages at each log in.</p>
-<p>To install packages noted in the R script, copy the installation lines of code without the preceeding hashtag (#) ie. remove the # from <code># install.packages("ggplot2")</code> so it looks like this <code>install.packages("ggplot2")</code> and copy it into the R console (lower left pane of RStudio). When you push enter on your keyboard the package will install. Be sure to do this for all of the required packages noted in the R script.</p>
+<p>To install packages noted in the R script, copy the installation lines of code without the preceeding hashtag (#) ie. remove the <code>#</code> from</p>
+<pre><code># install.packages(&quot;ggplot2&quot;)</code></pre>
+<p>so it looks like this</p>
+<pre><code>install.packages(&quot;ggplot2&quot;)</code></pre>
+<p>and copy it into the R console (lower left pane of RStudio). When you push enter on your keyboard the package will install. Be sure to do this for all of the required packages noted in the R script.</p>
 <p>Once packages are installed, they must be loaded to your current session in R. You will have to do this each time you re-start R. To load packages use the library function by running the lines of code pre-written into your R script. For example, run <code>library(ggplot2)</code> by clicking the ‘Run’ button at the top right of the working document.</p>
 <p><img src="images/run_button.png" /></p>
 </div>
@@ -274,12 +281,15 @@
 <li>Replacing “X label name” and “Y label name” with your desired x and y axes labels</li>
 <li>Replacing “My Caption” with your desired figure caption</li>
 </ul>
+<div class="note">
+<p>R is case sensitive. When providing your variable names, make sure they match exactly the variables used in your Excel or csv file!</p>
+</div>
 <p>In the R script for a categorical explanatory and a categorical response variable, code for both a boxplot and a stripchart is included. Recall that according to the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/figures.html">Biology Procedures and Guidelines document</a>, you should use a boxplot if the groups of your categorical variable have more than 20 data points. Alternatively, you should use a stripchart if each group contains less than 20 data points. Be sure to only produce one desired figure.</p>
 <div class="advanced">
 <p>In some of the R scripts there are some additional pieces of code that you don’t need to worry about for now; you’ll learn more about these in BIOL 202!</p>
 <p>For example, we have to factor the categorical variables before producing graphs. You will see this additional code if the script you are using includes categorical variables.</p>
 <p>In the code for creating a boxplot or stripchart, we refer to a function that calculates confidence intervals. So we have to define that function prior to running the code to produce the figure. You will find this additional piece of code in your R script if your experiment has a categorical explanatory variable and quantitative response variable.</p>
-<p>There are some regions in the R scripts where variables are re-named or manipulated. Don’t worry about why for now!</p>
+<p>There are some regions in the R scripts where variables are re-named or manipulated. If your up for it, take some time to read through the script and see if you can figure out exactly what’s happening!</p>
 </div>
 <p>Now you’re ready to run the code to create your figure! Once the code has been run, your figure will show in the lower right panel of RStudio under ‘Plots’. To save your figure click the ‘Export’ button and then ‘Save as Image’.</p>
 </div>

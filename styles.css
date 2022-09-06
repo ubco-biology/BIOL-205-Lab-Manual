@@ -70,7 +70,8 @@ ul.summary li span {
 }
 
 .caption {
-  text-align: center;
+  margin-top: 3em !important;
+  margin-bottom: 2em !important;
 }
 
 blockquote {
