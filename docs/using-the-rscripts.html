@@ -23,7 +23,7 @@
 <meta name="author" content="Dr. Tristyn Hay" />
 
 
-<meta name="date" content="2022-09-07" />
+<meta name="date" content="2022-09-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -384,17 +384,52 @@ y_label &lt;- &quot;Day&quot; # Replace with your desired y axis label</code></p
 <li>Your categorical variable has exactly 2 groups -&gt; Use Two Sample T-test</li>
 <li>Your categorical variable has more than 2 groups -&gt; Use ANOVA</li>
 </ul>
-<p>When interpreting the output from a statistical analysis for this project, focus on the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#P-value">p-value</a> provided by <code>R.</code> You’ll learn more about the other details shown by the output in BIOL 202! Below are some examples of output for each type of statistical test. The associated p-value has a red box around it.</p>
+<p>When interpreting the output from a statistical analysis for this project, focus on the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#P-value">p-value</a> provided by <code>R.</code> You’ll learn more about the other details shown by the output in BIOL 202! Below are some examples of output for each type of statistical test.</p>
 <p><strong><a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Fisher's-exact-test">Fisher’s Exact Test</a></strong></p>
-<p><img src="images/fishers_example.png" /></p>
+<p><code>Penguins</code> data set with <code>sex</code> and <code>species</code> variables - the p-value is evident:</p>
+<pre><code>## 
+##  Fisher&#39;s Exact Test for Count Data
+## 
+## data:  fisher.table
+## p-value = 0.979
+## alternative hypothesis: two.sided</code></pre>
 <p><strong><a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Chi-square-($\chi$^2^)-contingency-test">Chi-Square Contingency Analysis</a></strong></p>
-<p><img src="images/chi-square_example.png" /></p>
+<p><code>Penguins</code> data set with <code>sex</code> and <code>species</code> variables - the p-value is evident:</p>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  chi.table
+## X-squared = 0.048607, df = 2, p-value = 0.976</code></pre>
 <p><strong><a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Pearson-correlation">Correlation Analysis</a></strong></p>
-<p><img src="images/correlation_example.png" /></p>
+<p><code>Penguins</code> data set with <code>bill_length_mm</code> and <code>bill_depth_mm</code> variables - the p-value is farily evident, labeled p.value:</p>
+<pre><code>## # A tibble: 1 × 8
+##   estimate statistic   p.value parameter conf.low conf.high method       alter…¹
+##      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;int&gt;    &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;  
+## 1   -0.235     -4.46 0.0000112       340   -0.333    -0.132 Pearson&#39;s p… two.si…
+## # … with abbreviated variable name ¹​alternative</code></pre>
 <p><strong><a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Two-sample-t-test">Two-Sample T-test</a></strong></p>
-<p><img src="images/t-test_example.png" /></p>
+<p><code>Penguins</code> data set with <code>species</code> - filtered to Chinstrap and Adelie - and <code>body_mass_g</code> variables - the p-value is evident:</p>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  body_mass_g by species
+## t = -0.50809, df = 217, p-value = 0.6119
+## alternative hypothesis: true difference in means between group Adelie and group Chinstrap is not equal to 0
+## 95 percent confidence interval:
+##  -158.21193   93.35996
+## sample estimates:
+##    mean in group Adelie mean in group Chinstrap 
+##                3700.662                3733.088</code></pre>
 <p><strong><a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Analysis-of-variance">ANOVA</a></strong></p>
-<p><img src="images/anova_example.png" /></p>
+<p><code>Penguins</code> data set with <code>species</code> and <code>body_mass_g</code> variables - the p-value is under the header Pr(&gt;F):</p>
+<pre><code>## Analysis of Variance Table
+## 
+## Response: body_mass_g
+##            Df    Sum Sq  Mean Sq F value    Pr(&gt;F)    
+## species     2 146864214 73432107  343.63 &lt; 2.2e-16 ***
+## Residuals 339  72443483   213698                      
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <div class="advanced">
 <p>If you would like to have the code directly embedded within your RMarkdown report. Feel free to use the template below that corresponds with the types of variables in your research project. All of the code within these templates is the same as those described above but there are no instructions embedded in these templates.</p>
 <ul>
