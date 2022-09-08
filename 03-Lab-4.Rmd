@@ -4,7 +4,9 @@
 
 # Open Science, R, & RMarkdown Tutorial {-}
 
-You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and template for your Registered Report in BIOL 205. To prepare you for this, you must first complete this refresher Open Science, R, & RMarkdown tutorial and the accompanying quiz.
+You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and a similar template for your Registered Report in BIOL 205. However, instead of using a Shiny App to visualize your data, we'll be using R Scripts with almost all the code already written for you.
+
+To prepare you for this, you must first review some refresher Open Science, R, & RMarkdown tutorials, read and complete some short activities with some new material on working with the provided `R` scripts, and then complete the accompanying quiz in Canvas.
 
 ## Overview {-}
 
@@ -57,9 +59,27 @@ All the markdown syntax that you need for RMarkdown can be found in the [Markdow
 
 ### Directory Structure & File Naming {-}
 
-It is expected that you will have a root project folder for your work associated with this lab. And that at the minimum you will have a folder for your report, your data, and your figures. And that you will download this template into your `report/` directory. And that lastly, you will rename the template in accordance with the file naming conventions in the [Biology Procedures and Guidelines document](https://ubco-biology.github.io/Procedures-and-Guidelines/file-naming.html){target="_blank"}.
+It is expected that you will have a root project folder for your work associated with this lab. And that at the minimum you will have a folder for your report, your data, your figures, and your scripts. And that you will download this template into your `report/` directory. And that lastly, you will rename the template in accordance with the file naming conventions in the [Biology Procedures and Guidelines document](https://ubco-biology.github.io/Procedures-and-Guidelines/file-naming.html){target="_blank"}.
 
-This structure and hierarchy will be important when it comes time to include figures and images in your report.
+Lastly, we'll be working with an RProject file this round to help ensure our project's working directory is properly set up in `R`.
+
+<div class = "takeAway">
+It\'s important to load your project using the RProject file and not the RMarkdown file to ensure your working directory is properly set and that all the scripts and templates we'll be using work as intended!
+</div>
+
+Review the instruction [here](https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html){target="_blank"} in the Procedures and Guidelines Document, for setting up a working directory and RProject file.
+
+Your project directory structure should look something like this once you've created your RProject file and you've downloaded a copy of the RMarkdown file:
+
+```
+├── BIOL205_RP/
+│   ├── BIOL205_report.RProj
+│   ├── data/
+│   ├── figures/
+│   ├── report/
+│   │   ├── 20220101_Lab03_205_Assignment_V1.Rmd
+│   ├── scripts/
+```
 
 ### YAML {-}
 
@@ -90,23 +110,20 @@ The template is then pre-populated with first level headers for each section you
 
 ### Images & Graphs {-}
 
-There is one sample graph referenced in the template. If you\'d like to download this image and place it in your `figures/` directory to test knitting your template, the file can be downloaded [at this link](https://osf.io/download/nrzdu). Note how it references the figure to be included `../figures/image-name.png`. The `../` means \'go one level up in the directory\' which, if you have your project set up in the following way and your `.Rmd` file is in your `report/` directory it means \'look in the `root/` directory for a folder called `figures/`.
+There is one sample graph referenced in the template. If you\'d like to download this image and place it in your `figures/` directory to test knitting your template, the file can be downloaded [at this link](https://osf.io/download/nrzdu). And your project should look like this:
 
 ```
 ├── BIOL205_RP/
-│   ├── report/
-│   │   ├──20220101_Lab03_205_Assignment_V1.Rmd
+│   ├── BIOL205_report.RProj
 │   ├── data/
-│   │   ├──figures/MVD_BIOL125-Lab5_Fig-1-Boxplot_V1.png
+│   ├── figures/
+│   │   ├── MVD_BIOL125-Lab5_Fig-1-Boxplot_V1.png
+│   ├── report/
+│   │   ├── 20220101_Lab03_205_Assignment_V1.Rmd
+│   ├── scripts/
 ```
 
-If you make a mistake in setting this path, you\'ll get the following error in RStudio
-
-```
-(No image at path ...)
-```
-
-You\'ll also note the following directly after the image path: `{width=50%}`. This reduces the image size by 50%. 
+You might note the following directly after the image path: `{width=50%}`. This reduces the image size by 50%. 
 
 As noted in the template, you do not need to write `Figure 1:` before your figures; this small piece of text is handled during the conversion from RMarkdown to pdf. Any other information that you would like to include in the caption should go in the `[]` before the `()` that contain the path to the image.
 
@@ -140,28 +157,69 @@ Click this button or select the drop down arrow and select `Knit to pdf`. This w
 
 ## Using the RScripts {-}
 
-R scripts are text files containing the commands (aka code) and comments used to perform computations. For your research project, R scripts have been pre-written for you! You won't need to learn how to write code in R for this course; that comes later in BIOL 202. 
+Before we can knit the RMarkdown document with our own figures, we need to do our analysis and generate some visualizations! We'll do this with a few `R` scripts.
 
-There is a separate R script for each type of variable combination you might have for your project. Download the R script that corresponds to the types of variables you have in your experiment. 
+R scripts are text files containing the commands (aka code) and comments used to perform computations. For your research project, `R` scripts have been pre-written for you! You won't need to learn how to write code in `R` for this course; that comes later in BIOL 202. 
+
+There is a separate `R` script for each type of variable combination you might have for your project. Download the R script that corresponds to the types of variables you have in your experiment. 
 
 * Both response and explanatory variables are categorical 
     * [BIOL205_Script_Categorical-Categorical.R](https://osf.io/download/sg7y6)
 * Both response and explanatory variables are quantitative 
     * [BIOL205_Script_Quantitative-Quantitative.R](https://osf.io/download/adwg4)
 * Categorical explanatory variable and quantitative response variable 
-    * [BIOL205_Script_Quantitative-Categorical.R](https://osf.io/download/46mpk)
+    * [BIOL205_Script_Quantitative-Categorical.R](https://osf.io/download/2hsk5)
 
-While there are instructions within the R scripts themselves, the following sections describe how to use the R scripts in more detail. Be sure to read **everything here and in the R scripts!** Alongside each line of code in the script is a comment proceeded with a hashtag (#). The comments are either descriptions of what the code is doing or instructions describing things you need to do.  
+<div class = "note">
+While there are instructions within the `R` scripts themselves, the following sections describe how to use the R scripts in more detail. Be sure to read **everything here and in the R scripts!**
+
+Alongside each line of code in the script is a comment proceeded with a hashtag (#). The comments are either descriptions of what the code is doing or instructions describing things you need to do.
+</div>
+
+<div class = "takeAway">
+You must correctly set up your project and working directory using the instructions below for this to work. You must also not simply open your `R` script, but instead launch your RProject file and then from within R Studio load the script from the built in file manager.
+</div>
+
+The general workflow here is:
+
+1. Launch RStudio using your RPoject file
+2. Load your data
+3. Provide the script with your variable names and the labels you'd like to use on your graphs
+4. Generate a graph and save it to your `figures/` directory
+5. Run your descriptive stats and copy the relevant information to your RMarkdown file
+6. Run you statistical analyses and copy the relevant information to your RMarkdown file
+
+If you quite RStudio, you will need to re-run steps 1-3 to do any of steps 4-6 again.
 
 ### Step 1: Set your working directory {-}
 
-Make sure your working directory is set according to the instructions [here](https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html){target="_blank"} in the Procedures and Guidelines Document.
+If you haven't already, make sure your working directory is set according to the instructions [here](https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html){target="_blank"} in the Procedures and Guidelines Document.
+
+Your directory should look something like this when you're done, that is, after downloading at least one script, ensuring your data is in the project's data folder, you've created an RMarkdown file, you've generated an RPoject file and put everything in its respective directory. Don't worry if you don't have all these things ready yet, just make sure that when you're ready to run your scripts with your data, this is the model you're working with.
+
+```
+├── BIOL205_RP/
+│   ├── BIOL205_report.RProj
+│   ├── data/
+│   │   ├── 20221023_sample-data.csv
+│   ├── figures/
+│   ├── report/
+│   │   ├── 20220101_Lab03_205_Assignment_V1.Rmd
+│   ├── scripts/
+│   │   ├── BIOL205_Script_Quantitative-Categorical.R
+```
 
 ### Step 2: Installing & Loading Required Packages {-}
 
-Packages in R contain a set of functions, code, and data that you can use for your analysis. Before you can use the functions within a package, the package must be installed in R. Once a package is installed on your computer you won't need to re-install it every time you use R. However, if you\'re on a lab computer, since the computers are re-set at the end of each day you may need to re-install packages at each log in.
+We'll be using a couple of features that are not part of the basic install of `R` in our scripts. We add additional features in `R` with packages.
 
-To install packages noted in the R script, copy the installation lines of code without the preceeding hashtag (#) ie. remove the `#` from
+Packages in `R` contain a set of functions, code, and data that you can use for your analysis. Before you can use the functions within a package, the package must be both installed in `R`, which we do once, and loaded into `R`, which we do each time we start the application.
+
+<div class = "note">
+While packages only need to be installed once, if you\'re on a lab computer, since the computers are re-set at the end of each day you may need to re-install packages at each log in.
+</div>
+
+To install packages noted in the `R` script, copy the installation lines of code without the preceding hashtag (#) ie. remove the `#` from
 
 ```
 # install.packages("ggplot2")
@@ -173,29 +231,76 @@ so it looks like this
 install.packages("ggplot2")
 ```
 
-and copy it into the R console (lower left pane of RStudio). When you push enter on your keyboard the package will install. Be sure to do this for all of the required packages noted in the R script. 
+and copy it into the `R` console (lower left pane of RStudio). When you hit enter on your keyboard the package will install. Be sure to do this for all of the required packages noted in the `R` script; these are in the first few lines of each script. 
 
-Once packages are installed, they must be loaded to your current session in R. You will have to do this each time you re-start R. To load packages use the library function by running the lines of code pre-written into your R script. For example, run `library(ggplot2)` by clicking the 'Run' button at the top right of the working document. 
+Once packages are installed, they must be loaded to your current session. You will have to do this each time you re-start `R.` To load packages use the `library()` function by running the lines of code pre-written into your R script. For example, run `library(ggplot2)` by placing your cursor in that line of code and clicking the 'Run' button at the top right of the working document. To load all packages at the same time, use your cursor to highlight all of the sections of code you want to run (lines 35-38 in the screenshot below), and then click 'run'.
 
 ![](images/run_button.png)
 
+<div class = "note">
+Running code can be done several ways in RStudio. You can go through line by line, putting you cursor in the line you wish to run, and executing each independently of the next. Or you can run a section of code by highlighting the 'chunk' you want to run.
+
+The scripts are broken into 'steps'. It's probably best to highlight whole sections of each step and then running that chunk. But if you'd like to run line by line to get a better sense of what's happening, go for it!
+
+To quickly run a line of code, place your cursor on the line and use `ctrl + Enter` or `Command + Enter` if you're on a Mac.
+</div>
+
 ### Step 3: Uploading your data {-}
 
-Replace 'insert-data-file-name-here.csv' with the file name that your data is saved as to your computer. If your data file contains a header row, be sure that `my_data <- read.csv(file = my_file, header = TRUE)` shows `header = TRUE`. If you have no header row, simply change the code to `header = FALSE`. 
+Replace the content within the quotes that read 'insert-data-file-name-here.csv' with the file name that your data is saved as to your computer. This will be in between lines 45 and 50 depending on the script you're using.
+
+If my data file was called `20221023_sample-data.csv`, I'd change the following line
+
+```
+my_file <- paste0(dir,"insert-data-file-name-here.csv") # assign file name to a variable
+```
+
+to
+
+```
+my_file <- paste0(dir,"20221023_sample-data.csv") # assign file name to a variable
+```
+
+If your data file contains a header row, be sure that the following line, which reads
+
+```my_data <- read.csv(file = my_file, header = TRUE)```
+
+shows `header = TRUE`. If you have no header row, simply change the code to `header = FALSE`. 
     
 ### Step 4: Visualizing your data {-}
 
-You'll need to tell R some information before you can create graphs. Specifically, you need to assign the names of your variables, axes labels, and figure caption. You can do this by 
+You\'ll need to tell `R` some information before you can create graphs or do analyses. Specifically, you need to assign the names of your variables and axis labels. You can do this by 
 
 * Replacing "X variable name" and "Y variable name" with the names of your x and y variables
 * Replacing "X label name" and "Y label name" with your desired x and y axes labels
-* Replacing "My Caption" with your desired figure caption
+
+So, we update the following lines
+
+```
+x_var <- "X variable name" # Replace with the name of your x variable
+x_label <- "X label name" # Replace with your desired x axis label
+y_var <- "Y variable name" # Replace with the name of your x variable
+y_label <- "Y label name" # Replace with your desired y axis label
+```
+
+with something like
+
+```
+x_var <- "ht" # Replace with the name of your x variable
+x_label <- "Height (in cm)" # Replace with your desired x axis label
+y_var <- "day" # Replace with the name of your x variable
+y_label <- "Day" # Replace with your desired y axis label
+```
 
 <div class = "note">
-R is case sensitive. When providing your variable names, make sure they match exactly the variables used in your Excel or csv file!
+`R` is case sensitive. When providing your variable names, make sure they match exactly the variables used in your csv file!
 </div>
 
-In the R script for a categorical explanatory and a categorical response variable, code for both a boxplot and a stripchart is included. Recall that according to the [Biology Procedures and Guidelines document](https://ubco-biology.github.io/Procedures-and-Guidelines/figures.html), you should use a boxplot if the groups of your categorical variable have more than 20 data points. Alternatively, you should use a stripchart if each group contains less than 20 data points. Be sure to only produce one desired figure. 
+<div class = "flag">
+In the `R` script for a categorical explanatory and a categorical response variable, code for both a boxplot and a stripchart is included.
+
+Recall that according to the [Biology Procedures and Guidelines document](https://ubco-biology.github.io/Procedures-and-Guidelines/figures.html), you should use a boxplot if the groups of your categorical variable have more than 20 data points. Alternatively, you should use a stripchart if each group contains less than 20 data points. Be sure to only produce one desired figure.
+</div>
 
 <div class = "advanced">
 In some of the R scripts there are some additional pieces of code that you don't need to worry about for now; you'll learn more about these in BIOL 202!
@@ -215,37 +320,98 @@ The code here should run smoothly if everything in the proceeding steps was done
 
 **Two Categorical Variables**
 
-Here is an example of the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Descriptive-statistics">descriptive statistics</a> output produced by the R script for two categorical variables. The explanatory (independent) variable and its associated groups appear in the first column, while the response (dependent) variable appears at the top. In this case the explanatory variable was species and the response variable was sex. The numbers provided in the table describe the frequency for each category. For example, in this sample there was 1 female Adelie penguin and 0 male Chinstrap penguins. 
+Here is an example of the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Descriptive-statistics">descriptive statistics</a> output produced by the R script for two categorical variables. The explanatory (independent) variable and its associated groups appear in the first column, while the response (dependent) variable appears at the top. In this case the explanatory variable was species and the response variable was sex. The numbers provided in the table describe the frequency for each category. For example, in this sample there was 1 female Adelie penguin and 0 male Chinstrap penguins.
 
-![](images/categorical-categorical_stats_example.png)
+```{r, echo=FALSE, message=FALSE}
+# load data
+library(palmerpenguins)
+
+# build contingeny table
+with(penguins, table(species, sex))
+```
 
 **Two Quantitative Variables**
 
-Here is an example of the output produced by the R script for two quantitative variables. The explanatory (independent) variable appears in the first row, while the response (dependent) variable appears in the second row. `n` indicates the sample size, while the following columns represent the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Mean">mean</a>, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Standard-deviation">standard deviation</a>, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Median">median</a>, and <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Interquartile-range">interquartile range</a>, respectively.  
+Here is an example of the output produced by the R script for two quantitative variables. The explanatory (independent) variable appears in the first row, while the response (dependent) variable appears in the second row. `n` indicates the sample size, while the following columns represent the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Mean">mean</a>, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Standard-deviation">standard deviation</a>, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Median">median</a>, and <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Interquartile-range">interquartile range</a>, respectively.
 
-![](images/quantitative_quantitative_stats_example.png)
+```{r, echo=FALSE, message=FALSE}
+library(tidyverse)
+# subset and summarize first var
+bill_length_summary <- penguins %>%
+                        select(bill_length_mm) %>%
+                        summarise(
+                          n = n(),
+                          mean = round(mean(bill_length_mm, na.rm = T), 1),
+                          sd = round(sd(bill_length_mm, na.rm = T), 2),
+                          median = round(median(bill_length_mm, na.rm = ), 1),
+                          iqr = round(IQR(bill_length_mm, na.rm = T), 2)
+                          ) %>%
+                        as.data.frame()
+
+# subset and summarize second var
+bill_depth_summary <- penguins %>%
+                          select(bill_depth_mm) %>%
+                          summarise(
+                            n = n(),
+                            mean = round(mean(bill_depth_mm, na.rm = T), 1),
+                            sd = round(sd(bill_depth_mm, na.rm = T), 2),
+                            median = round(median(bill_depth_mm, na.rm = ), 1),
+                            iqr = round(IQR(bill_depth_mm, na.rm = T), 2)
+                            ) %>%
+                          as.data.frame()
+
+# merge vars
+summary_table <- full_join(bill_length_summary, bill_depth_summary)
+
+# update row names
+rownames(summary_table) <- c("bill_length_mm", "bill_depth_mm")
+
+#print results
+summary_table
+```
 
 **One Categorical and One Quantitative Variable**
 
 Here is an example of the output produced by the R script for one categorical and one quantitative variable. This table is organized so that the descriptive statistics of the quantitative response variable are reported based on the groups of the explanatory variable. `n` indicates the sample size, while the following columns represent the mean, standard deviation, median, and interquartile range, respectively. For example, the mean mass (g) for Adelie penguins in this sample is 3775 g. 
 
-![Sample descriptive statistics output for one categorical and one quantitative variable (species and mass (g)).](images/quantitative-categorical_stats_example.png)
+```{r, echo=FALSE, message=FALSE}
+penguins %>%
+  group_by(species) %>%
+  summarise(
+    n = n(),
+    mean = round(mean(body_mass_g, na.rm = T), 1),
+    sd = round(sd(body_mass_g, na.rm = T), 2),
+    median = round(median(body_mass_g, na.rm = T), 1),
+    iqr = round(IQR(body_mass_g, na.rm = T), 2)
+  ) %>%
+  as.data.frame()
+```
 
 Take a screenshot of these values or write them down for writing your lab report later. 
 
 ### Step 6: Performing statistical analyses {-}
 
-Similar to with the descriptive statistics, the code here should run smoothly if everything in the proceeding steps was done correctly. The type of <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Statistical-analysis">statistical analyses</a> you will perform depends on the types of variables in your experiment. Code for all possible statistical tests is included within the R scripts. **Only run the code that corresponds with the type of variables in your experiment.** Use the guidelines below to help you choose the appropriate statistical test:
+Similar to with the descriptive statistics, the code here should run smoothly if everything in the proceeding steps was done correctly. The type of <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Statistical-analysis">statistical analyses</a> you will perform depends on the types of variables in your experiment.
 
-* Both your response (dependent) and explanatory (independent) variables are **categorical**
-    * Both your response and explanatory variables have exactly 2 groups -> Use Fisher's Exact Test
-    * At least one of your response or explanatory variables has more than 2 groups -> Use Chi-Square Contingency Analysis 
-* Both your response (dependent) and explanatory (independent) variables are **quantitative** -> Use Correlation Analysis
-* Your response (dependent) variable is **quantitative** and your explanatory (independent) variable is **categorical** 
-    * Your categorical variable has exactly 2 groups -> Use Two Sample T-test
-    * Your categorical variable has more than 2 groups -> Use ANOVA
+<div class = "note">
+Code for all possible statistical tests is included within the R scripts. Only run the code that corresponds with the type of variables in your experiment. Use the guidelines below to help you choose the appropriate statistical test.
+</div>
+
+**Both response (dependent) and explanatory (independent) variables are categorical**
+
+* Both your response and explanatory variables have exactly 2 groups -> Use Fisher's Exact Test
+* At least one of your response or explanatory variables has more than 2 groups -> Use Chi-Square Contingency Analysis 
+
+**Both response (dependent) and explanatory (independent) variables are quantitative**
+
+* Use Correlation Analysis
+
+**Response (dependent) variable is quantitative and explanatory (independent) variable is categorical** 
+
+* Your categorical variable has exactly 2 groups -> Use Two Sample T-test
+* Your categorical variable has more than 2 groups -> Use ANOVA
     
-When interpreting the output from a statistical analysis for this project, focus on the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#P-value">p-value</a> provided by R. You'll learn more about the other details shown by the output in BIOL 202! Below are some examples of output for each type of statistical test. The associated p-value has a red box around it. 
+When interpreting the output from a statistical analysis for this project, focus on the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#P-value">p-value</a> provided by `R.` You'll learn more about the other details shown by the output in BIOL 202! Below are some examples of output for each type of statistical test. The associated p-value has a red box around it. 
     
 **<a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Fisher's-exact-test">Fisher's Exact Test</a>**
 
@@ -300,10 +466,12 @@ If you haven\'t already downloaded the assignment template, here it is again:
 
 To test the template, 
 
-* insert your name as the author in the YAML header
 * ensure the template `.Rmd` file is in your `report/` directory 
 * download the following image into your `figures/` directory
     * [MVD_BIOL205-Lab5_Fig-1-Boxplot_V1.png](https://osf.io/download/zuehg) (4 KB)
+* launch your project using your RProject file
+* open the template `.Rmd` file from within RStudio
+* insert your name as the author in the YAML header
 * knit the document to a PDF
 
 You should get something that looks like this after `Knitting` the `.Rmd` file
@@ -316,12 +484,14 @@ You should get something that looks like this after `Knitting` the `.Rmd` file
 
 We\'ll practice using the R script for a categorical explanatory variable and quantitative response variable. Follow these steps:
 
-* Download the R script 
+* download this `R` script and save it in your `scripts/` folder
   * [BIOL205_Script_Quantitative-Categorical.R](https://osf.io/download/46mpk)
-* Download this sample data set
+* download this sample data set and save it in your `data/` folder
   * [BIOL205_sample-data.csv](https://osf.io/download/3r76k)
-* Follow the instructions provided [earlier](https://ubco-biology.github.io/BIOL-205-Lab-Manual/using-the-rscripts.html) and run *ALL* code in the script
-  * Save the boxplot produced to your computer. You will need to upload this to the quiz on Canvas
+* launch your project using your RProject file
+* open the `R` `script from within RStudio
+* follow the instructions provided [earlier](https://ubco-biology.github.io/BIOL-205-Lab-Manual/using-the-rscripts.html) for working with the script - setting up variable names etc - and run *ALL* code in the script
+  * save the boxplot produced to your `figures/` folder. You will need to upload this to the quiz on Canvas
   * Keep the results of descriptive statistics and statistical analyses open while you complete the quiz. You will need some of these values to answer questions!
   
 ## Complete the Quiz {-}

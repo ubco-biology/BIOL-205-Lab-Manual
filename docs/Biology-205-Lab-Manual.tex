@@ -76,7 +76,7 @@
 
 \title{Biology 205 Lab Manual}
 \author{Dr.~Tristyn Hay}
-\date{2022-09-06}
+\date{2022-09-07}
 
 \begin{document}
 \maketitle
@@ -139,7 +139,7 @@ Optional material that dives deeper into a presented concept.
 \part*{Labs 1 \& 2 - BIOL 205}\label{part-labs-1-2---biol-205}}
 \addcontentsline{toc}{part}{Labs 1 \& 2 - BIOL 205}
 
-\emph{Last updated 2022-09-06}
+\emph{Last updated 2022-09-07}
 
 \hypertarget{planning-your-experiment}{%
 \chapter*{Planning Your Experiment}\label{planning-your-experiment}}
@@ -451,7 +451,7 @@ You have been hired by the Great Lakes Environmental Research Laboratory (GLERL)
 \part*{Lab 3 - BIOL 205}\label{part-lab-3---biol-205}}
 \addcontentsline{toc}{part}{Lab 3 - BIOL 205}
 
-\emph{Last updated 2022-09-06}
+\emph{Last updated 2022-09-07}
 
 \hypertarget{getting-acquainted-with-your-organism}{%
 \chapter*{Getting Acquainted with Your Organism}\label{getting-acquainted-with-your-organism}}
@@ -503,13 +503,15 @@ Complete Quiz 1: Getting Acquainted on \href{https://canvas.ubc.ca/courses/11391
 \part*{Lab 4 - BIOL 205}\label{part-lab-4---biol-205}}
 \addcontentsline{toc}{part}{Lab 4 - BIOL 205}
 
-\emph{Last updated 2022-09-06}
+\emph{Last updated 2022-09-07}
 
 \hypertarget{open-science-r-rmarkdown-tutorial}{%
 \chapter*{Open Science, R, \& RMarkdown Tutorial}\label{open-science-r-rmarkdown-tutorial}}
 \addcontentsline{toc}{chapter}{Open Science, R, \& RMarkdown Tutorial}
 
-You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and template for your Registered Report in BIOL 205. To prepare you for this, you must first complete this refresher Open Science, R, \& RMarkdown tutorial and the accompanying quiz.
+You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and a similar template for your Registered Report in BIOL 205. However, instead of using a Shiny App to visualize your data, we'll be using R Scripts with almost all the code already written for you.
+
+To prepare you for this, you must first complete this refresher Open Science, R, \& RMarkdown tutorial and the accompanying quiz.
 
 \hypertarget{overview-1}{%
 \section*{Overview}\label{overview-1}}
@@ -587,9 +589,25 @@ All the markdown syntax that you need for RMarkdown can be found in the \href{ht
 \subsection*{Directory Structure \& File Naming}\label{directory-structure-file-naming}}
 \addcontentsline{toc}{subsection}{Directory Structure \& File Naming}
 
-It is expected that you will have a root project folder for your work associated with this lab. And that at the minimum you will have a folder for your report, your data, and your figures. And that you will download this template into your \texttt{report/} directory. And that lastly, you will rename the template in accordance with the file naming conventions in the \href{https://ubco-biology.github.io/Procedures-and-Guidelines/file-naming.html}{Biology Procedures and Guidelines document}.
+It is expected that you will have a root project folder for your work associated with this lab. And that at the minimum you will have a folder for your report, your data, your figures, and your scripts. And that you will download this template into your \texttt{report/} directory. And that lastly, you will rename the template in accordance with the file naming conventions in the \href{https://ubco-biology.github.io/Procedures-and-Guidelines/file-naming.html}{Biology Procedures and Guidelines document}.
 
-This structure and hierarchy will be important when it comes time to include figures and images in your report.
+Lastly, we'll be working with an RProject file this round to help ensure our project's working directory is properly set up in \texttt{R}.
+
+It's important to load your project using the RProject file and not the RMarkdown file to ensure your working directory is properly set and that all the scripts and templates we'll be using work as intended!
+
+Review the instruction \href{https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html}{here} in the Procedures and Guidelines Document, for setting up a working directory and RProject file.
+
+Your project directory structure should look something like this once you've created your RProject file and you've downloaded a copy of the RMarkdown file:
+
+\begin{verbatim}
+├── BIOL205_RP/
+│   ├── BIOL205_report.RProj
+│   ├── data/
+│   ├── figures/
+│   ├── report/
+│   │   ├── 20220101_Lab03_205_Assignment_V1.Rmd
+│   ├── scripts/
+\end{verbatim}
 
 \hypertarget{yaml}{%
 \subsection*{YAML}\label{yaml}}
@@ -639,23 +657,20 @@ The template is then pre-populated with first level headers for each section you
 \subsection*{Images \& Graphs}\label{images-graphs}}
 \addcontentsline{toc}{subsection}{Images \& Graphs}
 
-There is one sample graph referenced in the template. If you'd like to download this image and place it in your \texttt{figures/} directory to test knitting your template, the file can be downloaded \href{https://osf.io/download/nrzdu}{at this link}. Note how it references the figure to be included \texttt{../figures/image-name.png}. The \texttt{../} means 'go one level up in the directory' which, if you have your project set up in the following way and your \texttt{.Rmd} file is in your \texttt{report/} directory it means 'look in the \texttt{root/} directory for a folder called \texttt{figures/}.
+There is one sample graph referenced in the template. If you'd like to download this image and place it in your \texttt{figures/} directory to test knitting your template, the file can be downloaded \href{https://osf.io/download/nrzdu}{at this link}. And your project should look like this:
 
 \begin{verbatim}
 ├── BIOL205_RP/
-│   ├── report/
-│   │   ├──20220101_Lab03_205_Assignment_V1.Rmd
+│   ├── BIOL205_report.RProj
 │   ├── data/
-│   │   ├──figures/MVD_BIOL125-Lab5_Fig-1-Boxplot_V1.png
+│   ├── figures/
+│   │   ├── MVD_BIOL125-Lab5_Fig-1-Boxplot_V1.png
+│   ├── report/
+│   │   ├── 20220101_Lab03_205_Assignment_V1.Rmd
+│   ├── scripts/
 \end{verbatim}
 
-If you make a mistake in setting this path, you'll get the following error in RStudio
-
-\begin{verbatim}
-(No image at path ...)
-\end{verbatim}
-
-You'll also note the following directly after the image path: \texttt{\{width=50\%\}}. This reduces the image size by 50\%.
+You might note the following directly after the image path: \texttt{\{width=50\%\}}. This reduces the image size by 50\%.
 
 As noted in the template, you do not need to write \texttt{Figure\ 1:} before your figures; this small piece of text is handled during the conversion from RMarkdown to pdf. Any other information that you would like to include in the caption should go in the \texttt{{[}{]}} before the \texttt{()} that contain the path to the image.
 
@@ -693,9 +708,11 @@ Click this button or select the drop down arrow and select \texttt{Knit\ to\ pdf
 \section*{Using the RScripts}\label{using-the-rscripts}}
 \addcontentsline{toc}{section}{Using the RScripts}
 
-R scripts are text files containing the commands (aka code) and comments used to perform computations. For your research project, R scripts have been pre-written for you! You won't need to learn how to write code in R for this course; that comes later in BIOL 202.
+Before we can knit the RMarkdown document, we need to do our analysis and generate some visualizations! We'll do this with a few \texttt{R} scripts.
 
-There is a separate R script for each type of variable combination you might have for your project. Download the R script that corresponds to the types of variables you have in your experiment.
+R scripts are text files containing the commands (aka code) and comments used to perform computations. For your research project, \texttt{R} scripts have been pre-written for you! You won't need to learn how to write code in \texttt{R} for this course; that comes later in BIOL 202.
+
+There is a separate \texttt{R} script for each type of variable combination you might have for your project. Download the R script that corresponds to the types of variables you have in your experiment.
 
 \begin{itemize}
 \tightlist
@@ -721,25 +738,68 @@ There is a separate R script for each type of variable combination you might hav
   \begin{itemize}
   \tightlist
   \item
-    \href{https://osf.io/download/46mpk}{BIOL205\_Script\_Quantitative-Categorical.R}
+    \href{https://osf.io/download/2hsk5}{BIOL205\_Script\_Quantitative-Categorical.R}
   \end{itemize}
 \end{itemize}
 
-While there are instructions within the R scripts themselves, the following sections describe how to use the R scripts in more detail. Be sure to read \textbf{everything here and in the R scripts!} Alongside each line of code in the script is a comment proceeded with a hashtag (\#). The comments are either descriptions of what the code is doing or instructions describing things you need to do.
+While there are instructions within the \texttt{R} scripts themselves, the following sections describe how to use the R scripts in more detail. Be sure to read \textbf{everything here and in the R scripts!}
+
+Alongside each line of code in the script is a comment proceeded with a hashtag (\#). The comments are either descriptions of what the code is doing or instructions describing things you need to do.
+
+You must correctly set up your project and working directory using the instructions below for this to work. You must also not simply open your \texttt{R} script, but instead launch your RProject file and then from within R Studio load the script from the built in file manager.
+
+The general workflow here is:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Launch RStudio using your RPoject file
+\item
+  Load your data
+\item
+  Provide the script with your variable names and the labels you'd like to use on your graphs
+\item
+  Generate a graph and save it to your \texttt{figures/} directory
+\item
+  Run your descriptive stats and copy the relevant information to your RMarkdown file
+\item
+  Run you statistical analyses and copy the relevant information to your RMarkdown file
+\end{enumerate}
+
+If you quite RStudio, you will need to re-run steps 1-3 to do any of steps 4-6.
 
 \hypertarget{step-1-set-your-working-directory}{%
 \subsection*{Step 1: Set your working directory}\label{step-1-set-your-working-directory}}
 \addcontentsline{toc}{subsection}{Step 1: Set your working directory}
 
-Make sure your working directory is set according to the instructions \href{https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html}{here} in the Procedures and Guidelines Document.
+If you haven't already, make sure your working directory is set according to the instructions \href{https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html}{here} in the Procedures and Guidelines Document.
+
+Your directory should look something like this when you're done, that is, after downloading at least one script, ensuring your data is in the project's data folder, you've created an RMarkdown file, you've generated an RPoject file and put everything in its respective directory:
+
+\begin{verbatim}
+├── BIOL205_RP/
+│   ├── BIOL205_report.RProj
+│   ├── data/
+│   │   ├── 20221023_sample-data.csv
+│   ├── figures/
+│   ├── report/
+│   │   ├── 20220101_Lab03_205_Assignment_V1.Rmd
+│   ├── scripts/
+│   │   ├── BIOL205_Script_Quantitative-Categorical.R
+\end{verbatim}
 
 \hypertarget{step-2-installing-loading-required-packages}{%
 \subsection*{Step 2: Installing \& Loading Required Packages}\label{step-2-installing-loading-required-packages}}
 \addcontentsline{toc}{subsection}{Step 2: Installing \& Loading Required Packages}
 
-Packages in R contain a set of functions, code, and data that you can use for your analysis. Before you can use the functions within a package, the package must be installed in R. Once a package is installed on your computer you won't need to re-install it every time you use R. However, if you're on a lab computer, since the computers are re-set at the end of each day you may need to re-install packages at each log in.
+We'll be using a couple of features that are not part of the basic install of \texttt{R} in our scripts. We add additional features in \texttt{R} with packages.
 
-To install packages noted in the R script, copy the installation lines of code without the preceeding hashtag (\#) ie. remove the \texttt{\#} from
+Packages in \texttt{R} contain a set of functions, code, and data that you can use for your analysis. Before you can use the functions within a package, the package must be both installed in \texttt{R}, which we don once, and loaded into \texttt{R} which we do each time we start the application.
+
+While packages only need to installed once, if you're on a lab computer, since the computers are re-set at the end of each day you may need to re-install packages at each log in.
+
+To install packages noted in the \texttt{R} script, copy the installation lines of code without the preceding hashtag (\#) ie. remove the \texttt{\#} from
 
 \begin{verbatim}
 # install.packages("ggplot2")
@@ -751,23 +811,45 @@ so it looks like this
 install.packages("ggplot2")
 \end{verbatim}
 
-and copy it into the R console (lower left pane of RStudio). When you push enter on your keyboard the package will install. Be sure to do this for all of the required packages noted in the R script.
+and copy it into the \texttt{R} console (lower left pane of RStudio). When you push enter on your keyboard the package will install. Be sure to do this for all of the required packages noted in the \texttt{R} script; these are in the first few lines of each script.
 
-Once packages are installed, they must be loaded to your current session in R. You will have to do this each time you re-start R. To load packages use the library function by running the lines of code pre-written into your R script. For example, run \texttt{library(ggplot2)} by clicking the `Run' button at the top right of the working document.
+Once packages are installed, they must be loaded to your current session. You will have to do this each time you re-start \texttt{R.} To load packages use the library function by running the lines of code pre-written into your R script. For example, run \texttt{library(ggplot2)} by placing your cursor in that line of code and clicking the `Run' button at the top right of the working document. To load all packages at the same time, use your cursor to highlight all of the sections of code you want to run (lines 35-38 in the screenshot below), and then click `run'.
 
 \includegraphics{images/run_button.png}
+
+Running code can be done several ways in RStudio. You can go through line by line, putting you cursor in the line you wish to run, and executing each independently of the next. You can run a section of code by highlighting the `chunk' you want to run. Or you can run all code above or below a certain point, designated by where your cursor is, using the options under the drop down menu adjacent to the `run' icon. Since these scripts have optional sections, you likely won't be using this third option.
+
+To quickly run a line of code, place your cursor on the line and use \texttt{ctrl\ +\ Enter} or \texttt{Command\ +\ Enter} if you're on a Mac.
 
 \hypertarget{step-3-uploading-your-data}{%
 \subsection*{Step 3: Uploading your data}\label{step-3-uploading-your-data}}
 \addcontentsline{toc}{subsection}{Step 3: Uploading your data}
 
-Replace `insert-data-file-name-here.csv' with the file name that your data is saved as to your computer. If your data file contains a header row, be sure that \texttt{my\_data\ \textless{}-\ read.csv(file\ =\ my\_file,\ header\ =\ TRUE)} shows \texttt{header\ =\ TRUE}. If you have no header row, simply change the code to \texttt{header\ =\ FALSE}.
+Replace the content within the quotes that read `insert-data-file-name-here.csv' with the file name that your data is saved as to your computer. This will be in between lines 45 and 50 depending on the script you're using.
+
+If my data file was called \texttt{20221023\_sample-data.csv}, I'd change the following line
+
+\begin{verbatim}
+my_file <- paste0(dir,"insert-data-file-name-here.csv") # assign file name to a variable
+\end{verbatim}
+
+to
+
+\begin{verbatim}
+my_file <- paste0(dir,"20221023_sample-data.csv") # assign file name to a variable
+\end{verbatim}
+
+If your data file contains a header row, be sure that the following line, which reads
+
+\texttt{my\_data\ \textless{}-\ read.csv(file\ =\ my\_file,\ header\ =\ TRUE)}
+
+shows \texttt{header\ =\ TRUE}. If you have no header row, simply change the code to \texttt{header\ =\ FALSE}.
 
 \hypertarget{step-4-visualizing-your-data}{%
 \subsection*{Step 4: Visualizing your data}\label{step-4-visualizing-your-data}}
 \addcontentsline{toc}{subsection}{Step 4: Visualizing your data}
 
-You'll need to tell R some information before you can create graphs. Specifically, you need to assign the names of your variables, axes labels, and figure caption. You can do this by
+You'll need to tell \texttt{R} some information before you can create graphs or do analyses. Specifically, you need to assign the names of your variables and axis labels. You can do this by
 
 \begin{itemize}
 \tightlist
@@ -775,13 +857,31 @@ You'll need to tell R some information before you can create graphs. Specificall
   Replacing ``X variable name'' and ``Y variable name'' with the names of your x and y variables
 \item
   Replacing ``X label name'' and ``Y label name'' with your desired x and y axes labels
-\item
-  Replacing ``My Caption'' with your desired figure caption
 \end{itemize}
 
-R is case sensitive. When providing your variable names, make sure they match exactly the variables used in your Excel or csv file!
+So, we update the following lines
 
-In the R script for a categorical explanatory and a categorical response variable, code for both a boxplot and a stripchart is included. Recall that according to the \href{https://ubco-biology.github.io/Procedures-and-Guidelines/figures.html}{Biology Procedures and Guidelines document}, you should use a boxplot if the groups of your categorical variable have more than 20 data points. Alternatively, you should use a stripchart if each group contains less than 20 data points. Be sure to only produce one desired figure.
+\begin{verbatim}
+x_var <- "X variable name" # Replace with the name of your x variable
+x_label <- "X label name" # Replace with your desired x axis label
+y_var <- "Y variable name" # Replace with the name of your x variable
+y_label <- "Y label name" # Replace with your desired y axis label
+\end{verbatim}
+
+with something like
+
+\begin{verbatim}
+x_var <- "ht" # Replace with the name of your x variable
+x_label <- "Height (in cm)" # Replace with your desired x axis label
+y_var <- "day" # Replace with the name of your x variable
+y_label <- "Day" # Replace with your desired y axis label
+\end{verbatim}
+
+\texttt{R} is case sensitive. When providing your variable names, make sure they match exactly the variables used in your csv file!
+
+In the \texttt{R} script for a categorical explanatory and a categorical response variable, code for both a boxplot and a stripchart is included.
+
+Recall that according to the \href{https://ubco-biology.github.io/Procedures-and-Guidelines/figures.html}{Biology Procedures and Guidelines document}, you should use a boxplot if the groups of your categorical variable have more than 20 data points. Alternatively, you should use a stripchart if each group contains less than 20 data points. Be sure to only produce one desired figure.
 
 In some of the R scripts there are some additional pieces of code that you don't need to worry about for now; you'll learn more about these in BIOL 202!
 
@@ -803,23 +903,34 @@ The code here should run smoothly if everything in the proceeding steps was done
 
 Here is an example of the descriptive statistics output produced by the R script for two categorical variables. The explanatory (independent) variable and its associated groups appear in the first column, while the response (dependent) variable appears at the top. In this case the explanatory variable was species and the response variable was sex. The numbers provided in the table describe the frequency for each category. For example, in this sample there was 1 female Adelie penguin and 0 male Chinstrap penguins.
 
-\includegraphics{images/categorical-categorical_stats_example.png}
+\begin{verbatim}
+##            sex
+## species     female male
+##   Adelie        73   73
+##   Chinstrap     34   34
+##   Gentoo        58   61
+\end{verbatim}
 
 \textbf{Two Quantitative Variables}
 
 Here is an example of the output produced by the R script for two quantitative variables. The explanatory (independent) variable appears in the first row, while the response (dependent) variable appears in the second row. \texttt{n} indicates the sample size, while the following columns represent the mean, standard deviation, median, and interquartile range, respectively.
 
-\includegraphics{images/quantitative_quantitative_stats_example.png}
+\begin{verbatim}
+##                  n Mean   SD Median  iqr
+## bill_length_mm 344 43.9 5.46   44.5 9.27
+## bill_depth_mm  344 17.2 1.97   17.3 3.10
+\end{verbatim}
 
 \textbf{One Categorical and One Quantitative Variable}
 
 Here is an example of the output produced by the R script for one categorical and one quantitative variable. This table is organized so that the descriptive statistics of the quantitative response variable are reported based on the groups of the explanatory variable. \texttt{n} indicates the sample size, while the following columns represent the mean, standard deviation, median, and interquartile range, respectively. For example, the mean mass (g) for Adelie penguins in this sample is 3775 g.
 
-\begin{figure}
-\centering
-\includegraphics{images/quantitative-categorical_stats_example.png}
-\caption{Sample descriptive statistics output for one categorical and one quantitative variable (species and mass (g)).}
-\end{figure}
+\begin{verbatim}
+##     species   n   Mean     SD Median   iqr
+## 1    Adelie 152 3700.7 458.57   3700 650.0
+## 2 Chinstrap  68 3733.1 384.34   3700 462.5
+## 3    Gentoo 124 5076.0 504.12   5000 800.0
+\end{verbatim}
 
 Take a screenshot of these values or write them down for writing your lab report later.
 
@@ -1059,7 +1170,7 @@ As you work on the draft of your research report, be sure to consult the Final R
 \part*{Lab 5 - BIOL 205}\label{part-lab-5---biol-205}}
 \addcontentsline{toc}{part}{Lab 5 - BIOL 205}
 
-\emph{Last updated 2022-09-06}
+\emph{Last updated 2022-09-07}
 
 \hypertarget{data-collection-round-1}{%
 \chapter*{Data Collection Round 1}\label{data-collection-round-1}}
@@ -1077,7 +1188,7 @@ Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 6 - BIOL 205}\label{part-lab-6---biol-205}}
 \addcontentsline{toc}{part}{Lab 6 - BIOL 205}
 
-\emph{Last updated 2022-09-06}
+\emph{Last updated 2022-09-07}
 
 \hypertarget{data-collection-round-2}{%
 \chapter*{Data Collection Round 2}\label{data-collection-round-2}}
@@ -1653,7 +1764,7 @@ Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 7 - BIOL 205}\label{part-lab-7---biol-205}}
 \addcontentsline{toc}{part}{Lab 7 - BIOL 205}
 
-\emph{Last updated 2022-09-06}
+\emph{Last updated 2022-09-07}
 
 \hypertarget{data-collection-round-3}{%
 \chapter*{Data Collection Round 3}\label{data-collection-round-3}}
@@ -1671,7 +1782,7 @@ Complete Quiz 4: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 8 - BIOL 205}\label{part-lab-8---biol-205}}
 \addcontentsline{toc}{part}{Lab 8 - BIOL 205}
 
-\emph{Last updated 2022-09-06}
+\emph{Last updated 2022-09-07}
 
 \hypertarget{data-collection-round-4-cleanup}{%
 \chapter*{Data Collection Round 4 \& Cleanup}\label{data-collection-round-4-cleanup}}
@@ -1689,7 +1800,7 @@ Complete Quiz 5: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 9 - BIOL 205}\label{part-lab-9---biol-205}}
 \addcontentsline{toc}{part}{Lab 9 - BIOL 205}
 
-\emph{Last updated 2022-09-06}
+\emph{Last updated 2022-09-07}
 
 \hypertarget{data-analysis}{%
 \chapter*{Data Analysis}\label{data-analysis}}
@@ -1735,7 +1846,7 @@ Below are a few videos which can help you get acquainted with running statistica
 \part*{Lab 10 - BIOL 205}\label{part-lab-10---biol-205}}
 \addcontentsline{toc}{part}{Lab 10 - BIOL 205}
 
-\emph{Last updated 2022-09-06}
+\emph{Last updated 2022-09-07}
 
 \hypertarget{assignment-5-poster-presentations}{%
 \chapter*{Assignment 5: Poster Presentations}\label{assignment-5-poster-presentations}}
