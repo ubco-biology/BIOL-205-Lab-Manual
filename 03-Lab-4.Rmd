@@ -263,7 +263,9 @@ my_file <- paste0(dir,"20221023_sample-data.csv") # assign file name to a variab
 
 If your data file contains a header row, be sure that the following line, which reads
 
-```my_data <- read.csv(file = my_file, header = TRUE)```
+```
+my_data <- read.csv(file = my_file, header = TRUE)
+```
 
 shows `header = TRUE`. If you have no header row, simply change the code to `header = FALSE`. 
     
@@ -435,7 +437,7 @@ chisq.results
 
 **<a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Pearson-correlation">Correlation Analysis</a>**
 
-`Penguins` data set with `bill_length_mm` and `bill_depth_mm` variables - the p-value is farily evident, labeled p.value:
+`Penguins` data set with `bill_length_mm` and `bill_depth_mm` variables - the p-value is fairly evident, labeled p.value:
 
 ```{r, echo=FALSE, message=FALSE}
 library(broom)
@@ -512,9 +514,9 @@ To test the template,
 * insert your name as the author in the YAML header
 * knit the document to a PDF
 
-You should get something that looks like this after `Knitting` the `.Rmd` file
+You should get something that looks like this after `Knitting` the `.Rmd` file:
 
-* [20220824_Lab05_205_Assignment_V1.pdf](https://osf.io/download/3k8ve) (180 KB)
+* [20220824_Lab05_125_Assignment_V1.pdf](https://osf.io/download/3k8ve) (180 KB)
 
 **Your knitted document should show your name under the title!** Take a screenshot of the first page of the knitted assignment template. You'll need to upload this screenshot to the quiz on Canvas. 
 
@@ -540,7 +542,7 @@ Now you\'re ready to start the quiz. Complete the Quiz titled Open Science, R, &
 
 You will use the following template for your Registered Report:
 
-[20220824_Lab03_205_Assignment_V1.Rmd]() (3 KB)
+[20220824_Lab03_205_Assignment_V1.Rmd](https://osf.io/download/g5zxk) (3 KB)
 
 <div class="note">
 See [Canvas](https://canvas.ubc.ca) for assignment due dates.

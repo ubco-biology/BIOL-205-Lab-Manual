@@ -76,7 +76,7 @@
 
 \title{Biology 205 Lab Manual}
 \author{Dr.~Tristyn Hay}
-\date{2022-09-07}
+\date{2022-09-13}
 
 \begin{document}
 \maketitle
@@ -139,7 +139,7 @@ Optional material that dives deeper into a presented concept.
 \part*{Labs 1 \& 2 - BIOL 205}\label{part-labs-1-2---biol-205}}
 \addcontentsline{toc}{part}{Labs 1 \& 2 - BIOL 205}
 
-\emph{Last updated 2022-09-07}
+\emph{Last updated 2022-09-13}
 
 \hypertarget{planning-your-experiment}{%
 \chapter*{Planning Your Experiment}\label{planning-your-experiment}}
@@ -451,7 +451,7 @@ You have been hired by the Great Lakes Environmental Research Laboratory (GLERL)
 \part*{Lab 3 - BIOL 205}\label{part-lab-3---biol-205}}
 \addcontentsline{toc}{part}{Lab 3 - BIOL 205}
 
-\emph{Last updated 2022-09-07}
+\emph{Last updated 2022-09-13}
 
 \hypertarget{getting-acquainted-with-your-organism}{%
 \chapter*{Getting Acquainted with Your Organism}\label{getting-acquainted-with-your-organism}}
@@ -503,7 +503,7 @@ Complete Quiz 1: Getting Acquainted on \href{https://canvas.ubc.ca/courses/11391
 \part*{Lab 4 - BIOL 205}\label{part-lab-4---biol-205}}
 \addcontentsline{toc}{part}{Lab 4 - BIOL 205}
 
-\emph{Last updated 2022-09-07}
+\emph{Last updated 2022-09-13}
 
 \hypertarget{open-science-r-rmarkdown-tutorial}{%
 \chapter*{Open Science, R, \& RMarkdown Tutorial}\label{open-science-r-rmarkdown-tutorial}}
@@ -511,7 +511,7 @@ Complete Quiz 1: Getting Acquainted on \href{https://canvas.ubc.ca/courses/11391
 
 You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and a similar template for your Registered Report in BIOL 205. However, instead of using a Shiny App to visualize your data, we'll be using R Scripts with almost all the code already written for you.
 
-To prepare you for this, you must first complete this refresher Open Science, R, \& RMarkdown tutorial and the accompanying quiz.
+To prepare you for this, you must first review some refresher Open Science, R, \& RMarkdown tutorials, read and complete some short activities with some new material on working with the provided \texttt{R} scripts, and then complete the accompanying quiz in Canvas.
 
 \hypertarget{overview-1}{%
 \section*{Overview}\label{overview-1}}
@@ -708,7 +708,7 @@ Click this button or select the drop down arrow and select \texttt{Knit\ to\ pdf
 \section*{Using the RScripts}\label{using-the-rscripts}}
 \addcontentsline{toc}{section}{Using the RScripts}
 
-Before we can knit the RMarkdown document, we need to do our analysis and generate some visualizations! We'll do this with a few \texttt{R} scripts.
+Before we can knit the RMarkdown document with our own figures, we need to do our analysis and generate some visualizations! We'll do this with a few \texttt{R} scripts.
 
 R scripts are text files containing the commands (aka code) and comments used to perform computations. For your research project, \texttt{R} scripts have been pre-written for you! You won't need to learn how to write code in \texttt{R} for this course; that comes later in BIOL 202.
 
@@ -767,7 +767,7 @@ The general workflow here is:
   Run you statistical analyses and copy the relevant information to your RMarkdown file
 \end{enumerate}
 
-If you quite RStudio, you will need to re-run steps 1-3 to do any of steps 4-6.
+If you quite RStudio, you will need to re-run steps 1-3 to do any of steps 4-6 again.
 
 \hypertarget{step-1-set-your-working-directory}{%
 \subsection*{Step 1: Set your working directory}\label{step-1-set-your-working-directory}}
@@ -775,7 +775,7 @@ If you quite RStudio, you will need to re-run steps 1-3 to do any of steps 4-6.
 
 If you haven't already, make sure your working directory is set according to the instructions \href{https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html}{here} in the Procedures and Guidelines Document.
 
-Your directory should look something like this when you're done, that is, after downloading at least one script, ensuring your data is in the project's data folder, you've created an RMarkdown file, you've generated an RPoject file and put everything in its respective directory:
+Your directory should look something like this when you're done, that is, after downloading at least one script, ensuring your data is in the project's data folder, you've created an RMarkdown file, you've generated an RPoject file and put everything in its respective directory. Don't worry if you don't have all these things ready yet, just make sure that when you're ready to run your scripts with your data, this is the model you're working with.
 
 \begin{verbatim}
 ├── BIOL205_RP/
@@ -795,9 +795,9 @@ Your directory should look something like this when you're done, that is, after 
 
 We'll be using a couple of features that are not part of the basic install of \texttt{R} in our scripts. We add additional features in \texttt{R} with packages.
 
-Packages in \texttt{R} contain a set of functions, code, and data that you can use for your analysis. Before you can use the functions within a package, the package must be both installed in \texttt{R}, which we don once, and loaded into \texttt{R} which we do each time we start the application.
+Packages in \texttt{R} contain a set of functions, code, and data that you can use for your analysis. Before you can use the functions within a package, the package must be both installed in \texttt{R}, which we do once, and loaded into \texttt{R}, which we do each time we start the application.
 
-While packages only need to installed once, if you're on a lab computer, since the computers are re-set at the end of each day you may need to re-install packages at each log in.
+While packages only need to be installed once, if you're on a lab computer, since the computers are re-set at the end of each day you may need to re-install packages at each log in.
 
 To install packages noted in the \texttt{R} script, copy the installation lines of code without the preceding hashtag (\#) ie. remove the \texttt{\#} from
 
@@ -811,13 +811,15 @@ so it looks like this
 install.packages("ggplot2")
 \end{verbatim}
 
-and copy it into the \texttt{R} console (lower left pane of RStudio). When you push enter on your keyboard the package will install. Be sure to do this for all of the required packages noted in the \texttt{R} script; these are in the first few lines of each script.
+and copy it into the \texttt{R} console (lower left pane of RStudio). When you hit enter on your keyboard the package will install. Be sure to do this for all of the required packages noted in the \texttt{R} script; these are in the first few lines of each script.
 
-Once packages are installed, they must be loaded to your current session. You will have to do this each time you re-start \texttt{R.} To load packages use the library function by running the lines of code pre-written into your R script. For example, run \texttt{library(ggplot2)} by placing your cursor in that line of code and clicking the `Run' button at the top right of the working document. To load all packages at the same time, use your cursor to highlight all of the sections of code you want to run (lines 35-38 in the screenshot below), and then click `run'.
+Once packages are installed, they must be loaded to your current session. You will have to do this each time you re-start \texttt{R.} To load packages use the \texttt{library()} function by running the lines of code pre-written into your R script. For example, run \texttt{library(ggplot2)} by placing your cursor in that line of code and clicking the `Run' button at the top right of the working document. To load all packages at the same time, use your cursor to highlight all of the sections of code you want to run (lines 35-38 in the screenshot below), and then click `run'.
 
 \includegraphics{images/run_button.png}
 
-Running code can be done several ways in RStudio. You can go through line by line, putting you cursor in the line you wish to run, and executing each independently of the next. You can run a section of code by highlighting the `chunk' you want to run. Or you can run all code above or below a certain point, designated by where your cursor is, using the options under the drop down menu adjacent to the `run' icon. Since these scripts have optional sections, you likely won't be using this third option.
+Running code can be done several ways in RStudio. You can go through line by line, putting you cursor in the line you wish to run, and executing each independently of the next. Or you can run a section of code by highlighting the `chunk' you want to run.
+
+The scripts are broken into `steps'. It's probably best to highlight whole sections of each step and then running that chunk. But if you'd like to run line by line to get a better sense of what's happening, go for it!
 
 To quickly run a line of code, place your cursor on the line and use \texttt{ctrl\ +\ Enter} or \texttt{Command\ +\ Enter} if you're on a Mac.
 
@@ -841,7 +843,9 @@ my_file <- paste0(dir,"20221023_sample-data.csv") # assign file name to a variab
 
 If your data file contains a header row, be sure that the following line, which reads
 
-\texttt{my\_data\ \textless{}-\ read.csv(file\ =\ my\_file,\ header\ =\ TRUE)}
+\begin{verbatim}
+my_data <- read.csv(file = my_file, header = TRUE)
+\end{verbatim}
 
 shows \texttt{header\ =\ TRUE}. If you have no header row, simply change the code to \texttt{header\ =\ FALSE}.
 
@@ -916,9 +920,9 @@ Here is an example of the descriptive statistics output produced by the R script
 Here is an example of the output produced by the R script for two quantitative variables. The explanatory (independent) variable appears in the first row, while the response (dependent) variable appears in the second row. \texttt{n} indicates the sample size, while the following columns represent the mean, standard deviation, median, and interquartile range, respectively.
 
 \begin{verbatim}
-##                  n Mean   SD Median  iqr
-## bill_length_mm 344 43.9 5.46   44.5 9.27
-## bill_depth_mm  344 17.2 1.97   17.3 3.10
+##                  n mean   sd median  iqr
+## bill_length_mm 344 43.9 5.46     NA 9.27
+## bill_depth_mm  344 17.2 1.97     NA 3.10
 \end{verbatim}
 
 \textbf{One Categorical and One Quantitative Variable}
@@ -926,7 +930,7 @@ Here is an example of the output produced by the R script for two quantitative v
 Here is an example of the output produced by the R script for one categorical and one quantitative variable. This table is organized so that the descriptive statistics of the quantitative response variable are reported based on the groups of the explanatory variable. \texttt{n} indicates the sample size, while the following columns represent the mean, standard deviation, median, and interquartile range, respectively. For example, the mean mass (g) for Adelie penguins in this sample is 3775 g.
 
 \begin{verbatim}
-##     species   n   Mean     SD Median   iqr
+##     species   n   mean     sd median   iqr
 ## 1    Adelie 152 3700.7 458.57   3700 650.0
 ## 2 Chinstrap  68 3733.1 384.34   3700 462.5
 ## 3    Gentoo 124 5076.0 504.12   5000 800.0
@@ -938,55 +942,109 @@ Take a screenshot of these values or write them down for writing your lab report
 \subsection*{Step 6: Performing statistical analyses}\label{step-6-performing-statistical-analyses}}
 \addcontentsline{toc}{subsection}{Step 6: Performing statistical analyses}
 
-Similar to with the descriptive statistics, the code here should run smoothly if everything in the proceeding steps was done correctly. The type of statistical analyses you will perform depends on the types of variables in your experiment. Code for all possible statistical tests is included within the R scripts. \textbf{Only run the code that corresponds with the type of variables in your experiment.} Use the guidelines below to help you choose the appropriate statistical test:
+Similar to with the descriptive statistics, the code here should run smoothly if everything in the proceeding steps was done correctly. The type of statistical analyses you will perform depends on the types of variables in your experiment.
+
+Code for all possible statistical tests is included within the R scripts. Only run the code that corresponds with the type of variables in your experiment. Use the guidelines below to help you choose the appropriate statistical test.
+
+\textbf{Both response (dependent) and explanatory (independent) variables are categorical}
 
 \begin{itemize}
 \tightlist
 \item
-  Both your response (dependent) and explanatory (independent) variables are \textbf{categorical}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Both your response and explanatory variables have exactly 2 groups -\textgreater{} Use Fisher's Exact Test
-  \item
-    At least one of your response or explanatory variables has more than 2 groups -\textgreater{} Use Chi-Square Contingency Analysis
-  \end{itemize}
+  Both your response and explanatory variables have exactly 2 groups -\textgreater{} Use Fisher's Exact Test
 \item
-  Both your response (dependent) and explanatory (independent) variables are \textbf{quantitative} -\textgreater{} Use Correlation Analysis
-\item
-  Your response (dependent) variable is \textbf{quantitative} and your explanatory (independent) variable is \textbf{categorical}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Your categorical variable has exactly 2 groups -\textgreater{} Use Two Sample T-test
-  \item
-    Your categorical variable has more than 2 groups -\textgreater{} Use ANOVA
-  \end{itemize}
+  At least one of your response or explanatory variables has more than 2 groups -\textgreater{} Use Chi-Square Contingency Analysis
 \end{itemize}
 
-When interpreting the output from a statistical analysis for this project, focus on the p-value provided by R. You'll learn more about the other details shown by the output in BIOL 202! Below are some examples of output for each type of statistical test. The associated p-value has a red box around it.
+\textbf{Both response (dependent) and explanatory (independent) variables are quantitative}
+
+\begin{itemize}
+\tightlist
+\item
+  Use Correlation Analysis
+\end{itemize}
+
+\textbf{Response (dependent) variable is quantitative and explanatory (independent) variable is categorical}
+
+\begin{itemize}
+\tightlist
+\item
+  Your categorical variable has exactly 2 groups -\textgreater{} Use Two Sample T-test
+\item
+  Your categorical variable has more than 2 groups -\textgreater{} Use ANOVA
+\end{itemize}
+
+When interpreting the output from a statistical analysis for this project, focus on the p-value provided by \texttt{R.} You'll learn more about the other details shown by the output in BIOL 202! Below are some examples of output for each type of statistical test.
 
 \textbf{Fisher's Exact Test}
 
-\includegraphics{images/fishers_example.png}
+\texttt{Penguins} data set with \texttt{sex} and \texttt{species} variables - the p-value is evident:
+
+\begin{verbatim}
+## 
+##  Fisher's Exact Test for Count Data
+## 
+## data:  fisher.table
+## p-value = 0.979
+## alternative hypothesis: two.sided
+\end{verbatim}
 
 \textbf{Chi-Square Contingency Analysis}
 
-\includegraphics{images/chi-square_example.png}
+\texttt{Penguins} data set with \texttt{sex} and \texttt{species} variables - the p-value is evident:
+
+\begin{verbatim}
+## 
+##  Pearson's Chi-squared test
+## 
+## data:  chi.table
+## X-squared = 0.048607, df = 2, p-value = 0.976
+\end{verbatim}
 
 \textbf{Correlation Analysis}
 
-\includegraphics{images/correlation_example.png}
+\texttt{Penguins} data set with \texttt{bill\_length\_mm} and \texttt{bill\_depth\_mm} variables - the p-value is fairly evident, labeled p.value:
+
+\begin{verbatim}
+## # A tibble: 1 x 8
+##   estimate statistic   p.value parameter conf.low conf.high method       alter~1
+##      <dbl>     <dbl>     <dbl>     <int>    <dbl>     <dbl> <chr>        <chr>  
+## 1   -0.235     -4.46 0.0000112       340   -0.333    -0.132 Pearson's p~ two.si~
+## # ... with abbreviated variable name 1: alternative
+\end{verbatim}
 
 \textbf{Two-Sample T-test}
 
-\includegraphics{images/t-test_example.png}
+\texttt{Penguins} data set with \texttt{species} - filtered to Chinstrap and Adelie - and \texttt{body\_mass\_g} variables - the p-value is evident:
+
+\begin{verbatim}
+## 
+##  Two Sample t-test
+## 
+## data:  body_mass_g by species
+## t = -0.50809, df = 217, p-value = 0.6119
+## alternative hypothesis: true difference in means between group Adelie and group Chinstrap is not equal to 0
+## 95 percent confidence interval:
+##  -158.21193   93.35996
+## sample estimates:
+##    mean in group Adelie mean in group Chinstrap 
+##                3700.662                3733.088
+\end{verbatim}
 
 \textbf{ANOVA}
 
-\includegraphics{images/anova_example.png}
+\texttt{Penguins} data set with \texttt{species} and \texttt{body\_mass\_g} variables - the p-value is under the header Pr(\textgreater F):
+
+\begin{verbatim}
+## Analysis of Variance Table
+## 
+## Response: body_mass_g
+##            Df    Sum Sq  Mean Sq F value    Pr(>F)    
+## species     2 146864214 73432107  343.63 < 2.2e-16 ***
+## Residuals 339  72443483   213698                      
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+\end{verbatim}
 
 If you would like to have the code directly embedded within your RMarkdown report. Feel free to use the template below that corresponds with the types of variables in your research project. All of the code within these templates is the same as those described above but there are no instructions embedded in these templates.
 
@@ -1051,8 +1109,6 @@ To test the template,
 \begin{itemize}
 \tightlist
 \item
-  insert your name as the author in the YAML header
-\item
   ensure the template \texttt{.Rmd} file is in your \texttt{report/} directory
 \item
   download the following image into your \texttt{figures/} directory
@@ -1063,15 +1119,21 @@ To test the template,
     \href{https://osf.io/download/zuehg}{MVD\_BIOL205-Lab5\_Fig-1-Boxplot\_V1.png} (4 KB)
   \end{itemize}
 \item
+  launch your project using your RProject file
+\item
+  open the template \texttt{.Rmd} file from within RStudio
+\item
+  insert your name as the author in the YAML header
+\item
   knit the document to a PDF
 \end{itemize}
 
-You should get something that looks like this after \texttt{Knitting} the \texttt{.Rmd} file
+You should get something that looks like this after \texttt{Knitting} the \texttt{.Rmd} file:
 
 \begin{itemize}
 \tightlist
 \item
-  \href{https://osf.io/download/3k8ve}{20220824\_Lab05\_205\_Assignment\_V1.pdf} (180 KB)
+  \href{https://osf.io/download/3k8ve}{20220824\_Lab05\_125\_Assignment\_V1.pdf} (180 KB)
 \end{itemize}
 
 \textbf{Your knitted document should show your name under the title!} Take a screenshot of the first page of the knitted assignment template. You'll need to upload this screenshot to the quiz on Canvas.
@@ -1085,7 +1147,7 @@ We'll practice using the R script for a categorical explanatory variable and qua
 \begin{itemize}
 \tightlist
 \item
-  Download the R script
+  download this \texttt{R} script and save it in your \texttt{scripts/} folder
 
   \begin{itemize}
   \tightlist
@@ -1093,7 +1155,7 @@ We'll practice using the R script for a categorical explanatory variable and qua
     \href{https://osf.io/download/46mpk}{BIOL205\_Script\_Quantitative-Categorical.R}
   \end{itemize}
 \item
-  Download this sample data set
+  download this sample data set and save it in your \texttt{data/} folder
 
   \begin{itemize}
   \tightlist
@@ -1101,12 +1163,16 @@ We'll practice using the R script for a categorical explanatory variable and qua
     \href{https://osf.io/download/3r76k}{BIOL205\_sample-data.csv}
   \end{itemize}
 \item
-  Follow the instructions provided \href{https://ubco-biology.github.io/BIOL-205-Lab-Manual/using-the-rscripts.html}{earlier} and run \emph{ALL} code in the script
+  launch your project using your RProject file
+\item
+  open the \texttt{R} `script from within RStudio
+\item
+  follow the instructions provided \href{https://ubco-biology.github.io/BIOL-205-Lab-Manual/using-the-rscripts.html}{earlier} for working with the script - setting up variable names etc - and run \emph{ALL} code in the script
 
   \begin{itemize}
   \tightlist
   \item
-    Save the boxplot produced to your computer. You will need to upload this to the quiz on Canvas
+    save the boxplot produced to your \texttt{figures/} folder. You will need to upload this to the quiz on Canvas
   \item
     Keep the results of descriptive statistics and statistical analyses open while you complete the quiz. You will need some of these values to answer questions!
   \end{itemize}
@@ -1124,7 +1190,7 @@ Now you're ready to start the quiz. Complete the Quiz titled Open Science, R, \&
 
 You will use the following template for your Registered Report:
 
-\href{}{20220824\_Lab03\_205\_Assignment\_V1.Rmd} (3 KB)
+\href{https://osf.io/download/g5zxk}{20220824\_Lab03\_205\_Assignment\_V1.Rmd} (3 KB)
 
 See \href{https://canvas.ubc.ca}{Canvas} for assignment due dates.
 
@@ -1170,7 +1236,7 @@ As you work on the draft of your research report, be sure to consult the Final R
 \part*{Lab 5 - BIOL 205}\label{part-lab-5---biol-205}}
 \addcontentsline{toc}{part}{Lab 5 - BIOL 205}
 
-\emph{Last updated 2022-09-07}
+\emph{Last updated 2022-09-13}
 
 \hypertarget{data-collection-round-1}{%
 \chapter*{Data Collection Round 1}\label{data-collection-round-1}}
@@ -1188,7 +1254,7 @@ Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 6 - BIOL 205}\label{part-lab-6---biol-205}}
 \addcontentsline{toc}{part}{Lab 6 - BIOL 205}
 
-\emph{Last updated 2022-09-07}
+\emph{Last updated 2022-09-13}
 
 \hypertarget{data-collection-round-2}{%
 \chapter*{Data Collection Round 2}\label{data-collection-round-2}}
@@ -1764,7 +1830,7 @@ Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 7 - BIOL 205}\label{part-lab-7---biol-205}}
 \addcontentsline{toc}{part}{Lab 7 - BIOL 205}
 
-\emph{Last updated 2022-09-07}
+\emph{Last updated 2022-09-13}
 
 \hypertarget{data-collection-round-3}{%
 \chapter*{Data Collection Round 3}\label{data-collection-round-3}}
@@ -1782,7 +1848,7 @@ Complete Quiz 4: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 8 - BIOL 205}\label{part-lab-8---biol-205}}
 \addcontentsline{toc}{part}{Lab 8 - BIOL 205}
 
-\emph{Last updated 2022-09-07}
+\emph{Last updated 2022-09-13}
 
 \hypertarget{data-collection-round-4-cleanup}{%
 \chapter*{Data Collection Round 4 \& Cleanup}\label{data-collection-round-4-cleanup}}
@@ -1800,7 +1866,7 @@ Complete Quiz 5: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 9 - BIOL 205}\label{part-lab-9---biol-205}}
 \addcontentsline{toc}{part}{Lab 9 - BIOL 205}
 
-\emph{Last updated 2022-09-07}
+\emph{Last updated 2022-09-13}
 
 \hypertarget{data-analysis}{%
 \chapter*{Data Analysis}\label{data-analysis}}
@@ -1846,7 +1912,7 @@ Below are a few videos which can help you get acquainted with running statistica
 \part*{Lab 10 - BIOL 205}\label{part-lab-10---biol-205}}
 \addcontentsline{toc}{part}{Lab 10 - BIOL 205}
 
-\emph{Last updated 2022-09-07}
+\emph{Last updated 2022-09-13}
 
 \hypertarget{assignment-5-poster-presentations}{%
 \chapter*{Assignment 5: Poster Presentations}\label{assignment-5-poster-presentations}}
