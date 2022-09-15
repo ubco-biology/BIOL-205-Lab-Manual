@@ -490,22 +490,6 @@ t.test(body_mass_g ~ species, data = penguins_subset, # chooses the variables an
     lm.anova <- anova(lm) 
     lm.anova  
 ```
-    
-<div class = "advanced"> 
-If you would like to have the code directly embedded within your RMarkdown report. Feel free to use the template below that corresponds with the types of variables in your research project. All of the code within these templates is the same as those described above but there are no instructions embedded in these templates. 
-
-* Both response and explanatory variables are categorical 
-    * [20220824_Lab03_205_Assignment-Categorical-Categorical_V1.Rmd](https://osf.io/download/98vmu)
-* Both response and explanatory variables are quantitative 
-    * [20220824_Lab03_205_Assignment-Quantitative-Quantitative_V1.Rmd](https://osf.io/download/75q4x)
-* Categorical explanatory variable and quantitative response variable 
-    * [20220824_Lab03_205_Assignment-Quantitative-Categorical_V1.Rmd](https://osf.io/download/2hsk5)
-
-Similar to the `R` scripts, code for all possible statistical tests is included within these templates. **Only include the code that corresponds with the type of variables in your experiment.** In other words, delete the `R` chunk that contains code for any statistical test you are **NOT** using. 
-
-Similarly, code for both a boxplot and a stripchart is included within the quantitative-categorical template. If you plan to include a boxplot and not a stripchart, be sure to delete the `R` chunk that contains the code for the stripchart.
-
-</div>
 
 # Quiz 2: Open Science, R, & RMarkdown {-}
 
