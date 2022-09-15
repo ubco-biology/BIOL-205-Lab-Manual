@@ -2,7 +2,7 @@
 
 *Last updated `r Sys.Date()`*
 
-# Assignment 5: Poster Presentations {-}
+# Assignment 5: PowerPoint Presentations {-}
 
 ## Overview {-}
 

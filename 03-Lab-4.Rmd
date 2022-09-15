@@ -4,7 +4,13 @@
 
 # Open Science, R, & RMarkdown Tutorial {-}
 
-You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a Recommendation Report in BIOL 125. We will be using the same format and a similar template for your Registered Report in BIOL 205. However, instead of using a Shiny App to visualize your data, we'll be using `R` Scripts with almost all the code already written for you.
+You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a protocol and subsequent Recommendation Report in BIOL 125. We will be using a similar format and template for your 3rd and 4th assignments in BIOL 205.
+
+Protocols are frequently not formally peer-reviewed. However, there is a specific publication type known as a Registered Report, in which peer-review of a protocol is an integral part. In a Registered Report, you submit a protocol with a detailed study design and plan, which is then reviewed by an editorial board, often suggestions for improvement are made, and if accepted on re-submission, the journal, within reason, commits to publishing your study irrespective of whether your findings are statistically significant.
+
+Following on this model, Assignment 3 will be your detailed study design plan. Your TA will be your peer reviewer as they grade your submission. Assignment 4 will be your re-submission of your study design based on feedback from your TA. This will be followed by your final in class presentation of the results of proposed study!
+
+We'll also be moving away from using an R Shiny App to create figures and compute analyses and instead use a few `R` scripts.
 
 To prepare you for this, we'll start with a short review of materials related to Open Science, `R`, & RMarkdown from BIOL 125 and then we'll introduce the `R` scripts that you'll be using later when you do your final report. After reviewing this material, you will be prompted to complete a quiz in Canvas before the rest of the term's material is made available.
 
@@ -20,16 +26,20 @@ For an optional refresher of Open Science principles and core values, visit the 
 
 ### Registered Reports {-}
 
-Writing a <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Registered-report">registered report</a> involves submitting your research question, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Hypothesis">hypotheses</a>, and planned methods for <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Peer-review">peer review</a> prior to beginning data collection. Using this format enhances research quality because it gives researchers a chance alter study design and methods before investing time into data collection. Just think of a time where you spent countless hours writing an essay thinking it was perfect, only to give it to a friend to read and receive a ton of editing comments. Often readers notice things the author doesn't! Pre-registering a report also helps avoid questionable research practices like selective reporting of results and publication bias. 
+A <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Registered-report">Registered Report</a> involves submitting--in the form of a protocol--your research question, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Hypothesis">hypotheses</a>, and planned methods, for <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Peer-review">peer review</a> prior to beginning data collection.
 
-For your Registered Report in BIOL 205, you will follow the stages of a typical <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Registered-report">registered report</a> and implement the following Open Science practices while working on your project:
+Using this format enhances research quality because it gives researchers a chance alter study design and methods before investing time into data collection. Just think of a time where you spent countless hours writing an essay thinking it was perfect, only to give it to a friend to read and receive a ton of editing comments. Often readers notice things the author doesn't! This approach also helps avoid questionable research practices like selective reporting of results and publication bias.
 
-* Using appropriate <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Version-control">version control</a> on electronic documents and proper <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#File-and-data-management">file and data management</a> practices throughout the experiment. 
-    * Be sure to follow the rules outlined in Chapters 1-5 [File and Data Management](https://ubco-biology.github.io/Procedures-and-Guidelines/file-and-data-management.html) in the UBCO Biology Procedures & Guidelines Document.
+The protocol that you submit for peer review will include:
+
 * Performing a <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Literature-review">literature review</a> on your research topic and documenting a list of consulted studies, how they were found, and the strengths, limitations, and weaknesses of each.
-* Submitting a registered report draft with an established <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
+* Submitting a <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
 * Implementing the study according to your plan, and noting any deviations from that plan (Note: deviations often happen, and that's OK! The key is to document them). These reflections will be submitted for marks.
-* Submitting and presenting a poster that details your experiences implementing the research plan (including any changes recorded, justification for changes, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Statistical-analysis">analysis</a> of the data, and your interpretation and conclusion).
+* Submitting and presenting the details of your experiences implementing the research plan (including any changes recorded, justification for changes, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Statistical-analysis">analysis</a> of the data, and your interpretation and conclusion).
+
+<div class ="note">
+It is expected throughout this process that you will be implementing best practices for research data management as articulate in the UBCO Procedures and Guidelines, including using appropriate <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Version-control">version control</a> on electronic documents and proper <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#File-and-data-management">file and data management</a> practices throughout your experiment. Need a refresher? Revisit the rules outlined in Chapters 1-5 [File and Data Management](https://ubco-biology.github.io/Procedures-and-Guidelines/file-and-data-management.html) in the Procedures & Guidelines.
+</div>
 
 ### Why Use `R` & RMarkdown? {-}
 
@@ -550,7 +560,7 @@ We\'ll practice using the `R` script for a categorical explanatory variable and 
 
 Now you\'re ready to start the quiz. Complete the Quiz titled Open Science, R, & RMarkdown on [Canvas](https://canvas.ubc.ca/courses/98621). 
 
-# Assignment 3: Registered Report Draft {-}
+# Assignment 3: Protocol (first submission) {-}
 
 You will use the following template for your Registered Report:
 
@@ -560,27 +570,43 @@ You will use the following template for your Registered Report:
 See [Canvas](https://canvas.ubc.ca) for assignment due dates.
 </div>
 
-For this assignment you will submit a registered report draft with an established <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
+For this assignment you will submit a protocol with an established <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
 
-At this point you won't have completed data analysis and won't have results to discuss. So you should focus on describing what you plan to do in detail along with explanations for why your project is important and any potential implications results might have. For the draft research proposal you only need to include the following sections of the assignment template:
+Your protocol will be comprised of the following sections:
 
 * Abstract 
+* Data availability
 * Introduction 
 * Methods
 * Discussion - describe the potential implications of your project 
 * References
 
-You should delete any additional, unused headings, and the pre-populated text under them!
+<div class = "note">
+Protocols don't often have an abstract. But being able to write a concise synopsis of what's to come is a critical skill in academic writing. So we're going to take advantage of the opportunity to practice by requiring one for this assignment!
 
-When you submit the final copy of your registered report you will include **ALL** the sections of the assignment template, including the data availability statement, results etc. with a focus on your results and the direct implications and interpretation of those specific results. 
+Your data availability statement should be a proposed statement. Something like 'Data will be made available...'.
+</div>
 
-You will receive your marked Registered Report draft one week from the time it is submitted. If you have any questions regarding your mark and / or the comments from your TA please ensure you take the opportunity to chat with your TA to go over these. This will ensure that you are in the best position to attain the highest marks possible for this assignment.
+You will receive your marked protocol one week from the time it is submitted. If you have any questions regarding your mark and / or the comments from your TA please ensure you take the opportunity to chat with your TA to go over these. This will ensure that you are in the best position to attain the highest marks possible for this assignment.
 
-**Tips for Preparing a Registered Report**
+**Tips for Preparing a Protocol**
 
 *	Read a lot!  It is important that you have a thorough understanding of the topic.  At the very least you should have at least 3 primary source papers you are referring too throughout your report.
 *	Discuss your ideas with other students (not just your partner).  Get a feel for what everyone else is doing and the depth they are working in.
 *	Start writing early!  Students often make the mistake of starting the night before the report is due.  This more than not results in poor submissions and thus lower grades.  You should expect that you will have at least 3 rounds of revisions before you submit.
 *	Someone reading your report should be able to tell what question(s) you will address, why the topic is interesting and/or important, how you will approach the problem, the types of data you will collect, and how your research will advance the field.
 
-As you work on the draft of your research report, be sure to consult the Final Registered Report marking rubric [here](https://ubco-biology.github.io/BIOL-205-Lab-Manual/registered-report-rubric.html)!
+# Assignment 3: Detailed Outline {-}
+
+COPY FROM WORD DOC
+
+<div class = "flag">
+You will need to submit 2 files for this assignment:
+
+* Updated Protocol as `.Rmd`
+* Updated Protocol as `.pdf`
+</div>
+
+# Assignment 3: Rubric {-}
+
+PENDING

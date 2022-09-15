@@ -6,7 +6,7 @@
 
 This week you will be continuing data collection for your project.
 
-# Assignment 4: Final Registered Report {-}
+# Assignment 4: Protocol (final submission) {-}
 
 ## Overview {-}
 
@@ -15,28 +15,20 @@ See [Canvas](https://canvas.ubc.ca) for assignment due dates.
 </div>
 
 <div class = "flag">
-You will need to submit 4 files for this assignment:
+You will need to submit 3 files for this assignment:
 
-* Registered report as `.Rmd`
-* Registered report as `.pdf`
-* Data in <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Long-format-data">long</a>, tidy, format as <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Comma-separated-values-(CSV)-file">`.csv`</a>
+* Updated Protocol as `.Rmd`
+* Updated Protocol as `.pdf`
 * Data dictionary as `.md`
 </div>
 
 Following a week after you submit your Registered Report Draft you will have received the edits from your TA. You can decide to resubmit the report without making any changes or you will have the opportunity to review the edits from your TA and make the needed changes in order to increase your mark. If you have any questions regarding your mark and/or the comments from your TA please ensure you take the opportunity to chat with your TA and go over these.  This will ensure that you are in the best position to attain the highest marks possible for this assignment.
 
-When you submit the final copy of your registered report you will include **ALL** the sections of the assignment template including:
-
-* Data availability statement
-* Introduction
-* Methods (including a section about statistical analyses)
-* Results
-* Discussion & recommendations
-* References
+At this stage as well, you have started your data collection. Between your protocol and active data collecting, you should have what you need to be able write a data dictionary. Need a refresher on writing a data dictionary? Review [chapter 4.6](https://ubco-biology.github.io/Procedures-and-Guidelines/data-dictionary.html) of the Procedures and Guidelines.
 
 ##  Registered Report Rubric {-}
 
-**NEEDS UPDATING**
+**NEEDS UPDATING AND NEEDS TO INCLUDE DATA DICTIONARY ASPECT**
 
 **Total\ /41**
 
