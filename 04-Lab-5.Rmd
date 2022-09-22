@@ -9,3 +9,40 @@ This week you will be working in the labs collecting data for your project.
 # Quiz 3: Who Am I? {-}
 
 Complete Quiz 2: Who Am I? on [Canvas](https://canvas.ubc.ca/courses/113910)
+
+# Assignment 4: Protocol (final submission) {-}
+
+## Overview {-}
+
+<div class="note">
+See [Canvas](https://canvas.ubc.ca) for assignment due dates.
+</div>
+
+<div class = "flag">
+You will need to submit 3 files for this assignment:
+
+* Updated Protocol as `.Rmd`
+* Updated Protocol as `.pdf`
+* Data dictionary as `.md`
+</div>
+
+Following a week after you submit your Registered Report Draft you will have received the edits from your TA. You can decide to resubmit the report without making any changes or you will have the opportunity to review the edits from your TA and make the needed changes in order to increase your mark. If you have any questions regarding your mark and/or the comments from your TA please ensure you take the opportunity to chat with your TA and go over these.  This will ensure that you are in the best position to attain the highest marks possible for this assignment.
+
+At this stage as well, you have started your data collection. Between your protocol and active data collecting, you should have what you need to be able write a data dictionary. Need a refresher on writing a data dictionary? Review [chapter 4.6](https://ubco-biology.github.io/Procedures-and-Guidelines/data-dictionary.html) of the Procedures and Guidelines.
+
+## Assignment 4: Rubric {-}
+
+**Total\ /40**
+
+| <span style="display: inline-block; width:600px">Criteria</span> | Points |
+| :--- | :--- |
+| **Abstract**<br />- Brief, no more than 500 words<br />- Clearly outlines the question/problem<br />- Clearly describes how the question/problem will be addressed | 3 |
+| **Introduction**<br />- Relevant background information provided<br />- Clearly articulates how the background information is connected to the current project idea<br />- Well written and easy to follow<br />- Flows from more general and broad background information and narrows towards the focus of this proposed project<br />- Hypothesis/question(s) posed are clearly stated towards the end of this section<br />- No factual errors are present | 6 |
+| **Background**<br />- Information regarding feeding and habitat needs of organism provided<br />- significance of using this particular organism to study has been provided<br />- information regarding specific problem being addressed, both current and historical, have been provided <br />- students show a solid understanding of the organism, its habitat and its impact within its environment | 4 |
+| **Significance of Project**<br />- Significance of the problem is clearly and convincingly stated<br />- Experimental design has been described in a way that elicits confidence in study <br />- Background information was used well in order to show the importance of this project | 3 |
+| **Experimental Design**<br />- No bullet points<br />- The experimental design is specific and addresses the question/problem<br />- Enough information is provided that experiment can be replicated<br />- There is an appropriate control where applicable<br />- Both independent and dependent variables are clearly defined<br />- Statistical analysis to be used has been clearly outlined and is appropriate for type of data being collected | 6 |
+| **Spelling & Grammar**<br />- No spelling errors<br />- No grammar errors<br />- No awkward sentence structures | 3 |
+| **References & in-text citations**<br />- APA format used properly and consistently<br />- Minimum of 3 primary source papers used in the proposal<br />- In-text citations are used when required<br />- Citations and references match up | 4 |
+| **Plagiarism & Quotations**<br />- No plagiarism of any kind has been found<br />- No quotations present<br />- Information attained from outside resources are properly cited | 3 |
+| **Open Science & Format**<br />- 5 pages double spaced, font 12, Times New Roman (not including references)<br />- Screen shot of directory structure has been uploaded and directory follows good practices<br />- Registered report submitted as Rmd and pdf version<br />- YAML is provided at the top of the template<br />- Data Dictionary is present and accurately displayed | 4 |
+| **Timeline**<br />- All data collection dates included and a description of what data will be collected and how this will be done<br />- All non-data collection dates included with details of what will be done on those days<br />- start and end of dates are provided | 3 |

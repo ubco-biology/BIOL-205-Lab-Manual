@@ -76,7 +76,7 @@
 
 \title{Biology 205 Lab Manual}
 \author{Dr.~Tristyn Hay}
-\date{2022-09-15}
+\date{2022-09-22}
 
 \begin{document}
 \maketitle
@@ -139,7 +139,7 @@ Optional material that dives deeper into a presented concept.
 \part*{Labs 1 \& 2 - BIOL 205}\label{part-labs-1-2---biol-205}}
 \addcontentsline{toc}{part}{Labs 1 \& 2 - BIOL 205}
 
-\emph{Last updated 2022-09-15}
+\emph{Last updated 2022-09-22}
 
 \hypertarget{planning-your-experiment}{%
 \chapter*{Planning Your Experiment}\label{planning-your-experiment}}
@@ -451,7 +451,13 @@ You have been hired by the Great Lakes Environmental Research Laboratory (GLERL)
 \part*{Lab 3 - BIOL 205}\label{part-lab-3---biol-205}}
 \addcontentsline{toc}{part}{Lab 3 - BIOL 205}
 
-\emph{Last updated 2022-09-15}
+\emph{Last updated 2022-09-22}
+
+\hypertarget{lab-3-welcome}{%
+\chapter*{Lab 3 Welcome}\label{lab-3-welcome}}
+\addcontentsline{toc}{chapter}{Lab 3 Welcome}
+
+This labs has two components. The first involves getting acquainted with your organism. The second re-visits some core aspects of open science and has you prepare a draft protocol for your research project.
 
 \hypertarget{getting-acquainted-with-your-organism}{%
 \chapter*{Getting Acquainted with Your Organism}\label{getting-acquainted-with-your-organism}}
@@ -499,25 +505,17 @@ Pts
 
 Complete Quiz 1: Getting Acquainted on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
 
-\hypertarget{part-lab-4---biol-205}{%
-\part*{Lab 4 - BIOL 205}\label{part-lab-4---biol-205}}
-\addcontentsline{toc}{part}{Lab 4 - BIOL 205}
-
-\emph{Last updated 2022-09-15}
-
-\hypertarget{open-science-r-rmarkdown-tutorial}{%
-\chapter*{Open Science, R, \& RMarkdown Tutorial}\label{open-science-r-rmarkdown-tutorial}}
-\addcontentsline{toc}{chapter}{Open Science, R, \& RMarkdown Tutorial}
+\hypertarget{open-science-r-rmarkdown}{%
+\chapter*{Open Science, R, \& RMarkdown}\label{open-science-r-rmarkdown}}
+\addcontentsline{toc}{chapter}{Open Science, R, \& RMarkdown}
 
 You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a protocol and subsequent Recommendation Report in BIOL 125. We will be using a similar format and template for your 3rd and 4th assignments in BIOL 205.
 
 Protocols are frequently not formally peer-reviewed. However, there is a specific publication type known as a Registered Report, in which peer-review of a protocol is an integral part. In a Registered Report, you submit a protocol with a detailed study design and plan, which is then reviewed by an editorial board, often suggestions for improvement are made, and if accepted on re-submission, the journal, within reason, commits to publishing your study irrespective of whether your findings are statistically significant.
 
-Following on this model, Assignment 3 will be your detailed study design plan. Your TA will be your peer reviewer as they grade your submission. Assignment 4 will be your re-submission of your study design based on feedback from your TA. This will be followed by your final in class presentation of the results of proposed study!
+Following on this model, Assignment 3 will be your detailed study design plan. Your TA will be your peer reviewer as they grade your submission. Assignment 4 will be your re-submission of your study design based on feedback from your TA. This will be followed by your final in class presentation of the results of your proposed study!
 
-We'll also be moving away from using an R Shiny App to create figures and compute analyses and instead use a few \texttt{R} scripts.
-
-To prepare you for this, we'll start with a short review of materials related to Open Science, \texttt{R}, \& RMarkdown from BIOL 125 and then we'll introduce the \texttt{R} scripts that you'll be using later when you do your final report. After reviewing this material, you will be prompted to complete a quiz in Canvas before the rest of the term's material is made available.
+To prepare you for this, we'll start with a short review of materials related to Open Science, \texttt{R}, \& RMarkdown from BIOL 125. After reviewing this material, you should be set to draft your protocol using an RMarkdown template.
 
 \hypertarget{overview-1}{%
 \section*{Overview}\label{overview-1}}
@@ -577,11 +575,11 @@ For a refresher on scientific writing, the different sections of a lab report, a
 \section*{Assignment Template}\label{assignment-template}}
 \addcontentsline{toc}{section}{Assignment Template}
 
-You will use the following template for your Registered Report:
+You will use the following template for your protocol:
 
-\href{https://osf.io/download/g5zxk}{20220824\_Lab03\_205\_Assignment\_V1.Rmd}
+\href{https://osf.io/download/qhc2v}{BIOL205\_Lab03\_Assignment3.Rmd}
 
-Before starting your Registered Report, we'll spend some time going through the different parts of this template.
+Before starting your protocol, we'll spend some time reviewing the different parts of this template.
 
 \hypertarget{using-the-template}{%
 \subsection*{Using the Template}\label{using-the-template}}
@@ -708,17 +706,157 @@ If you've installed \texttt{R}, RStudio, and the \texttt{markdown} and \texttt{t
 
 Click this button or select the drop down arrow and select \texttt{Knit\ to\ pdf}. This will generate a pdf in the same directory as your \texttt{.Rmd} file.
 
+\hypertarget{assignment-3-protocol-first-submission}{%
+\chapter*{Assignment 3: Protocol (first submission)}\label{assignment-3-protocol-first-submission}}
+\addcontentsline{toc}{chapter}{Assignment 3: Protocol (first submission)}
+
+You will use the following template for your protocol:
+
+\href{https://osf.io/download/qhc2v}{BIOL205\_Lab03\_Assignment3.Rmd} (3 KB)
+
+You will need to submit 2 files for this assignment:
+
+\begin{itemize}
+\tightlist
+\item
+  Updated Protocol as \texttt{.Rmd}
+\item
+  Updated Protocol as \texttt{.pdf}
+\end{itemize}
+
+See \href{https://canvas.ubc.ca}{Canvas} for assignment due dates.
+
+For this assignment you will submit a protocol with an established a priori hypothesis, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
+
+Your protocol will be comprised of the following sections:
+
+\begin{itemize}
+\tightlist
+\item
+  Abstract
+\item
+  Data availability
+\item
+  Introduction
+\item
+  Methods
+\item
+  Discussion - describe the potential implications of your project
+\item
+  References
+\end{itemize}
+
+Protocols don't often have an abstract. But being able to write a concise synopsis of what's to come is a critical skill in academic writing. So we're going to take advantage of the opportunity to practice by requiring one for this assignment!
+
+Your data availability statement should be a proposed statement. Something like `Data will be made available\ldots{}'.
+
+You will receive your marked protocol one week from the time it is submitted. If you have any questions regarding your mark and / or the comments from your TA please ensure you take the opportunity to chat with your TA to go over these. This will ensure that you are in the best position to attain the highest marks possible for this assignment.
+
+\textbf{Tips for Preparing a Protocol}
+
+\begin{itemize}
+\tightlist
+\item
+  Read a lot! It is important that you have a thorough understanding of the topic. At the very least you should have at least 3 primary source papers you are referring too throughout your report.
+\item
+  Discuss your ideas with other students (not just your partner). Get a feel for what everyone else is doing and the depth they are working in.
+\item
+  Start writing early! Students often make the mistake of starting the night before the report is due. This more than not results in poor submissions and thus lower grades. You should expect that you will have at least 3 rounds of revisions before you submit.
+\item
+  Someone reading your report should be able to tell what question(s) you will address, why the topic is interesting and/or important, how you will approach the problem, the types of data you will collect, and how your research will advance the field.
+\end{itemize}
+
+\hypertarget{practicing-knitting}{%
+\section*{Practicing Knitting}\label{practicing-knitting}}
+\addcontentsline{toc}{section}{Practicing Knitting}
+
+If you haven't already downloaded the assignment template, here it is again:
+
+\href{https://osf.io/download/qhc2v}{BIOL205\_Lab03\_Assignment3.Rmd}
+
+To test the template,
+
+\begin{itemize}
+\tightlist
+\item
+  ensure the template \texttt{.Rmd} file is in your \texttt{report/} directory
+\item
+  download the following image into your \texttt{figures/} directory
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://osf.io/download/zuehg}{MVD\_BIOL205-Lab5\_Fig-1-Boxplot\_V1.png} (4 KB)
+  \end{itemize}
+\item
+  launch your project using your RProject file
+\item
+  open the template \texttt{.Rmd} file from within RStudio
+\item
+  insert your name as the author in the YAML header
+\item
+  knit the document to a PDF
+\end{itemize}
+
+You should get something that looks like this after \texttt{Knitting} the \texttt{.Rmd} file:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://osf.io/download/3k8ve}{20220824\_Lab05\_125\_Assignment\_V1.pdf} (180 KB)
+\end{itemize}
+
+\textbf{Your knitted document should show your name under the title!} Take a screenshot of the first page of the knitted assignment template. You'll need to upload this screenshot to the quiz on Canvas.
+
+\hypertarget{assignment-3-rubric}{%
+\section*{Assignment 3: Rubric}\label{assignment-3-rubric}}
+\addcontentsline{toc}{section}{Assignment 3: Rubric}
+
+\textbf{Total~/39}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+{Criteria}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Points
+\end{minipage} \\
+\midrule()
+\endhead
+\textbf{Abstract}- Brief, no more than 500 words- Clearly outlines the question/problem- Clearly describes how the question/problem will be addressed & 3 \\
+\textbf{Introduction}- Relevant background information provided- Clearly articulates how the background information is connected to the current project idea- Well written and easy to follow- Flows from more general and broad background information and narrows towards the focus of this proposed project- Hypothesis/question(s) posed are clearly stated towards the end of this section- No factual errors are present & 6 \\
+\textbf{Background}- Information regarding feeding and habitat needs of organism provided- significance of using this particular organism to study has been provided- information regarding specific problem being addressed, both current and historical, have been provided - students show a solid understanding of the organism, its habitat and its impact within its environment & 4 \\
+\textbf{Significance of Project}- Significance of the problem is clearly and convincingly stated- Experimental design has been described in a way that elicits confidence in study - Background information was used well in order to show the importance of this project & 3 \\
+\textbf{Experimental Design}- No bullet points- The experimental design is specific and addresses the question/problem- Enough information is provided that experiment can be replicated- There is an appropriate control where applicable- Both independent and dependent variables are clearly defined- Statistical analysis to be used has been clearly outlined and is appropriate for type of data being collected & 6 \\
+\textbf{Spelling \& Grammar}- No spelling errors- No grammar errors- No awkward sentence structures & 3 \\
+\textbf{References \& in-text citations}- APA format used properly and consistently- Minimum of 3 primary source papers used in the proposal- In-text citations are used when required- Citations and references match up & 4 \\
+\textbf{Plagiarism \& Quotations}- No plagiarism of any kind has been found- No quotations present- Information attained from outside resources are properly cited & 3 \\
+\textbf{Open Science \& Format}- 5 pages double spaced, font 12, Times New Roman (not including references)- Screen shot of directory structure has been uploaded and directory follows good practices- Registered report submitted as Rmd and pdf version- YAML is provided at the top of the template & 4 \\
+\textbf{Timeline}- All data collection dates included and a description of what data will be collected and how this will be done- All non-data collection dates included with details of what will be done on those days- start and end of dates are provided & 3 \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{part-lab-4---biol-205}{%
+\part*{Lab 4 - BIOL 205}\label{part-lab-4---biol-205}}
+\addcontentsline{toc}{part}{Lab 4 - BIOL 205}
+
+\emph{Last updated 2022-09-22}
+
+\hypertarget{scripting-in-r}{%
+\chapter*{Scripting in R}\label{scripting-in-r}}
+\addcontentsline{toc}{chapter}{Scripting in R}
+
+At this stage, you have your draft protocol submitted which includes an articulation of the statistical analyses you plan to use. In this lab, we'll start preparing for running those analyses. To do this, we'll be moving away from using an R Shiny App and instead use a few \texttt{R} scripts.
+
 \hypertarget{using-the-rscripts}{%
-\section*{Using the RScripts}\label{using-the-rscripts}}
-\addcontentsline{toc}{section}{Using the RScripts}
-
-For the quiz associated with this lab we'll have you investigate and play around a bit with the scripts we've built for your analyses. And we'll have some sample data that you can use to explore the scripts.
-
-The instructions below primarily relate to building an appropriate project structure for your final report and analyses. It would be good practice at this stage to set up a temporary project space on your computer, using the folder structure detailed below. In fact, when you get the section \href{https://ubco-biology.github.io/BIOL-205-Lab-Manual/practicing-using-the-r-scripts.html}{Practicing Using the \texttt{R} Scripts} later in this lab, you'll be provided with direct links to a sample data set and an appropriate \texttt{R} script to use with that dataset within this directory structure, which will in turn allow you to get the screen shots required for the quiz.
+\chapter*{Using the RScripts}\label{using-the-rscripts}}
+\addcontentsline{toc}{chapter}{Using the RScripts}
 
 \texttt{R} scripts are text files containing the commands (aka code) and comments used to perform computations. For BIOL 205, we've written the majority of the code for you. In BIOL 202, you'll be doing much more of this from scratch. Even though much of the code has been written for you, we encourage you to read through the scripts in detail and see if you can figure out with the help of the comments exactly what's going on!
 
-There is a separate \texttt{R} script for each type of variable combination you might have for your research project. When it comes time for your final analyiss, download the \texttt{R} script that corresponds to the types of variables you have in your experiment. In the mean time, download all or any that you're interested in looking through.
+There is a separate \texttt{R} script for each type of variable combination you might have for your research project. When it comes time for your final analysis, download the \texttt{R} script that corresponds to the types of variables you have in your experiment. In the mean time, download all or any that you're interested in looking through.
 
 \begin{itemize}
 \tightlist
@@ -1052,69 +1190,9 @@ When interpreting the output from a statistical analysis for this project, focus
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 \end{verbatim}
 
-\hypertarget{quiz-2-open-science-r-rmarkdown}{%
-\chapter*{Quiz 2: Open Science, R, \& RMarkdown}\label{quiz-2-open-science-r-rmarkdown}}
-\addcontentsline{toc}{chapter}{Quiz 2: Open Science, R, \& RMarkdown}
-
-Before starting this quiz, you must:
-
-\begin{itemize}
-\tightlist
-\item
-  practice knitting the assignment template RMarkdown file
-\item
-  practice using the \texttt{R} script for a categorical explanatory variable and quantitative response variable
-\end{itemize}
-
-The next two pages provide you with sample files to do each of these. Refer to the previous sections on working with RMarkdown files and the \texttt{R} scripts if you run into any issues.
-
-The quiz will ask you to upload screenshots and will have questions from the output of the knitting process and the \texttt{R} scripts.
-
-\hypertarget{practicing-knitting}{%
-\section*{Practicing Knitting}\label{practicing-knitting}}
-\addcontentsline{toc}{section}{Practicing Knitting}
-
-If you haven't already downloaded the assignment template, here it is again:
-
-\href{https://osf.io/download/g5zxk}{20220824\_Lab03\_205\_Assignment\_V1.Rmd}
-
-To test the template,
-
-\begin{itemize}
-\tightlist
-\item
-  ensure the template \texttt{.Rmd} file is in your \texttt{report/} directory
-\item
-  download the following image into your \texttt{figures/} directory
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \href{https://osf.io/download/zuehg}{MVD\_BIOL205-Lab5\_Fig-1-Boxplot\_V1.png} (4 KB)
-  \end{itemize}
-\item
-  launch your project using your RProject file
-\item
-  open the template \texttt{.Rmd} file from within RStudio
-\item
-  insert your name as the author in the YAML header
-\item
-  knit the document to a PDF
-\end{itemize}
-
-You should get something that looks like this after \texttt{Knitting} the \texttt{.Rmd} file:
-
-\begin{itemize}
-\tightlist
-\item
-  \href{https://osf.io/download/3k8ve}{20220824\_Lab05\_125\_Assignment\_V1.pdf} (180 KB)
-\end{itemize}
-
-\textbf{Your knitted document should show your name under the title!} Take a screenshot of the first page of the knitted assignment template. You'll need to upload this screenshot to the quiz on Canvas.
-
 \hypertarget{practicing-using-the-r-scripts}{%
-\section*{\texorpdfstring{Practicing Using the \texttt{R} Scripts}{Practicing Using the R Scripts}}\label{practicing-using-the-r-scripts}}
-\addcontentsline{toc}{section}{Practicing Using the \texttt{R} Scripts}
+\chapter*{\texorpdfstring{Practicing Using the \texttt{R} Scripts}{Practicing Using the R Scripts}}\label{practicing-using-the-r-scripts}}
+\addcontentsline{toc}{chapter}{Practicing Using the \texttt{R} Scripts}
 
 We'll practice using the \texttt{R} script for a categorical explanatory variable and quantitative response variable. Follow these steps:
 
@@ -1146,95 +1224,17 @@ We'll practice using the \texttt{R} script for a categorical explanatory variabl
   \begin{itemize}
   \tightlist
   \item
-    save the boxplot produced to your \texttt{figures/} folder. You will need to upload this to the quiz on Canvas
+    the boxplot should be automatically saved to your \texttt{figures/} folder.
   \item
-    Keep the results of descriptive statistics and statistical analyses open while you complete the quiz. You will need some of these values to answer questions!
+    the results of your descriptive statistics and statistical analyses should be automatically save to your \texttt{report/} folder.
   \end{itemize}
 \end{itemize}
-
-\hypertarget{complete-the-quiz}{%
-\section*{Complete the Quiz}\label{complete-the-quiz}}
-\addcontentsline{toc}{section}{Complete the Quiz}
-
-Now you're ready to start the quiz. Complete the Quiz titled Open Science, R, \& RMarkdown on \href{https://canvas.ubc.ca/courses/98621}{Canvas}.
-
-\hypertarget{assignment-3-protocol-first-submission}{%
-\chapter*{Assignment 3: Protocol (first submission)}\label{assignment-3-protocol-first-submission}}
-\addcontentsline{toc}{chapter}{Assignment 3: Protocol (first submission)}
-
-You will use the following template for your Registered Report:
-
-\href{https://osf.io/download/g5zxk}{20220824\_Lab03\_205\_Assignment\_V1.Rmd} (3 KB)
-
-See \href{https://canvas.ubc.ca}{Canvas} for assignment due dates.
-
-For this assignment you will submit a protocol with an established a priori hypothesis, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
-
-Your protocol will be comprised of the following sections:
-
-\begin{itemize}
-\tightlist
-\item
-  Abstract
-\item
-  Data availability
-\item
-  Introduction
-\item
-  Methods
-\item
-  Discussion - describe the potential implications of your project
-\item
-  References
-\end{itemize}
-
-Protocols don't often have an abstract. But being able to write a concise synopsis of what's to come is a critical skill in academic writing. So we're going to take advantage of the opportunity to practice by requiring one for this assignment!
-
-Your data availability statement should be a proposed statement. Something like `Data will be made available\ldots{}'.
-
-You will receive your marked protocol one week from the time it is submitted. If you have any questions regarding your mark and / or the comments from your TA please ensure you take the opportunity to chat with your TA to go over these. This will ensure that you are in the best position to attain the highest marks possible for this assignment.
-
-\textbf{Tips for Preparing a Protocol}
-
-\begin{itemize}
-\tightlist
-\item
-  Read a lot! It is important that you have a thorough understanding of the topic. At the very least you should have at least 3 primary source papers you are referring too throughout your report.
-\item
-  Discuss your ideas with other students (not just your partner). Get a feel for what everyone else is doing and the depth they are working in.
-\item
-  Start writing early! Students often make the mistake of starting the night before the report is due. This more than not results in poor submissions and thus lower grades. You should expect that you will have at least 3 rounds of revisions before you submit.
-\item
-  Someone reading your report should be able to tell what question(s) you will address, why the topic is interesting and/or important, how you will approach the problem, the types of data you will collect, and how your research will advance the field.
-\end{itemize}
-
-\hypertarget{assignment-3-detailed-outline}{%
-\chapter*{Assignment 3: Detailed Outline}\label{assignment-3-detailed-outline}}
-\addcontentsline{toc}{chapter}{Assignment 3: Detailed Outline}
-
-COPY FROM WORD DOC
-
-You will need to submit 2 files for this assignment:
-
-\begin{itemize}
-\tightlist
-\item
-  Updated Protocol as \texttt{.Rmd}
-\item
-  Updated Protocol as \texttt{.pdf}
-\end{itemize}
-
-\hypertarget{assignment-3-rubric}{%
-\chapter*{Assignment 3: Rubric}\label{assignment-3-rubric}}
-\addcontentsline{toc}{chapter}{Assignment 3: Rubric}
-
-PENDING
 
 \hypertarget{part-lab-5---biol-205}{%
 \part*{Lab 5 - BIOL 205}\label{part-lab-5---biol-205}}
 \addcontentsline{toc}{part}{Lab 5 - BIOL 205}
 
-\emph{Last updated 2022-09-15}
+\emph{Last updated 2022-09-22}
 
 \hypertarget{data-collection-round-1}{%
 \chapter*{Data Collection Round 1}\label{data-collection-round-1}}
@@ -1247,18 +1247,6 @@ This week you will be working in the labs collecting data for your project.
 \addcontentsline{toc}{chapter}{Quiz 3: Who Am I?}
 
 Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas}
-
-\hypertarget{part-lab-6---biol-205}{%
-\part*{Lab 6 - BIOL 205}\label{part-lab-6---biol-205}}
-\addcontentsline{toc}{part}{Lab 6 - BIOL 205}
-
-\emph{Last updated 2022-09-15}
-
-\hypertarget{data-collection-round-2}{%
-\chapter*{Data Collection Round 2}\label{data-collection-round-2}}
-\addcontentsline{toc}{chapter}{Data Collection Round 2}
-
-This week you will be continuing data collection for your project.
 
 \hypertarget{assignment-4-protocol-final-submission}{%
 \chapter*{Assignment 4: Protocol (final submission)}\label{assignment-4-protocol-final-submission}}
@@ -1286,519 +1274,47 @@ Following a week after you submit your Registered Report Draft you will have rec
 
 At this stage as well, you have started your data collection. Between your protocol and active data collecting, you should have what you need to be able write a data dictionary. Need a refresher on writing a data dictionary? Review \href{https://ubco-biology.github.io/Procedures-and-Guidelines/data-dictionary.html}{chapter 4.6} of the Procedures and Guidelines.
 
-\hypertarget{registered-report-rubric}{%
-\section*{Registered Report Rubric}\label{registered-report-rubric}}
-\addcontentsline{toc}{section}{Registered Report Rubric}
+\hypertarget{assignment-4-rubric}{%
+\section*{Assignment 4: Rubric}\label{assignment-4-rubric}}
+\addcontentsline{toc}{section}{Assignment 4: Rubric}
 
-\textbf{NEEDS UPDATING AND NEEDS TO INCLUDE DATA DICTIONARY ASPECT}
-
-\textbf{Total~/41}
-
-\hypertarget{abstract}{%
-\subsection*{Abstract}\label{abstract}}
-\addcontentsline{toc}{subsection}{Abstract}
-
-\textbf{~/3}
-
-\textbf{Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  Brief, no more than 500 words
-\item
-  Clearly outlines the question/problem
-\item
-  Clearly describes how the question/problem will be addressed
-\end{itemize}
+\textbf{Total~/40}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
 \toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 {Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks3 pts & All 3 criteria are met \\
-Satisfactory2 pts & 2 of the 3 criteria are met \\
-Unsatisfactory1 pt & Only 1 of the criteria is met \\
-No Marks0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{introduction}{%
-\subsection*{Introduction}\label{introduction}}
-\addcontentsline{toc}{subsection}{Introduction}
-
-Your Introduction \& Background should:
-
-\begin{itemize}
-\tightlist
-\item
-  Provide a brief literature review to contextualize the proposed research \textbf{(1-2 pages)}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    What do you know about the organisms involved
-
-    \begin{itemize}
-    \tightlist
-    \item
-      What does it need to survive?
-    \item
-      What temperature is it typically found?
-    \item
-      Remember you have to run this experiment in the lab and be able to control for all variables
-    \end{itemize}
-  \item
-    What do you know about the issue surrounding toxic algal blooms
-  \item
-    What differences are there between saltwater systems and freshwater systems if any that need to be considered when making inferences from one to another
-  \end{itemize}
-\item
-  Clearly outline the problem and why this is so important. You will likely need to use the background information to justify the importance \textbf{(0.5-1 pages)}
-\item
-  Provide clear hypotheses
-\end{itemize}
-
-\textbf{~/6}
-
-\textbf{Grading Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  Relevant background information provided
-\item
-  Clearly articulates how the background information is connected to the current project idea
-\item
-  Well written and easy to follow
-\item
-  Flows from more general and broad background information and narrows towards the focus of this proposed project
-\item
-  Hypothesis/question(s) posed are clearly stated towards the end of this section
-\item
-  No factual errors are present
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
 \end{minipage} \\
 \midrule()
 \endhead
-Full Marks6 pts & All 6 criteria are met \\
-Excellent5 pts & 5 of the 6 criteria are met \\
-Proficient4 pts & 4 of the 6 criteria are met \\
-Satisfactory3 pts & 3 of the 6 criteria are met \\
-Unsatisfactory2 pt & 2 of the 6 criteria are met \\
-Poor1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
+\textbf{Abstract}- Brief, no more than 500 words- Clearly outlines the question/problem- Clearly describes how the question/problem will be addressed & 3 \\
+\textbf{Introduction}- Relevant background information provided- Clearly articulates how the background information is connected to the current project idea- Well written and easy to follow- Flows from more general and broad background information and narrows towards the focus of this proposed project- Hypothesis/question(s) posed are clearly stated towards the end of this section- No factual errors are present & 6 \\
+\textbf{Background}- Information regarding feeding and habitat needs of organism provided- significance of using this particular organism to study has been provided- information regarding specific problem being addressed, both current and historical, have been provided - students show a solid understanding of the organism, its habitat and its impact within its environment & 4 \\
+\textbf{Significance of Project}- Significance of the problem is clearly and convincingly stated- Experimental design has been described in a way that elicits confidence in study - Background information was used well in order to show the importance of this project & 3 \\
+\textbf{Experimental Design}- No bullet points- The experimental design is specific and addresses the question/problem- Enough information is provided that experiment can be replicated- There is an appropriate control where applicable- Both independent and dependent variables are clearly defined- Statistical analysis to be used has been clearly outlined and is appropriate for type of data being collected & 6 \\
+\textbf{Spelling \& Grammar}- No spelling errors- No grammar errors- No awkward sentence structures & 3 \\
+\textbf{References \& in-text citations}- APA format used properly and consistently- Minimum of 3 primary source papers used in the proposal- In-text citations are used when required- Citations and references match up & 4 \\
+\textbf{Plagiarism \& Quotations}- No plagiarism of any kind has been found- No quotations present- Information attained from outside resources are properly cited & 3 \\
+\textbf{Open Science \& Format}- 5 pages double spaced, font 12, Times New Roman (not including references)- Screen shot of directory structure has been uploaded and directory follows good practices- Registered report submitted as Rmd and pdf version- YAML is provided at the top of the template- Data Dictionary is present and accurately displayed & 4 \\
+\textbf{Timeline}- All data collection dates included and a description of what data will be collected and how this will be done- All non-data collection dates included with details of what will be done on those days- start and end of dates are provided & 3 \\
 \bottomrule()
 \end{longtable}
 
-\hypertarget{background}{%
-\subsection*{Background}\label{background}}
-\addcontentsline{toc}{subsection}{Background}
+\hypertarget{part-lab-6---biol-205}{%
+\part*{Lab 6 - BIOL 205}\label{part-lab-6---biol-205}}
+\addcontentsline{toc}{part}{Lab 6 - BIOL 205}
 
-\textbf{~/4}
+\emph{Last updated 2022-09-22}
 
-\textbf{Grading Criteria}
+\hypertarget{data-collection-round-2}{%
+\chapter*{Data Collection Round 2}\label{data-collection-round-2}}
+\addcontentsline{toc}{chapter}{Data Collection Round 2}
 
-\begin{itemize}
-\tightlist
-\item
-  Information regarding the feeding and habitat needs of the organism being used provided
-\item
-  The significance of using this particular organism to study the issue at hand has been provided
-\item
-  Information regarding the specific problem being addressed, both current and historical, have been provided
-\item
-  Student has shown a solid understanding of the organism, its habitat and its impact on other organisms within its range
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks4 pts & All 4 criteria are met \\
-Proficient3 pts & 3 of the 4 criteria are met \\
-Satisfactory2 pts & 2 of the 4 criteria are met \\
-Unsatisfactory1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{significance-of-project}{%
-\subsection*{Significance of Project}\label{significance-of-project}}
-\addcontentsline{toc}{subsection}{Significance of Project}
-
-\textbf{~/3}
-
-\textbf{Grading Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  Significance of the problem is clearly and convincingly stated
-\item
-  Experimental design has been described in a way that elicits confidence in this study
-\item
-  Background information was used well in order to show the importance of this project
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks3 pts & All 3 criteria are met \\
-Satisfactory2 pts & 2 of the 3 criteria are met \\
-Unsatisfactory1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{experimental-design}{%
-\subsection*{Experimental Design}\label{experimental-design}}
-\addcontentsline{toc}{subsection}{Experimental Design}
-
-Your Methods section should:
-
-\begin{itemize}
-\tightlist
-\item
-  Outline the major methods and data collection (including what statistical analyses to be used, when appropriate and a list of materials required). There should not be any bullet points here \textbf{(1 page)}
-\end{itemize}
-
-\textbf{~/6}
-
-\textbf{Grading Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  No bullet points
-\item
-  The experimental design is specific and addresses the question/problem
-\item
-  Enough information is provided that someone else may be able to run a similar experiment
-\item
-  There is an appropriate control where applicable
-\item
-  Both independent and dependent variables are clearly defined
-\item
-  Statistical analysis to be used has been clearly outlined
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks6 pts & All 6 criteria are met \\
-Excellent5 pts & 5 of the 6 criteria are met \\
-Proficient4 pts & 4 of the 6 criteria are met \\
-Satisfactory3 pts & 3 of the 6 criteria are met \\
-Unsatisfactory2 pt & 2 of the 6 criteria are met \\
-Poor1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{spelling-grammar}{%
-\subsection*{Spelling \& Grammar}\label{spelling-grammar}}
-\addcontentsline{toc}{subsection}{Spelling \& Grammar}
-
-\textbf{~/3}
-
-\textbf{Grading Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  No spelling errors
-\item
-  No grammar errors
-\item
-  No awkward sentence structures
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks3 pts & All 3 criteria are met \\
-Satisfactory2 pts & 2 of the 3 criteria are met \\
-Unsatisfactory1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{references-in-text-citations}{%
-\subsection*{References \& In-Text Citations}\label{references-in-text-citations}}
-\addcontentsline{toc}{subsection}{References \& In-Text Citations}
-
-\textbf{~/4}
-
-\textbf{Grading Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  APA format used properly and consistently
-\item
-  Minimum of 5 primary source papers used in the report
-\item
-  In-text citations are used when required
-\item
-  Citations and references match up
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks4 pts & All 4 criteria are met \\
-Proficient3 pts & 3 of the 4 criteria are met \\
-Satisfactory2 pts & 2 of the 4 criteria are met \\
-Unsatisfactory1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{plagiarism-quotations}{%
-\subsection*{Plagiarism \& Quotations}\label{plagiarism-quotations}}
-\addcontentsline{toc}{subsection}{Plagiarism \& Quotations}
-
-\textbf{~/3}
-
-\textbf{Grading Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  No plagiarism of any kind has been found
-\item
-  No quotations present
-\item
-  Information attained from outside resources are properly cited
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks3 pts & All 3 criteria are met \\
-Satisfactory2 pts & 2 of the 3 criteria are met \\
-Unsatisfactory1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{format}{%
-\subsection*{Format}\label{format}}
-\addcontentsline{toc}{subsection}{Format}
-
-\textbf{~/4}
-
-\textbf{Grading Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  5 pages (not including references)
-\item
-  Font 12
-\item
-  Times New Roman
-\item
-  Double spaced
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks4 pts & All 4 criteria are met \\
-Proficient3 pts & 3 of the 4 criteria are met \\
-Satisfactory2 pts & 2 of the 4 criteria are met \\
-Unsatisfactory1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{timeline}{%
-\subsection*{Timeline}\label{timeline}}
-\addcontentsline{toc}{subsection}{Timeline}
-
-You must:
-
-\begin{itemize}
-\tightlist
-\item
-  Provide a detailed projected week by week timeline of your research. The information in this table should include the following and be in chronological order:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Start date of experiment (include pilot round if relevant)
-  \item
-    Data collection dates and how data will be collected
-  \item
-    Non-data collection dates should be included with a detail of what you expect to be working on. E.g. you may need to complete a water change or feed your organisms
-  \item
-    Additional notes may be added in the case where you anticipate there may need to be a change in timeline depending on previous weeks
-  \item
-    End date of experiment
-  \item
-    Below is an example format
-  \end{itemize}
-\end{itemize}
-
-\textbf{Table 1: Projected weekly timeline}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Date
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Activity
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Notes
-\end{minipage} \\
-\midrule()
-\endhead
-\textbf{September 13, 2021} & Experimental set up - clean tank, fill with spring water and heat to appropriate temperature and add organisms & \\
-\textbf{September 20th, 2021} & Count organisms using pods from a small sample and estimating total number to provide baseline population size & May need to readjust environment depending on organism survival \\
-\textbf{September 27th, 2021} & Add variable - pesticides & May need to adjust amount of pesticides depending on survivability \\
-\bottomrule()
-\end{longtable}
-
-\textbf{~/3}
-
-\textbf{Grading Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  All data collection dates included and a description of what data will be collected and how this will be done
-\item
-  All non-data collection dates included with details of what will be done on those days
-\item
-  Start and end of dates are provided
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks3 pts & All 3 criteria are met \\
-Satisfactory2 pts & 2 of the 3 criteria are met \\
-Unsatisfactory1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
-
-\hypertarget{file-uploads}{%
-\subsection*{File Uploads}\label{file-uploads}}
-\addcontentsline{toc}{subsection}{File Uploads}
-
-\textbf{~/2}
-
-\textbf{Grading Criteria}
-
-\begin{itemize}
-\tightlist
-\item
-  Registered Report has been submitted as pdf
-\item
-  Registered Report has been submitted as RMarkdown
-\end{itemize}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\raggedright
-Points
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-{Criteria}
-\end{minipage} \\
-\midrule()
-\endhead
-Full Marks2 pts & All 2 of the criteria are met \\
-Unsatisfactory1 pt & Only 1 of the criteria is met \\
-Incomplete0 pts & None of the criteria are met \\
-\bottomrule()
-\end{longtable}
+This week you will be continuing data collection for your project.
 
 \hypertarget{quiz-4-who-am-i}{%
 \chapter*{Quiz 4: Who Am I?}\label{quiz-4-who-am-i}}
@@ -1810,7 +1326,7 @@ Complete Quiz 2: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 7 - BIOL 205}\label{part-lab-7---biol-205}}
 \addcontentsline{toc}{part}{Lab 7 - BIOL 205}
 
-\emph{Last updated 2022-09-15}
+\emph{Last updated 2022-09-22}
 
 \hypertarget{data-collection-round-3}{%
 \chapter*{Data Collection Round 3}\label{data-collection-round-3}}
@@ -1828,7 +1344,7 @@ Complete Quiz 4: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 8 - BIOL 205}\label{part-lab-8---biol-205}}
 \addcontentsline{toc}{part}{Lab 8 - BIOL 205}
 
-\emph{Last updated 2022-09-15}
+\emph{Last updated 2022-09-22}
 
 \hypertarget{data-collection-round-4-cleanup}{%
 \chapter*{Data Collection Round 4 \& Cleanup}\label{data-collection-round-4-cleanup}}
@@ -1846,7 +1362,7 @@ Complete Quiz 5: Who Am I? on \href{https://canvas.ubc.ca/courses/113910}{Canvas
 \part*{Lab 9 - BIOL 205}\label{part-lab-9---biol-205}}
 \addcontentsline{toc}{part}{Lab 9 - BIOL 205}
 
-\emph{Last updated 2022-09-15}
+\emph{Last updated 2022-09-22}
 
 \hypertarget{data-analysis}{%
 \chapter*{Data Analysis}\label{data-analysis}}
@@ -1892,7 +1408,7 @@ Below are a few videos which can help you get acquainted with running statistica
 \part*{Lab 10 - BIOL 205}\label{part-lab-10---biol-205}}
 \addcontentsline{toc}{part}{Lab 10 - BIOL 205}
 
-\emph{Last updated 2022-09-15}
+\emph{Last updated 2022-09-22}
 
 \hypertarget{assignment-5-powerpoint-presentations}{%
 \chapter*{Assignment 5: PowerPoint Presentations}\label{assignment-5-powerpoint-presentations}}
@@ -2063,8 +1579,8 @@ Incomplete0 pts & None of the criteria are met \\
 \bottomrule()
 \end{longtable}
 
-\hypertarget{background-1}{%
-\subsection*{Background}\label{background-1}}
+\hypertarget{background}{%
+\subsection*{Background}\label{background}}
 \addcontentsline{toc}{subsection}{Background}
 
 \textbf{~/6}
@@ -2108,8 +1624,8 @@ Incomplete0 pts & None of the criteria are met \\
 \bottomrule()
 \end{longtable}
 
-\hypertarget{experimental-design-1}{%
-\subsection*{Experimental Design}\label{experimental-design-1}}
+\hypertarget{experimental-design}{%
+\subsection*{Experimental Design}\label{experimental-design}}
 \addcontentsline{toc}{subsection}{Experimental Design}
 
 \textbf{~/6}

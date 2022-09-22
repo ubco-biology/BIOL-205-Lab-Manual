@@ -2,184 +2,15 @@
 
 *Last updated `r Sys.Date()`*
 
-# Open Science, R, & RMarkdown Tutorial {-}
+# Scripting in R {-}
 
-You were introduced to Open Science practices, RMarkdown, and RStudio when you completed a protocol and subsequent Recommendation Report in BIOL 125. We will be using a similar format and template for your 3rd and 4th assignments in BIOL 205.
+At this stage, you have your draft protocol submitted which includes an articulation of the statistical analyses you plan to use. In this lab, we'll start preparing for running those analyses. To do this, we'll be moving away from using an R Shiny App and instead use a few `R` scripts.
 
-Protocols are frequently not formally peer-reviewed. However, there is a specific publication type known as a Registered Report, in which peer-review of a protocol is an integral part. In a Registered Report, you submit a protocol with a detailed study design and plan, which is then reviewed by an editorial board, often suggestions for improvement are made, and if accepted on re-submission, the journal, within reason, commits to publishing your study irrespective of whether your findings are statistically significant.
-
-Following on this model, Assignment 3 will be your detailed study design plan. Your TA will be your peer reviewer as they grade your submission. Assignment 4 will be your re-submission of your study design based on feedback from your TA. This will be followed by your final in class presentation of the results of proposed study!
-
-We'll also be moving away from using an R Shiny App to create figures and compute analyses and instead use a few `R` scripts.
-
-To prepare you for this, we'll start with a short review of materials related to Open Science, `R`, & RMarkdown from BIOL 125 and then we'll introduce the `R` scripts that you'll be using later when you do your final report. After reviewing this material, you will be prompted to complete a quiz in Canvas before the rest of the term's material is made available.
-
-## Overview {-}
-
-### Open Science {-}
-
-Open Science is a movement that tries to combat the <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Replication-crisis">replication crisis</a>, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Questionable-research-practices">questionable research practices</a>, and flashy research trumping quality research in two ways. First, by providing different incentives and rewards for research. That is, changing what we measure as a success in research, shifting from a culture that emphasizes novel findings to one that also rewards the many other aspects of practicing good science. Second, by making all parts of the scientific research process <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Transparency">transparent</a> and accessible, allowing for a critical review of how a study was conducted, and ultimately enabling that study to be independently <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Replication">replicated</a>. 
-
-<div class = "advanced">
-For an optional refresher of Open Science principles and core values, visit the [Open Science 101 Module](https://ubco-biology.github.io/OS-Introduction/principles-of-open-science.html) that was covered in BIOL 116.
-</div>
-
-### Registered Reports {-}
-
-A <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Registered-report">Registered Report</a> involves submitting--in the form of a protocol--your research question, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Hypothesis">hypotheses</a>, and planned methods, for <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Peer-review">peer review</a> prior to beginning data collection.
-
-Using this format enhances research quality because it gives researchers a chance alter study design and methods before investing time into data collection. Just think of a time where you spent countless hours writing an essay thinking it was perfect, only to give it to a friend to read and receive a ton of editing comments. Often readers notice things the author doesn't! This approach also helps avoid questionable research practices like selective reporting of results and publication bias.
-
-The protocol that you submit for peer review will include:
-
-* Performing a <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Literature-review">literature review</a> on your research topic and documenting a list of consulted studies, how they were found, and the strengths, limitations, and weaknesses of each.
-* Submitting a <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
-* Implementing the study according to your plan, and noting any deviations from that plan (Note: deviations often happen, and that's OK! The key is to document them). These reflections will be submitted for marks.
-* Submitting and presenting the details of your experiences implementing the research plan (including any changes recorded, justification for changes, <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Statistical-analysis">analysis</a> of the data, and your interpretation and conclusion).
-
-<div class ="note">
-It is expected throughout this process that you will be implementing best practices for research data management as articulate in the UBCO Procedures and Guidelines, including using appropriate <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Version-control">version control</a> on electronic documents and proper <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#File-and-data-management">file and data management</a> practices throughout your experiment. Need a refresher? Revisit the rules outlined in Chapters 1-5 [File and Data Management](https://ubco-biology.github.io/Procedures-and-Guidelines/file-and-data-management.html) in the Procedures & Guidelines.
-</div>
-
-### Why Use `R` & RMarkdown? {-}
-
-While there are numerous programs that you can use to write lab reports, research manuscripts, and perform <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#Statistical-analysis">statistical analysis</a>, there are so many benefits to using <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#R">R</a> & RMarkdown!
-
-First, `R` is both free and open source! Moreover, using `R` allows for computational reproducibility of your work. Computational reproducibility is the ability to document data and analyses so that others can understand and replicate the computations that led to the results and conclusions.
-
-While you could use `R` to perform statistical analyses and write your report separately using a program like Microsoft Word. By using RMarkdown to write your lab report, you can include data analyses directly within the report which allows for everything to be stored in a single document. This makes it simple for readers to understand the computations used to conduct analyses as they read through your paper. For your Registered Report in BIOL 205 you won't be expected to have the code for your analyses directly embedded within your RMarkdown document but you will use pre-made `R` scripts to perform these analyses.
-
-<div class = "note">
-Accessibility is a key aspect of Open Science. And while digital accessibility has many connotations, one of these relates to cost. `R` has no associated financial costs with it and RStudio supports free distribution of their software for educational use. The same can't be said for many alternative authoring and statistical programs, for example products from Microsoft.
-</div>
-
-### Scientific Writing, Installation of `R` & RStudio {-}
-
-For a refresher on scientific writing, the different sections of a lab report, and setting up `R` & RStudio, see the BIOL 125 Lab Manual here [https://ubco-biology.github.io/BIOL-125-Lab-Manual/recommendation-report.html](https://ubco-biology.github.io/BIOL-125-Lab-Manual/recommendation-report.html). **Read all of the subsections under the Recommendation Report.**
-
-## Assignment Template {-}
-
-You will use the following template for your Registered Report:
-
-[20220824_Lab03_205_Assignment_V1.Rmd](https://osf.io/download/g5zxk) 
-
-Before starting your Registered Report, we'll spend some time going through the different parts of this template.
-
-### Using the Template {-}
-
-<div class = "note">
-All the markdown syntax that you need for RMarkdown can be found in the [Markdown](https://ubco-biology.github.io/Procedures-and-Guidelines/markdown-1.html){target="_blank"} section of the BIOL Procedures and Guidelines.
-</div>
-
-### Directory Structure & File Naming {-}
-
-It is expected that you will have a root project folder for your work associated with this lab. And that at the minimum you will have a folder for your report, your data, your figures, and your scripts. And that you will download this template into your `report/` directory. And that lastly, you will rename the template in accordance with the file naming conventions in the [Biology Procedures and Guidelines document](https://ubco-biology.github.io/Procedures-and-Guidelines/file-naming.html){target="_blank"}.
-
-Lastly, we'll be working with an RProject file this round to help ensure our project's working directory is properly set up in `R`.
-
-<div class = "takeAway">
-It\'s important to load your project using the RProject file and not the RMarkdown file to ensure your working directory is properly set and that all the scripts and templates we'll be using work as intended!
-</div>
-
-Review the instruction [here](https://ubco-biology.github.io/Procedures-and-Guidelines/set-a-working-directory-in-rstudio.html){target="_blank"} in the Procedures and Guidelines Document, for setting up a working directory and RProject file.
-
-Your project directory structure should look something like this once you've created your RProject file and you've downloaded a copy of the RMarkdown file:
-
-```
-├── BIOL205_RP/
-│   ├── BIOL205_report.RProj
-│   ├── data/
-│   ├── figures/
-│   ├── report/
-│   │   ├── 20220101_Lab03_205_Assignment_V1.Rmd
-│   ├── scripts/
-```
-
-### YAML {-}
-
-The top of the template contains some front matter called YAML. YAML provides instructions to all the pieces of software involved in converting your RMarkdown document to it\'s outputs, in this case, `pdf`. YAML is very specific to spacing, so don\'t add any extra spaces!
-
-What you need to do.
-
-1. Provide a title within the quotations after `title`.
-2. Provide your name within the quotations after `author`.
-3. Provide your abstract within the quotations after `abstract`.
-
-What might be nice to know.
-
-1. <code>r Sys.Date()</code> pulls the date from your computer and auto populates this for you.
-2. The `output` tag defines the output format. Other options include `html_document` and `word_document`.
-
-<div class = "advanced">
-What exactly is YAML?
-
-> YAML™ (rhymes with “camel”) is a human-friendly, cross language, Unicode based data serialization language designed around the common native data types of dynamic programming languages. It is broadly useful for programming needs ranging from configuration files to internet messaging to object persistence to data auditing and visualization.
-
-Read more at [the Official YAML Web Site](https://yaml.org/)
-</div>
-
-### Document Body {-}
-
-The template is then pre-populated with first level headers for each section you\'re expected to include in your report. Each heading re-iterates the key elements the content of these headings should address. This is just place holder text, so replace it with your own.
-
-### Images & Graphs {-}
-
-There is one sample graph referenced in the template. If you\'d like to download this image and place it in your `figures/` directory to test knitting your template, the file can be downloaded [at this link](https://osf.io/download/nrzdu). And your project should look like this:
-
-```
-├── BIOL205_RP/
-│   ├── BIOL205_report.RProj
-│   ├── data/
-│   ├── figures/
-│   │   ├── MVD_BIOL125-Lab5_Fig-1-Boxplot_V1.png
-│   ├── report/
-│   │   ├── 20220101_Lab03_205_Assignment_V1.Rmd
-│   ├── scripts/
-```
-
-You might note the following directly after the image path: `{width=50%}`. This reduces the image size by 50%. 
-
-As noted in the template, you do not need to write `Figure 1:` before your figures; this small piece of text is handled during the conversion from RMarkdown to pdf. Any other information that you would like to include in the caption should go in the `[]` before the `()` that contain the path to the image.
-
-<div class = "note">
-Figure placement
-
-The engine behind the conversion from RMarkdown to pdf is a typesetting application, one with pretty strict rules about how content should be formatted - much more strict than something like Microsoft Word.
-
-What this means is that if the placement of your images will disrupt your prose - by creating large amounts of empty white space for example - this typesetting application will *push* your figure to somewhere lower in your report where it won\'t create this white space.
-
-Your figures should be adjacent to the relevant text in your RMarkdown file. How this manifests to your pdf might look a little different; that\'s ok.
-</div>
-
-### References {-}
-
-Just before the heading for references you\'ll see the following
-
-```
-\clearpage
-```
-
-This creates a page break between your references section and the rest of your report.
-
-### Building the `pdf` {-}
-
-If you've installed `R`, RStudio, and the `markdown` and `tinytex` packages succesfully, when you open the template `.Rmd` file you should see an option to `Knit`.
-
-![](images/Knit_20220101.png)
-
-Click this button or select the drop down arrow and select `Knit to pdf`. This will generate a pdf in the same directory as your `.Rmd` file.
-
-## Using the RScripts {-}
-
-<div class = "note">
-For the quiz associated with this lab we'll have you investigate and play around a bit with the scripts we've built for your analyses. And we'll have some sample data that you can use to explore the scripts.
-
-The instructions below primarily relate to building an appropriate project structure for your final report and analyses. It would be good practice at this stage to set up a temporary project space on your computer, using the folder structure detailed below. In fact, when you get the section [Practicing Using the `R` Scripts](https://ubco-biology.github.io/BIOL-205-Lab-Manual/practicing-using-the-r-scripts.html) later in this lab, you'll be provided with direct links to a sample data set and an appropriate `R` script to use with that dataset within this directory structure, which will in turn allow you to get the screen shots required for the quiz.
-</div>
+# Using the RScripts {-}
 
 `R` scripts are text files containing the commands (aka code) and comments used to perform computations. For BIOL 205, we've written the majority of the code for you. In BIOL 202, you'll be doing much more of this from scratch. Even though much of the code has been written for you, we encourage you to read through the scripts in detail and see if you can figure out with the help of the comments exactly what's going on! 
 
-There is a separate `R` script for each type of variable combination you might have for your research project. When it comes time for your final analyiss, download the `R` script that corresponds to the types of variables you have in your experiment. In the mean time, download all or any that you're interested in looking through. 
+There is a separate `R` script for each type of variable combination you might have for your research project. When it comes time for your final analysis, download the `R` script that corresponds to the types of variables you have in your experiment. In the mean time, download all or any that you're interested in looking through. 
 
 * Both response and explanatory variables are categorical 
     * [BIOL205_Script_Categorical-Categorical.R](https://osf.io/download/sg7y6)
@@ -491,42 +322,7 @@ t.test(body_mass_g ~ species, data = penguins_subset, # chooses the variables an
     lm.anova  
 ```
 
-# Quiz 2: Open Science, R, & RMarkdown {-}
-
-Before starting this quiz, you must:
-
-* practice knitting the assignment template RMarkdown file
-* practice using the `R` script for a categorical explanatory variable and quantitative response variable
-
-The next two pages provide you with sample files to do each of these. Refer to the previous sections on working with RMarkdown files and the `R` scripts if you run into any issues.
-
-<div class = "note">
-The quiz will ask you to upload screenshots and will have questions from the output of the knitting process and the `R` scripts.
-</div>
-
-## Practicing Knitting {-}
-
-If you haven\'t already downloaded the assignment template, here it is again:
-
-[20220824_Lab03_205_Assignment_V1.Rmd](https://osf.io/download/g5zxk) 
-
-To test the template, 
-
-* ensure the template `.Rmd` file is in your `report/` directory 
-* download the following image into your `figures/` directory
-    * [MVD_BIOL205-Lab5_Fig-1-Boxplot_V1.png](https://osf.io/download/zuehg) (4 KB)
-* launch your project using your RProject file
-* open the template `.Rmd` file from within RStudio
-* insert your name as the author in the YAML header
-* knit the document to a PDF
-
-You should get something that looks like this after `Knitting` the `.Rmd` file:
-
-* [20220824_Lab05_125_Assignment_V1.pdf](https://osf.io/download/3k8ve) (180 KB)
-
-**Your knitted document should show your name under the title!** Take a screenshot of the first page of the knitted assignment template. You'll need to upload this screenshot to the quiz on Canvas. 
-
-## Practicing Using the `R` Scripts {-}
+# Practicing Using the `R` Scripts {-}
 
 We\'ll practice using the `R` script for a categorical explanatory variable and quantitative response variable. Follow these steps:
 
@@ -537,60 +333,5 @@ We\'ll practice using the `R` script for a categorical explanatory variable and 
 * launch your project using your RProject file
 * open the `R` `script from within RStudio
 * follow the instructions provided [earlier](https://ubco-biology.github.io/BIOL-205-Lab-Manual/using-the-rscripts.html) for working with the script - setting up variable names etc - and run *ALL* code in the script
-  * save the boxplot produced to your `figures/` folder. You will need to upload this to the quiz on Canvas
-  * Keep the results of descriptive statistics and statistical analyses open while you complete the quiz. You will need some of these values to answer questions!
-  
-## Complete the Quiz {-}
-
-Now you\'re ready to start the quiz. Complete the Quiz titled Open Science, R, & RMarkdown on [Canvas](https://canvas.ubc.ca/courses/98621). 
-
-# Assignment 3: Protocol (first submission) {-}
-
-You will use the following template for your Registered Report:
-
-[20220824_Lab03_205_Assignment_V1.Rmd](https://osf.io/download/g5zxk) (3 KB)
-
-<div class="note">
-See [Canvas](https://canvas.ubc.ca) for assignment due dates.
-</div>
-
-For this assignment you will submit a protocol with an established <a href="https://ubco-biology.github.io/Procedures-and-Guidelines/glossary#A-priori-hypothesis">a priori hypothesis</a>, experimental design, and plan for presenting and analyzing your data. This will be marked before the experiment implementation phase and TA feedback incorporated into the project as needed. Creating a detailed, thorough plan for your research often takes as much time as running the experiment and collecting and analyzing your data. The more you plan, including anticipating potential problems, the easier the implementation!
-
-Your protocol will be comprised of the following sections:
-
-* Abstract 
-* Data availability
-* Introduction 
-* Methods
-* Discussion - describe the potential implications of your project 
-* References
-
-<div class = "note">
-Protocols don't often have an abstract. But being able to write a concise synopsis of what's to come is a critical skill in academic writing. So we're going to take advantage of the opportunity to practice by requiring one for this assignment!
-
-Your data availability statement should be a proposed statement. Something like 'Data will be made available...'.
-</div>
-
-You will receive your marked protocol one week from the time it is submitted. If you have any questions regarding your mark and / or the comments from your TA please ensure you take the opportunity to chat with your TA to go over these. This will ensure that you are in the best position to attain the highest marks possible for this assignment.
-
-**Tips for Preparing a Protocol**
-
-*	Read a lot!  It is important that you have a thorough understanding of the topic.  At the very least you should have at least 3 primary source papers you are referring too throughout your report.
-*	Discuss your ideas with other students (not just your partner).  Get a feel for what everyone else is doing and the depth they are working in.
-*	Start writing early!  Students often make the mistake of starting the night before the report is due.  This more than not results in poor submissions and thus lower grades.  You should expect that you will have at least 3 rounds of revisions before you submit.
-*	Someone reading your report should be able to tell what question(s) you will address, why the topic is interesting and/or important, how you will approach the problem, the types of data you will collect, and how your research will advance the field.
-
-# Assignment 3: Detailed Outline {-}
-
-COPY FROM WORD DOC
-
-<div class = "flag">
-You will need to submit 2 files for this assignment:
-
-* Updated Protocol as `.Rmd`
-* Updated Protocol as `.pdf`
-</div>
-
-# Assignment 3: Rubric {-}
-
-PENDING
+  * the boxplot should be automatically saved to your `figures/` folder.
+  * the results of your descriptive statistics and statistical analyses should be automatically save to your `report/` folder.
