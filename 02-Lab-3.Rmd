@@ -225,7 +225,6 @@ Your protocol will be comprised of the following sections:
 * Data availability
 * Introduction 
 * Methods
-* Discussion - describe the potential implications of your project 
 * References
 
 <div class = "note">
@@ -281,21 +280,3 @@ You should get something that looks like this after `Knitting` the `.Rmd` file:
 | **Plagiarism & Quotations**<br />- No plagiarism of any kind has been found<br />- No quotations present<br />- Information attained from outside resources are properly cited | 3 |
 | **Open Science & Format**<br />- 5 pages double spaced, font 12, Times New Roman (not including references)<br />- Screen shot of directory structure has been uploaded and directory follows good practices<br />- Registered report submitted as Rmd and pdf version<br />- YAML is provided at the top of the template | 4 |
 | **Timeline**<br />- All data collection dates included and a description of what data will be collected and how this will be done<br />- All non-data collection dates included with details of what will be done on those days<br />- start and end of dates are provided | 3 |
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
